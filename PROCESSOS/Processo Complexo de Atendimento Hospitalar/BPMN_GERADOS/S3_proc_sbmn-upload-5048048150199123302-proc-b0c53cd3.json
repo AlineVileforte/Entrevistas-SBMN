@@ -1,0 +1,267 @@
+{
+  "fragments": [
+    {
+      "id": "Default_init",
+      "type": "START_EVENT",
+      "branch": "0.0.",
+      "inComing": [],
+      "outComing": [
+        "Par0"
+      ]
+    },
+    {
+      "id": "Par0",
+      "name": "PAR",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.",
+      "inComing": [
+        "Default_init"
+      ],
+      "outComing": [
+        "CP1",
+        "TIE1"
+      ]
+    },
+    {
+      "id": "CP1",
+      "name": "Chegada do paciente",
+      "type": "TASK",
+      "branch": "0.0.1.1.",
+      "inComing": [
+        "Par0"
+      ],
+      "outComing": [
+        "RA1"
+      ]
+    },
+    {
+      "id": "TIE1",
+      "name": "Triagem inicial de enfermagem",
+      "type": "TASK",
+      "branch": "0.0.1.2.",
+      "inComing": [
+        "Par0"
+      ],
+      "outComing": [
+        "MAS1"
+      ]
+    },
+    {
+      "id": "MAS1",
+      "name": "Médico analisa os sintomas",
+      "type": "TASK",
+      "branch": "0.0.1.2.",
+      "inComing": [
+        "TIE1"
+      ],
+      "outComing": [
+        "SE1"
+      ]
+    },
+    {
+      "id": "SE1",
+      "name": "Solicitar exames",
+      "type": "TASK",
+      "branch": "0.0.1.2.",
+      "inComing": [
+        "MAS1"
+      ],
+      "outComing": [
+        "PPI1"
+      ]
+    },
+    {
+      "id": "RA1",
+      "name": "Registro administrativo",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.2.",
+      "inComing": [
+        "CP1"
+      ],
+      "outComing": [
+        "MCA1"
+      ]
+    },
+    {
+      "id": "PPI1",
+      "name": "Preparar procedimentos de Internação",
+      "type": "TASK",
+      "branch": "0.0.1.2.",
+      "inComing": [
+        "SE1"
+      ],
+      "outComing": [
+        "AMI1"
+      ]
+    },
+    {
+      "id": "MCA1",
+      "name": "Monitorar custos e aprovações",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.2.",
+      "inComing": [
+        "RA1"
+      ],
+      "outComing": [
+        "TAC1"
+      ]
+    },
+    {
+      "id": "AMI1",
+      "name": "Administrar medicação inicial",
+      "type": "TASK",
+      "branch": "0.0.1.2.",
+      "inComing": [
+        "PPI1"
+      ],
+      "outComing": [
+        "TEA1"
+      ]
+    },
+    {
+      "id": "TAC1",
+      "name": "Tratar autorização do convênio",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.2.",
+      "inComing": [
+        "MCA1"
+      ],
+      "outComing": [
+        "PARCLOSE24"
+      ]
+    },
+    {
+      "id": "TEA1",
+      "name": "Tratamento em andamento",
+      "type": "TASK",
+      "branch": "0.0.1.2.",
+      "inComing": [
+        "AMI1"
+      ],
+      "outComing": [
+        "PRE1"
+      ]
+    },
+    {
+      "id": "PRE1",
+      "name": "Processar/realizar exames",
+      "type": "TASK",
+      "branch": "0.0.1.2.",
+      "inComing": [
+        "TEA1"
+      ],
+      "outComing": [
+        "RD1"
+      ]
+    },
+    {
+      "id": "RD1",
+      "name": "Revisar diagnóstico",
+      "type": "TASK",
+      "branch": "0.0.1.2.",
+      "inComing": [
+        "PRE1"
+      ],
+      "outComing": [
+        "Par20"
+      ]
+    },
+    {
+      "id": "Par20",
+      "name": "PAR",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.1.2.",
+      "inComing": [
+        "RD1"
+      ],
+      "outComing": [
+        "CE1",
+        "SEA1"
+      ]
+    },
+    {
+      "id": "CE1",
+      "name": "Consultar especialista",
+      "type": "TASK",
+      "branch": "0.0.1.2.2.1.",
+      "inComing": [
+        "Par20"
+      ],
+      "outComing": [
+        "PARCLOSE23"
+      ]
+    },
+    {
+      "id": "SEA1",
+      "name": "Solicitar exames adicionais",
+      "type": "TASK",
+      "branch": "0.0.1.2.2.2.",
+      "inComing": [
+        "Par20"
+      ],
+      "outComing": [
+        "PARCLOSE23"
+      ]
+    },
+    {
+      "id": "PARCLOSE23",
+      "name": "PARCLOSE23",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.1.2.2.1.",
+      "inComing": [
+        "CE1",
+        "SEA1"
+      ],
+      "outComing": [
+        "PARCLOSE24"
+      ]
+    },
+    {
+      "id": "PARCLOSE24",
+      "name": "PARCLOSE24",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.1.1.",
+      "inComing": [
+        "PARCLOSE23",
+        "TAC1"
+      ],
+      "outComing": [
+        "EOF1"
+      ]
+    },
+    {
+      "id": "EOF1",
+      "name": "Entregar orientações finais",
+      "type": "TASK",
+      "branch": "0.0.",
+      "inComing": [
+        "PARCLOSE24"
+      ],
+      "outComing": [
+        "PPA1"
+      ]
+    },
+    {
+      "id": "PPA1",
+      "name": "Preparar procedimentos de alta",
+      "type": "TASK",
+      "branch": "0.0.",
+      "inComing": [
+        "EOF1"
+      ],
+      "outComing": [
+        "END"
+      ]
+    },
+    {
+      "id": "END",
+      "name": "END_EVENT",
+      "type": "END_EVENT",
+      "branch": "0.0.",
+      "inComing": [
+        "PPA1"
+      ],
+      "outComing": []
+    }
+  ]
+}

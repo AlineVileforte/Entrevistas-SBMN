@@ -1,0 +1,345 @@
+{
+  "fragments": [
+    {
+      "id": "Default_init",
+      "type": "START_EVENT",
+      "branch": "0.0.",
+      "inComing": [],
+      "outComing": [
+        "TIE1"
+      ]
+    },
+    {
+      "id": "TIE1",
+      "name": "Triagem inicial de enfermagem",
+      "type": "TASK",
+      "branch": "0.0.",
+      "inComing": [
+        "Default_init"
+      ],
+      "outComing": [
+        "CP1"
+      ]
+    },
+    {
+      "id": "CP1",
+      "name": "Chegada do paciente",
+      "type": "TASK",
+      "branch": "0.0.",
+      "inComing": [
+        "TIE1"
+      ],
+      "outComing": [
+        "MAS1"
+      ]
+    },
+    {
+      "id": "MAS1",
+      "name": "Médico analisa os sintomas",
+      "type": "TASK",
+      "branch": "0.0.",
+      "inComing": [
+        "CP1"
+      ],
+      "outComing": [
+        "Par3"
+      ]
+    },
+    {
+      "id": "Par3",
+      "name": "PAR",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.",
+      "inComing": [
+        "MAS1"
+      ],
+      "outComing": [
+        "RA1",
+        "G0"
+      ]
+    },
+    {
+      "id": "RA1",
+      "name": "Registro administrativo",
+      "type": "TASK",
+      "branch": "0.0.1.1.",
+      "inComing": [
+        "Par3"
+      ],
+      "outComing": [
+        "Par7"
+      ]
+    },
+    {
+      "id": "G0",
+      "name": "G0",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.2.",
+      "inComing": [
+        "Par3"
+      ],
+      "outComing": [
+        "PPI1",
+        "XORCLOSE16"
+      ]
+    },
+    {
+      "id": "PPI1",
+      "name": "Preparar procedimentos de Internação",
+      "type": "TASK",
+      "branch": "0.0.1.2.1.2.",
+      "inComing": [
+        "G0"
+      ],
+      "outComing": [
+        "XORCLOSE16"
+      ]
+    },
+    {
+      "id": "Par7",
+      "name": "PAR",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.1.1.",
+      "inComing": [
+        "RA1"
+      ],
+      "outComing": [
+        "MCA1",
+        "TAC1"
+      ]
+    },
+    {
+      "id": "MCA1",
+      "name": "Monitorar custos e aprovações",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.1.",
+      "inComing": [
+        "Par7"
+      ],
+      "outComing": [
+        "AMI1"
+      ]
+    },
+    {
+      "id": "TAC1",
+      "name": "Tratar autorização do convênio",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.2.",
+      "inComing": [
+        "Par7"
+      ],
+      "outComing": [
+        "SE1"
+      ]
+    },
+    {
+      "id": "AMI1",
+      "name": "Administrar medicação inicial",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.1.",
+      "inComing": [
+        "MCA1"
+      ],
+      "outComing": [
+        "TEA1"
+      ]
+    },
+    {
+      "id": "SE1",
+      "name": "Solicitar exames",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.2.",
+      "inComing": [
+        "TAC1"
+      ],
+      "outComing": [
+        "PRE1"
+      ]
+    },
+    {
+      "id": "TEA1",
+      "name": "Tratamento em andamento",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.1.",
+      "inComing": [
+        "AMI1"
+      ],
+      "outComing": [
+        "PARCLOSE17"
+      ]
+    },
+    {
+      "id": "PRE1",
+      "name": "Processar/realizar exames",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.2.",
+      "inComing": [
+        "SE1"
+      ],
+      "outComing": [
+        "PARCLOSE17"
+      ]
+    },
+    {
+      "id": "XORCLOSE16",
+      "name": "XORCLOSE16",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.2.1.2.",
+      "inComing": [
+        "PPI1",
+        "G0"
+      ],
+      "outComing": [
+        "RD1"
+      ]
+    },
+    {
+      "id": "PARCLOSE17",
+      "name": "PARCLOSE17",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.1.1.2.2.",
+      "inComing": [
+        "PRE1",
+        "TEA1"
+      ],
+      "outComing": [
+        "PARCLOSE32"
+      ]
+    },
+    {
+      "id": "RD1",
+      "name": "Revisar diagnóstico",
+      "type": "TASK",
+      "branch": "0.0.1.2.",
+      "inComing": [
+        "XORCLOSE16"
+      ],
+      "outComing": [
+        "G1"
+      ]
+    },
+    {
+      "id": "G1",
+      "name": "G1",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.2.",
+      "inComing": [
+        "RD1"
+      ],
+      "outComing": [
+        "SEA1",
+        "G2"
+      ]
+    },
+    {
+      "id": "SEA1",
+      "name": "Solicitar exames adicionais",
+      "type": "TASK",
+      "branch": "0.0.1.2.1.2.",
+      "inComing": [
+        "G1"
+      ],
+      "outComing": [
+        "XORCLOSE31"
+      ]
+    },
+    {
+      "id": "G2",
+      "name": "G2",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.2.1.1.2.2.",
+      "inComing": [
+        "G1"
+      ],
+      "outComing": [
+        "CE1",
+        "XORCLOSE29"
+      ]
+    },
+    {
+      "id": "CE1",
+      "name": "Consultar especialista",
+      "type": "TASK",
+      "branch": "0.0.1.2.1.1.2.2.2.1.",
+      "inComing": [
+        "G2"
+      ],
+      "outComing": [
+        "XORCLOSE29"
+      ]
+    },
+    {
+      "id": "XORCLOSE29",
+      "name": "XORCLOSE29",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.2.1.1.2.2.2.1.",
+      "inComing": [
+        "CE1",
+        "G2"
+      ],
+      "outComing": [
+        "XORCLOSE31"
+      ]
+    },
+    {
+      "id": "XORCLOSE31",
+      "name": "XORCLOSE31",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.2.1.2.",
+      "inComing": [
+        "SEA1",
+        "XORCLOSE29"
+      ],
+      "outComing": [
+        "PARCLOSE32"
+      ]
+    },
+    {
+      "id": "PARCLOSE32",
+      "name": "PARCLOSE32",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.1.1.",
+      "inComing": [
+        "PARCLOSE17",
+        "XORCLOSE31"
+      ],
+      "outComing": [
+        "EOF1"
+      ]
+    },
+    {
+      "id": "EOF1",
+      "name": "Entregar orientações finais",
+      "type": "TASK",
+      "branch": "0.0.",
+      "inComing": [
+        "PARCLOSE32"
+      ],
+      "outComing": [
+        "PPA1"
+      ]
+    },
+    {
+      "id": "PPA1",
+      "name": "Preparar procedimentos de alta",
+      "type": "TASK",
+      "branch": "0.0.",
+      "inComing": [
+        "EOF1"
+      ],
+      "outComing": [
+        "END"
+      ]
+    },
+    {
+      "id": "END",
+      "name": "END_EVENT",
+      "type": "END_EVENT",
+      "branch": "0.0.",
+      "inComing": [
+        "PPA1"
+      ],
+      "outComing": []
+    }
+  ]
+}
