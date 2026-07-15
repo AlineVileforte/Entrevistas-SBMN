@@ -1,0 +1,333 @@
+{
+  "fragments": [
+    {
+      "id": "Default_init",
+      "type": "START_EVENT",
+      "branch": "0.0.",
+      "inComing": [],
+      "outComing": [
+        "ACP1"
+      ]
+    },
+    {
+      "id": "ACP1",
+      "name": "Aprovar Conceito do Produto",
+      "type": "TASK",
+      "branch": "0.0.",
+      "inComing": [
+        "Default_init"
+      ],
+      "outComing": [
+        "DCE1"
+      ]
+    },
+    {
+      "id": "DCE1",
+      "name": "Desenvolver Componentes Estruturais",
+      "type": "TASK",
+      "branch": "0.0.",
+      "inComing": [
+        "ACP1"
+      ],
+      "outComing": [
+        "Par2"
+      ]
+    },
+    {
+      "id": "Par2",
+      "name": "PAR",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.",
+      "inComing": [
+        "DCE1"
+      ],
+      "outComing": [
+        "NCF1",
+        "PP1"
+      ]
+    },
+    {
+      "id": "NCF1",
+      "name": "Negociar com Fornecedores",
+      "type": "TASK",
+      "branch": "0.0.1.1.",
+      "inComing": [
+        "Par2"
+      ],
+      "outComing": [
+        "Par5"
+      ]
+    },
+    {
+      "id": "PP1",
+      "name": "Produzir Protótipos",
+      "type": "TASK",
+      "branch": "0.0.1.2.",
+      "inComing": [
+        "Par2"
+      ],
+      "outComing": [
+        "Par8"
+      ]
+    },
+    {
+      "id": "Par5",
+      "name": "PAR",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.1.1.",
+      "inComing": [
+        "NCF1"
+      ],
+      "outComing": [
+        "PCS1",
+        "AACL1"
+      ]
+    },
+    {
+      "id": "PCS1",
+      "name": "Projetar Circuitos e Sensores",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.1.",
+      "inComing": [
+        "Par5"
+      ],
+      "outComing": [
+        "PARCLOSE13"
+      ]
+    },
+    {
+      "id": "AACL1",
+      "name": "Atualizar Análise de Custos e Logística",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.2.",
+      "inComing": [
+        "Par5"
+      ],
+      "outComing": [
+        "PARCLOSE13"
+      ]
+    },
+    {
+      "id": "Par8",
+      "name": "PAR",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.1.2.",
+      "inComing": [
+        "PP1"
+      ],
+      "outComing": [
+        "DVSE1",
+        "G0"
+      ]
+    },
+    {
+      "id": "DVSE1",
+      "name": "Desenvolver e Validar Software Embarcado",
+      "type": "TASK",
+      "branch": "0.0.1.2.2.1.",
+      "inComing": [
+        "Par8"
+      ],
+      "outComing": [
+        "PLP1"
+      ]
+    },
+    {
+      "id": "G0",
+      "name": "G0",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.2.2.2.",
+      "inComing": [
+        "Par8"
+      ],
+      "outComing": [
+        "MDT1",
+        "XORCLOSE18"
+      ]
+    },
+    {
+      "id": "PARCLOSE13",
+      "name": "PARCLOSE13",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.1.1.2.2.",
+      "inComing": [
+        "AACL1",
+        "PCS1"
+      ],
+      "outComing": [
+        "PARCLOSE26"
+      ]
+    },
+    {
+      "id": "PLP1",
+      "name": "Preparar Linha de Produção",
+      "type": "TASK",
+      "branch": "0.0.1.2.2.1.",
+      "inComing": [
+        "DVSE1"
+      ],
+      "outComing": [
+        "RI1"
+      ]
+    },
+    {
+      "id": "MDT1",
+      "name": "Modificar Desenhos Técnicos",
+      "type": "TASK",
+      "branch": "0.0.1.2.2.2.2.1.",
+      "inComing": [
+        "G0"
+      ],
+      "outComing": [
+        "RTM1"
+      ]
+    },
+    {
+      "id": "RI1",
+      "name": "Realizar Inspeções",
+      "type": "TASK",
+      "branch": "0.0.1.2.2.1.",
+      "inComing": [
+        "PLP1"
+      ],
+      "outComing": [
+        "PARCLOSE19"
+      ]
+    },
+    {
+      "id": "RTM1",
+      "name": "Realizar Testes Mecânicos",
+      "type": "TASK",
+      "branch": "0.0.1.2.2.2.2.1.",
+      "inComing": [
+        "MDT1"
+      ],
+      "outComing": [
+        "XORCLOSE18"
+      ]
+    },
+    {
+      "id": "XORCLOSE18",
+      "name": "XORCLOSE18",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.2.2.2.2.2.",
+      "inComing": [
+        "RTM1",
+        "G0"
+      ],
+      "outComing": [
+        "PARCLOSE19"
+      ]
+    },
+    {
+      "id": "PARCLOSE19",
+      "name": "PARCLOSE19",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.1.2.2.2.",
+      "inComing": [
+        "XORCLOSE18",
+        "RI1"
+      ],
+      "outComing": [
+        "CDT1"
+      ]
+    },
+    {
+      "id": "CDT1",
+      "name": "Consolidar Documentação Técnica",
+      "type": "TASK",
+      "branch": "0.0.1.2.",
+      "inComing": [
+        "PARCLOSE19"
+      ],
+      "outComing": [
+        "Par21"
+      ]
+    },
+    {
+      "id": "Par21",
+      "name": "PAR",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.1.2.",
+      "inComing": [
+        "CDT1"
+      ],
+      "outComing": [
+        "VF1",
+        "PMT1"
+      ]
+    },
+    {
+      "id": "VF1",
+      "name": "Validação Final",
+      "type": "TASK",
+      "branch": "0.0.1.2.2.1.",
+      "inComing": [
+        "Par21"
+      ],
+      "outComing": [
+        "APLE1"
+      ]
+    },
+    {
+      "id": "PMT1",
+      "name": "Preparar Materiais de Treinamento",
+      "type": "TASK",
+      "branch": "0.0.1.2.2.2.",
+      "inComing": [
+        "Par21"
+      ],
+      "outComing": [
+        "PARCLOSE25"
+      ]
+    },
+    {
+      "id": "APLE1",
+      "name": "Autorizar Produção em Larga Escala",
+      "type": "TASK",
+      "branch": "0.0.1.2.2.1.",
+      "inComing": [
+        "VF1"
+      ],
+      "outComing": [
+        "PARCLOSE25"
+      ]
+    },
+    {
+      "id": "PARCLOSE25",
+      "name": "PARCLOSE25",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.1.2.2.2.",
+      "inComing": [
+        "PMT1",
+        "APLE1"
+      ],
+      "outComing": [
+        "PARCLOSE26"
+      ]
+    },
+    {
+      "id": "PARCLOSE26",
+      "name": "PARCLOSE26",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.1.1.",
+      "inComing": [
+        "PARCLOSE13",
+        "PARCLOSE25"
+      ],
+      "outComing": [
+        "END"
+      ]
+    },
+    {
+      "id": "END",
+      "name": "END_EVENT",
+      "type": "END_EVENT",
+      "branch": "0.0.1.1.",
+      "inComing": [
+        "PARCLOSE26"
+      ],
+      "outComing": []
+    }
+  ]
+}

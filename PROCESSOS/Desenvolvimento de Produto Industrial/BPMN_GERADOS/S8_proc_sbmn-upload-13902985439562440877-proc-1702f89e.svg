@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="3460" height="1320" viewBox="0 0 3460 1320">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#55606c"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="100%" height="100%" fill="#ffffff"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="156,160 320,160"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="420,160 480,160 480,200 600,200"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="700,200 760,200 760,280 860,280"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="960,280 1020,280 1020,454 1151,454"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="1190,465 1240,465 1240,460 1360,460"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="1177,478 1260,478 1260,692 1373,692"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="1406,709 1460,709 1460,760 1620,760"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="1400,715 1480,715 1480,855 1630,855"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="1460,460 1560,460 1560,557 1628,557"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="1720,760 1780,760 1780,860 1900,860"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="1668,563 1740,563 1740,540 1900,540"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="1662,573 1760,573 1760,700 1900,700"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="2000,540 2060,540 2060,520 2160,520"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="2000,700 2080,700 2080,680 2160,680"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="2000,860 2040,860 2040,1160 1580,1160 1580,865 1670,865"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="2260,520 2320,520 2320,580 2440,580"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="2260,680 2340,680 2340,703 2442,703"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="1662,873 1800,873 1800,1020 1900,1020"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="2540,580 2620,580 2620,684 2469,684"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="2465,680 2600,680 2600,710 2465,710"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="2000,1020 2100,1020 2100,840 2160,840"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="2260,840 2360,840 2360,694 2449,694"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="2480,675 2540,675 2540,500 2700,500"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="2800,500 2860,500 2860,380 2980,380"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="3080,380 3260,380"/>
+  <circle cx="138" cy="158" r="18" fill="#ffffff" stroke="#203040" stroke-width="3"/>
+  <text x="138" y="198" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Default_init</text>
+  <rect x="320" y="120" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="370" y="222" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Aprovar Conceito do Produto</text>
+  <rect x="600" y="160" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="650" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Desenvolver Componentes Estru...</text>
+  <rect x="860" y="240" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="910" y="342" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Produzir Protótipos</text>
+  <polygon points="1165,440 1190,465 1165,490 1140,465" fill="#fff7e0" stroke="#8a6d1f" stroke-width="2"/>
+  <text x="1165" y="512" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">PAR</text>
+  <polygon points="1385,680 1410,705 1385,730 1360,705" fill="#fff7e0" stroke="#8a6d1f" stroke-width="2"/>
+  <text x="1385" y="752" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">G0</text>
+  <rect x="1360" y="420" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="1410" y="522" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Desenvolver e Validar Softwar...</text>
+  <rect x="1620" y="720" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="1670" y="822" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Modificar Desenhos Técnicos</text>
+  <polygon points="1645,540 1670,565 1645,590 1620,565" fill="#fff7e0" stroke="#8a6d1f" stroke-width="2"/>
+  <text x="1645" y="612" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">PAR</text>
+  <rect x="1900" y="500" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="1950" y="602" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Negociar com Fornecedores</text>
+  <rect x="1900" y="660" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="1950" y="762" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Preparar Linha de Produção</text>
+  <rect x="1900" y="820" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="1950" y="922" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Realizar Testes Mecânicos</text>
+  <rect x="2160" y="480" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="2210" y="582" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Projetar Circuitos e Sensores</text>
+  <rect x="2160" y="640" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="2210" y="742" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Realizar Inspeções</text>
+  <polygon points="1645,840 1670,865 1645,890 1620,865" fill="#fff7e0" stroke="#8a6d1f" stroke-width="2"/>
+  <text x="1645" y="912" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">XORCLOSE14</text>
+  <rect x="2440" y="540" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="2490" y="642" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Atualizar Análise de Custos e...</text>
+  <polygon points="2465,680 2490,705 2465,730 2440,705" fill="#fff7e0" stroke="#8a6d1f" stroke-width="2"/>
+  <text x="2465" y="752" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">PARCLOSE16</text>
+  <rect x="1900" y="980" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="1950" y="1082" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Consolidar Documentação Técnica</text>
+  <rect x="2160" y="800" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="2210" y="902" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Validação Final</text>
+  <polygon points="2465,660 2490,685 2465,710 2440,685" fill="#fff7e0" stroke="#8a6d1f" stroke-width="2"/>
+  <text x="2465" y="732" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">PARCLOSE19</text>
+  <rect x="2700" y="460" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="2750" y="562" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Autorizar Produção em Larga E...</text>
+  <rect x="2980" y="340" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="3030" y="442" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Preparar Materiais de Treinam...</text>
+  <circle cx="3278" cy="378" r="18" fill="#ffffff" stroke="#203040" stroke-width="3"/>
+  <text x="3278" y="418" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">END_EVENT</text>
+</svg>

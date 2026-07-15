@@ -1,0 +1,281 @@
+{
+  "fragments": [
+    {
+      "id": "Default_init",
+      "type": "START_EVENT",
+      "branch": "0.0.",
+      "inComing": [],
+      "outComing": [
+        "ACP1"
+      ]
+    },
+    {
+      "id": "ACP1",
+      "name": "Aprovar Conceito do Produto",
+      "type": "TASK",
+      "branch": "0.0.",
+      "inComing": [
+        "Default_init"
+      ],
+      "outComing": [
+        "DCE1"
+      ]
+    },
+    {
+      "id": "DCE1",
+      "name": "Desenvolver Componentes Estruturais",
+      "type": "TASK",
+      "branch": "0.0.",
+      "inComing": [
+        "ACP1"
+      ],
+      "outComing": [
+        "NCF1"
+      ]
+    },
+    {
+      "id": "NCF1",
+      "name": "Negociar com Fornecedores",
+      "type": "TASK",
+      "branch": "0.0.",
+      "inComing": [
+        "DCE1"
+      ],
+      "outComing": [
+        "PP1"
+      ]
+    },
+    {
+      "id": "PP1",
+      "name": "Produzir Protótipos",
+      "type": "TASK",
+      "branch": "0.0.",
+      "inComing": [
+        "NCF1"
+      ],
+      "outComing": [
+        "Par4"
+      ]
+    },
+    {
+      "id": "Par4",
+      "name": "PAR",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.",
+      "inComing": [
+        "PP1"
+      ],
+      "outComing": [
+        "PCS1",
+        "DVSE1"
+      ]
+    },
+    {
+      "id": "PCS1",
+      "name": "Projetar Circuitos e Sensores",
+      "type": "TASK",
+      "branch": "0.0.1.1.",
+      "inComing": [
+        "Par4"
+      ],
+      "outComing": [
+        "Par7"
+      ]
+    },
+    {
+      "id": "DVSE1",
+      "name": "Desenvolver e Validar Software Embarcado",
+      "type": "TASK",
+      "branch": "0.0.1.2.",
+      "inComing": [
+        "Par4"
+      ],
+      "outComing": [
+        "PLP1"
+      ]
+    },
+    {
+      "id": "Par7",
+      "name": "PAR",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.1.1.",
+      "inComing": [
+        "PCS1"
+      ],
+      "outComing": [
+        "AACL1",
+        "G1"
+      ]
+    },
+    {
+      "id": "AACL1",
+      "name": "Atualizar Análise de Custos e Logística",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.1.",
+      "inComing": [
+        "Par7"
+      ],
+      "outComing": [
+        "PARCLOSE20"
+      ]
+    },
+    {
+      "id": "G1",
+      "name": "G1",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.1.2.2.",
+      "inComing": [
+        "Par7"
+      ],
+      "outComing": [
+        "MDT1",
+        "XORCLOSE15"
+      ]
+    },
+    {
+      "id": "PLP1",
+      "name": "Preparar Linha de Produção",
+      "type": "TASK",
+      "branch": "0.0.1.2.",
+      "inComing": [
+        "DVSE1"
+      ],
+      "outComing": [
+        "RI1"
+      ]
+    },
+    {
+      "id": "MDT1",
+      "name": "Modificar Desenhos Técnicos",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.2.2.1.",
+      "inComing": [
+        "G1"
+      ],
+      "outComing": [
+        "RTM1"
+      ]
+    },
+    {
+      "id": "RI1",
+      "name": "Realizar Inspeções",
+      "type": "TASK",
+      "branch": "0.0.1.2.",
+      "inComing": [
+        "PLP1"
+      ],
+      "outComing": [
+        "PARCLOSE21"
+      ]
+    },
+    {
+      "id": "RTM1",
+      "name": "Realizar Testes Mecânicos",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.2.2.1.",
+      "inComing": [
+        "MDT1"
+      ],
+      "outComing": [
+        "XORCLOSE15"
+      ]
+    },
+    {
+      "id": "XORCLOSE15",
+      "name": "XORCLOSE15",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.1.2.2.2.2.",
+      "inComing": [
+        "RTM1",
+        "G1"
+      ],
+      "outComing": [
+        "CDT1"
+      ]
+    },
+    {
+      "id": "CDT1",
+      "name": "Consolidar Documentação Técnica",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.2.",
+      "inComing": [
+        "XORCLOSE15"
+      ],
+      "outComing": [
+        "PMT1"
+      ]
+    },
+    {
+      "id": "PMT1",
+      "name": "Preparar Materiais de Treinamento",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.2.",
+      "inComing": [
+        "CDT1"
+      ],
+      "outComing": [
+        "VF1"
+      ]
+    },
+    {
+      "id": "VF1",
+      "name": "Validação Final",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.2.",
+      "inComing": [
+        "PMT1"
+      ],
+      "outComing": [
+        "APLE1"
+      ]
+    },
+    {
+      "id": "APLE1",
+      "name": "Autorizar Produção em Larga Escala",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.2.",
+      "inComing": [
+        "VF1"
+      ],
+      "outComing": [
+        "PARCLOSE20"
+      ]
+    },
+    {
+      "id": "PARCLOSE20",
+      "name": "PARCLOSE20",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.1.1.2.1.",
+      "inComing": [
+        "AACL1",
+        "APLE1"
+      ],
+      "outComing": [
+        "PARCLOSE21"
+      ]
+    },
+    {
+      "id": "PARCLOSE21",
+      "name": "PARCLOSE21",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.1.2.",
+      "inComing": [
+        "RI1",
+        "PARCLOSE20"
+      ],
+      "outComing": [
+        "END"
+      ]
+    },
+    {
+      "id": "END",
+      "name": "END_EVENT",
+      "type": "END_EVENT",
+      "branch": "0.0.1.2.",
+      "inComing": [
+        "PARCLOSE21"
+      ],
+      "outComing": []
+    }
+  ]
+}

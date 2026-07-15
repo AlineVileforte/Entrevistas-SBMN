@@ -1,0 +1,16 @@
+Desenvolver Componentes Estruturais DEP Aprovar Conceito do Produto
+Negociar com Fornecedores DEP Desenvolver Componentes Estruturais
+Produzir Protótipos DEP Desenvolver Componentes Estruturais
+Projetar Circuitos e Sensores DEP Negociar com Fornecedores
+Atualizar Análise de Custos e Logística DEP Negociar com Fornecedores
+Desenvolver e Validar Software Embarcado DEP Produzir Protótipos
+Modificar Desenhos Técnicos REQ Produzir Protótipos
+Preparar Linha de Produção DEP Desenvolver e Validar Software Embarcado
+Realizar Inspeções DEP Preparar Linha de Produção
+Realizar Testes Mecânicos DEP Produzir Protótipos
+Realizar Testes Mecânicos DEPC Modificar Desenhos Técnicos
+Validação Final DEP Realizar Testes Mecânicos
+Autorizar Produção em Larga Escala DEP Validação Final
+Consolidar Documentação Técnica DEP Produzir Protótipos
+Consolidar Documentação Técnica DEPC Modificar Desenhos Técnicos
+Preparar Materiais de Treinamento DEP Consolidar Documentação Técnica

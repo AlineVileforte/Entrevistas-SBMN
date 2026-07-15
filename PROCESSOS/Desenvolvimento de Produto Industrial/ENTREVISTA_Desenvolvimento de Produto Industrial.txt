@@ -1,0 +1,257 @@
+**1. Pergunta:** Qual idioma você gostaria de utilizar na entrevista?
+**Resposta:** Português.
+
+**2. Pergunta:** Qual é o nome do processo que você deseja modelar?
+**Resposta:** Desenvolvimento de Produto Industrial.
+
+**3. Pergunta:** Em qual domínio ou setor esse processo é realizado?
+**Resposta:** Indústria.
+
+**4. Pergunta:** Liste todas as atividades (AFOs) do processo.
+**Resposta:** Aprovar Conceito do Produto; Desenvolver Componentes Estruturais; Negociar com Fornecedores; Produzir Protótipos; Projetar Circuitos e Sensores; Atualizar Análise de Custos e Logística; Desenvolver e Validar Software Embarcado; Preparar Linha de Produção; Realizar Inspeções; Modificar Desenhos Técnicos; Realizar Testes Mecânicos; Validação Final; Autorizar Produção em Larga Escala; Consolidar Documentação Técnica; Preparar Materiais de Treinamento.
+
+**5. Pergunta:** Desenvolver Componentes Estruturais depende obrigatoriamente de Aprovar Conceito do Produto?
+**Resposta:** Sim.
+
+**6. Pergunta:** Quando Desenvolver Componentes Estruturais ocorre, Aprovar Conceito do Produto deve ocorrer antes, depois ou a ordem é irrelevante?
+**Resposta:** Antes.
+
+**7. Pergunta:** Aprovar Conceito do Produto pode ocorrer sem que Desenvolver Componentes Estruturais ocorra?
+**Resposta:** Não.
+
+**8. Pergunta:** Produzir Protótipos depende obrigatoriamente de Desenvolver Componentes Estruturais?
+**Resposta:** Sim.
+
+**9. Pergunta:** Quando Produzir Protótipos ocorre, Desenvolver Componentes Estruturais deve ocorrer antes, depois ou a ordem é irrelevante?
+**Resposta:** Antes.
+
+**10. Pergunta:** Desenvolver Componentes Estruturais pode ocorrer sem que Produzir Protótipos ocorra?
+**Resposta:** Não.
+
+**11. Pergunta:** Projetar Circuitos e Sensores depende obrigatoriamente de Desenvolver Componentes Estruturais?
+**Resposta:** Sim, mas antes também precisa negociar com fornecedores.
+
+**12. Pergunta:** Desenvolver Componentes Estruturais pode ocorrer sem que Projetar Circuitos e Sensores ocorra?
+**Resposta:** Não.
+
+**13. Pergunta:** Negociar com Fornecedores pode ocorrer sem que Projetar Circuitos e Sensores ocorra?
+**Resposta:** Não.
+
+**14. Pergunta:** Produzir Protótipos depende obrigatoriamente de Projetar Circuitos e Sensores?
+**Resposta:** Não, estas atividades ocorrem em paralelo. Produzir Protótipos vem depois de Desenvolver Componentes Estruturais.
+
+**15. Pergunta:** Desenvolver e Validar Software Embarcado depende obrigatoriamente de Projetar Circuitos e Sensores?
+**Resposta:** Não. Desenvolver e Validar Software Embarcado vem depois de Produzir Protótipos.
+
+**16. Pergunta:** Quando Desenvolver e Validar Software Embarcado ocorre, Produzir Protótipos deve ocorrer antes, depois ou a ordem é irrelevante?
+**Resposta:** Antes.
+
+**17. Pergunta:** Produzir Protótipos pode ocorrer sem que Desenvolver e Validar Software Embarcado ocorra?
+**Resposta:** Não.
+
+**18. Pergunta:** Realizar Testes Mecânicos depende obrigatoriamente de Produzir Protótipos?
+**Resposta:** Sim.
+
+**19. Pergunta:** Quando Realizar Testes Mecânicos ocorre, Produzir Protótipos deve ocorrer antes, depois ou a ordem é irrelevante?
+**Resposta:** Antes.
+
+**20. Pergunta:** Produzir Protótipos pode ocorrer sem que Realizar Testes Mecânicos ocorra?
+**Resposta:** Pode.
+
+**21. Pergunta:** Validação Final depende obrigatoriamente de Realizar Testes Mecânicos?
+**Resposta:** Sim.
+
+**22. Pergunta:** Quando Validação Final ocorre, Realizar Testes Mecânicos deve ocorrer antes, depois ou a ordem é irrelevante?
+**Resposta:** Antes.
+
+**23. Pergunta:** Realizar Testes Mecânicos pode ocorrer sem que Validação Final ocorra?
+**Resposta:** Não.
+
+**24. Pergunta:** A Validação Final depende obrigatoriamente de Desenvolver e Validar Software Embarcado?
+**Resposta:** Não, elas ocorrem em paralelo. Desenvolver e Validar Software Embarcado vem logo após Produzir Protótipos e Validação Final vem depois de Realizar Testes Mecânicos.
+
+**25. Pergunta:** Autorizar Produção em Larga Escala depende obrigatoriamente de Validação Final?
+**Resposta:** Sim.
+
+**26. Pergunta:** Quando Autorizar Produção em Larga Escala ocorre, Validação Final deve ocorrer antes, depois ou a ordem é irrelevante?
+**Resposta:** Antes.
+
+**27. Pergunta:** Validação Final pode ocorrer sem que Autorizar Produção em Larga Escala ocorra?
+**Resposta:** Não.
+
+**28. Pergunta:** Preparar Linha de Produção depende obrigatoriamente de Autorizar Produção em Larga Escala?
+**Resposta:** Preparar Linha de Produção vem depois de Desenvolver e Validar Software Embarcado.
+
+**29. Pergunta:** Quando Preparar Linha de Produção ocorre, Desenvolver e Validar Software Embarcado deve ocorrer antes, depois ou a ordem é irrelevante?
+**Resposta:** Antes.
+
+**30. Pergunta:** Desenvolver e Validar Software Embarcado pode ocorrer sem que Preparar Linha de Produção ocorra?
+**Resposta:** Não.
+
+**31. Pergunta:** Realizar Inspeções depende obrigatoriamente de Preparar Linha de Produção?
+**Resposta:** Sim.
+
+**32. Pergunta:** Quando Realizar Inspeções ocorre, Preparar Linha de Produção deve ocorrer antes, depois ou a ordem é irrelevante?
+**Resposta:** Antes.
+
+**33. Pergunta:** Preparar Linha de Produção pode ocorrer sem que Realizar Inspeções ocorra?
+**Resposta:** Não.
+
+**34. Pergunta:** Consolidar Documentação Técnica depende obrigatoriamente de Validação Final?
+**Resposta:** Não, eles ocorrem em paralelo. Validação Final vem depois de Realizar Testes Mecânicos.
+
+**35. Pergunta:** Consolidar Documentação Técnica depende obrigatoriamente de Realizar Inspeções?
+**Resposta:** Não, eles também ocorrem em paralelo.
+
+**36. Pergunta:** Consolidar Documentação Técnica depende obrigatoriamente de Autorizar Produção em Larga Escala?
+**Resposta:** Não, Consolidar Documentação Técnica vem depois de Produzir Protótipos ou Modificar Desenhos Técnicos se ocorrer.
+
+**37. Pergunta:** Produzir Protótipos pode ocorrer sem que Consolidar Documentação Técnica ocorra?
+**Resposta:** Não.
+
+**38. Pergunta:** Quando Modificar Desenhos Técnicos ocorre, ela deve ocorrer antes de Consolidar Documentação Técnica, depois ou a ordem é irrelevante?
+**Resposta:** Antes de Consolidar Documentação Técnica.
+
+**39. Pergunta:** Modificar Desenhos Técnicos pode ocorrer sem que Consolidar Documentação Técnica ocorra?
+**Resposta:** Não.
+
+**40. Pergunta:** Modificar Desenhos Técnicos depende obrigatoriamente de Realizar Testes Mecânicos?
+**Resposta:** Se Modificar Desenhos Técnicos ocorrer, ele ocorre antes de Realizar Testes Mecânicos.
+
+Como a entrevista gerou **50 perguntas**, restam apenas **10 perguntas** após a questão 40.
+
+**41. Pergunta:** Modificar Desenhos Técnicos pode ocorrer sem que Realizar Testes Mecânicos ocorra?
+**Resposta:** Não.
+
+**42. Pergunta:** Modificar Desenhos Técnicos depende obrigatoriamente de Produzir Protótipos?
+**Resposta:** Sim.
+
+**43. Pergunta:** Quando Modificar Desenhos Técnicos ocorre, Produzir Protótipos deve ocorrer antes, depois ou a ordem é irrelevante?
+**Resposta:** Antes.
+
+**44. Pergunta:** Produzir Protótipos pode ocorrer sem que Modificar Desenhos Técnicos ocorra?
+**Resposta:** Sim.
+
+**45. Pergunta:** Preparar Materiais de Treinamento depende obrigatoriamente de Consolidar Documentação Técnica?
+**Resposta:** Sim.
+
+**46. Pergunta:** Quando Preparar Materiais de Treinamento ocorre, Consolidar Documentação Técnica deve ocorrer antes, depois ou a ordem é irrelevante?
+**Resposta:** Antes.
+
+**47. Pergunta:** Consolidar Documentação Técnica pode ocorrer sem que Preparar Materiais de Treinamento ocorra?
+**Resposta:** Não.
+
+**48. Pergunta:** Atualizar Análise de Custos e Logística depende obrigatoriamente de Negociar com Fornecedores?
+**Resposta:** Sim.
+
+**49. Pergunta:** Quando Atualizar Análise de Custos e Logística ocorre, Negociar com Fornecedores deve ocorrer antes, depois ou a ordem é irrelevante?
+**Resposta:** Antes.
+
+**50. Pergunta:** Negociar com Fornecedores pode ocorrer sem que Atualizar Análise de Custos e Logística ocorra?
+**Resposta:** Não.
+
+Você tem razão. A contagem anterior estava incorreta: a entrevista gerou **68 perguntas**, considerando cada intervenção interrogativa do entrevistador desde a escolha do idioma.
+
+As perguntas que faltaram após a nº 50 são:
+
+**51. Pergunta:** “Atualizar Análise de Custos e Logística” depende obrigatoriamente de “Projetar Circuitos e Sensores”? Ou seja, a atualização da análise de custos e logística só pode ocorrer após o projeto de circuitos e sensores?
+**Resposta:** Não, eles ocorrem em paralelo.
+
+**52. Pergunta:** “Atualizar Análise de Custos e Logística” depende obrigatoriamente de “Consolidar Documentação Técnica”? Ou seja, a atualização da análise de custos e logística só pode ocorrer após a consolidação da documentação técnica?
+**Resposta:** Não, Atualizar Análise de Custos e Logística ocorre após Negociar com Fornecedores.
+
+**53. Pergunta:** “Negociar com Fornecedores” depende obrigatoriamente de “Aprovar Conceito do Produto”? Ou seja, a negociação com fornecedores só pode ocorrer após a aprovação do conceito do produto?
+**Resposta:** Sim, mas ele ocorre logo após Desenvolver Componentes Estruturais.
+
+**54. Pergunta:** Quando “Negociar com Fornecedores” ocorre, “Aprovar Conceito do Produto” deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+**Resposta:** Antes.
+
+**55. Pergunta:** “Aprovar Conceito do Produto” pode ocorrer sem que “Negociar com Fornecedores” ocorra em alguma execução do processo?
+**Resposta:** Não.
+
+**56. Pergunta:** “Negociar com Fornecedores” depende obrigatoriamente de “Desenvolver Componentes Estruturais”? Ou seja, a negociação com fornecedores só pode ocorrer após o desenvolvimento dos componentes estruturais?
+**Resposta:** Sim.
+
+**57. Pergunta:** Quando “Negociar com Fornecedores” ocorre, “Desenvolver Componentes Estruturais” deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+**Resposta:** Antes.
+
+**58. Pergunta:** “Desenvolver Componentes Estruturais” pode ocorrer sem que “Negociar com Fornecedores” ocorra em alguma execução do processo?
+**Resposta:** Não.
+
+**59. Pergunta:** “Produzir Protótipos” depende obrigatoriamente de “Negociar com Fornecedores”? Ou seja, a produção de protótipos só pode ocorrer após a negociação com fornecedores?
+**Resposta:** Não, elas ocorrem em paralelo.
+
+**60. Pergunta:** “Produzir Protótipos” depende obrigatoriamente de “Atualizar Análise de Custos e Logística”? Ou seja, a produção dos protótipos só pode ocorrer após a atualização da análise de custos e logística?
+**Resposta:** Atualizar Análise de Custos e Logística ocorre em paralelo com Projetar Circuitos e Sensores e após Negociar com Fornecedores.
+
+**61. Pergunta:** “Validação Final” depende obrigatoriamente de “Realizar Inspeções”? Ou seja, a Validação Final só pode ocorrer após a realização das inspeções?
+**Resposta:** Eles não têm relação direta, elas ocorrem em paralelo. Realizar Inspeções ocorre após Preparar Linha de Produção e Validação Final ocorre após Realizar Testes Mecânicos.
+
+**62. Pergunta:** “Autorizar Produção em Larga Escala” depende obrigatoriamente de “Preparar Materiais de Treinamento”? Ou seja, a autorização para produção em larga escala só pode ocorrer após a preparação dos materiais de treinamento?
+**Resposta:** Não, elas ocorrem em paralelo.
+
+**63. Pergunta:** “Preparar Materiais de Treinamento” depende obrigatoriamente de “Autorizar Produção em Larga Escala”? Ou seja, a preparação dos materiais de treinamento só pode ocorrer após a autorização para produção em larga escala?
+**Resposta:** Ocorrem em paralelo. Preparar Materiais de Treinamento vem após Consolidar Documentação Técnica.
+
+**64. Pergunta:** “Desenvolver e Validar Software Embarcado” e “Modificar Desenhos Técnicos” podem ocorrer na mesma execução do processo? Se sim, existe alguma dependência estrutural entre elas ou elas ocorrem em paralelo?
+**Resposta:** Ocorrem em paralelo.
+
+**65. Pergunta:** “Modificar Desenhos Técnicos” pode ocorrer sem que “Realizar Testes Mecânicos” identifique a necessidade de modificação? Ou, em outras palavras, a modificação dos desenhos técnicos só ocorre quando os testes mecânicos indicam essa necessidade?
+**Resposta:** Não.
+
+**66. Pergunta:** Qual das duas situações está correta: “Modificar Desenhos Técnicos” ocorre antes de “Realizar Testes Mecânicos” ou “Realizar Testes Mecânicos” ocorre antes de “Modificar Desenhos Técnicos”, identificando a necessidade de modificar os desenhos?
+**Resposta:** Se Modificar Desenhos Técnicos ocorrer, ele ocorre antes de Realizar Testes Mecânicos.
+
+**67. Pergunta:** Após “Autorizar Produção em Larga Escala”, o processo pode retornar a alguma atividade anterior ou pular diretamente para alguma atividade posterior — JMP — sem criar novas obrigações? Se sim, quais atividades estão envolvidas?
+**Resposta:** Não.
+
+**68. Pergunta:** Existe alguma outra atividade do processo que possa retornar para uma atividade anterior ou pular diretamente para uma atividade posterior — relação JMP — sem violar as dependências já estabelecidas?
+**Resposta:** Não.
+
+Processo: **Desenvolvimento de Produto Industrial** 
+
+Atividades:
+
+1. Aprovar Conceito do Produto
+2. Desenvolver Componentes Estruturais
+3. Negociar com Fornecedores
+4. Produzir Protótipos
+5. Projetar Circuitos e Sensores
+6. Atualizar Análise de Custos e Logística
+7. Desenvolver e Validar Software Embarcado
+8. Preparar Linha de Produção
+9. Realizar Inspeções
+10. Modificar Desenhos Técnicos
+11. Realizar Testes Mecânicos
+12. Validação Final
+13. Autorizar Produção em Larga Escala
+14. Consolidar Documentação Técnica
+15. Preparar Materiais de Treinamento
+
+Situações SBMN:
+
+* Desenvolver Componentes Estruturais **DEP** Aprovar Conceito do Produto
+* Negociar com Fornecedores **DEP** Aprovar Conceito do Produto
+* Negociar com Fornecedores **DEP** Desenvolver Componentes Estruturais
+* Produzir Protótipos **DEP** Desenvolver Componentes Estruturais
+* Projetar Circuitos e Sensores **DEP** Desenvolver Componentes Estruturais
+* Projetar Circuitos e Sensores **DEP** Negociar com Fornecedores
+* Atualizar Análise de Custos e Logística **DEP** Negociar com Fornecedores
+* Desenvolver e Validar Software Embarcado **DEP** Produzir Protótipos
+* Preparar Linha de Produção **DEP** Desenvolver e Validar Software Embarcado
+* Realizar Inspeções **DEP** Preparar Linha de Produção
+* Modificar Desenhos Técnicos **REQ** Produzir Protótipos
+* Realizar Testes Mecânicos **DEP** Modificar Desenhos Técnicos
+* Realizar Testes Mecânicos **REQ** Produzir Protótipos
+* Validação Final **DEP** Realizar Testes Mecânicos
+* Autorizar Produção em Larga Escala **DEP** Validação Final
+* Consolidar Documentação Técnica **DEP** Produzir Protótipos
+* Consolidar Documentação Técnica **DEP** Modificar Desenhos Técnicos
+* Preparar Materiais de Treinamento **DEP** Consolidar Documentação Técnica
+
+Situações JMP:
+
+* Nenhuma.
+
+**Este modelo SBMN é consistente e possui pelo menos uma realização BPMN válida.** 
+
