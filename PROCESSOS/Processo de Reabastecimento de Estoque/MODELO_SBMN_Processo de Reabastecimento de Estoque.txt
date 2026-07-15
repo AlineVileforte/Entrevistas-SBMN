@@ -1,0 +1,15 @@
+Criar Pedido de Compra REQ Verificar Nível Atual de Estoque
+Revisar Pedido de Compra DEP Criar Pedido de Compra
+Retrabalhar Pedido de Compra DEPC Revisar Pedido de Compra
+Revisar Pedido de Compra DEPC Retrabalhar Pedido de Compra
+Aprovar Pedido de Compra REQ Revisar Pedido de Compra
+Reservar Recursos Financeiros para a Compra DEP Aprovar Pedido de Compra
+Enviar Pedido de Compra ao Fornecedor DEP Aprovar Pedido de Compra
+Receber Romaneio de Entrega do Pedido DEP Enviar Pedido de Compra ao Fornecedor
+Receber Fatura do Pedido DEP Enviar Pedido de Compra ao Fornecedor
+Registrar Romaneio de Entrega do Pedido DEP Receber Romaneio de Entrega do Pedido
+Registrar Fatura do Pedido DEP Receber Fatura do Pedido
+Liberar Recursos Financeiros DEP Registrar Romaneio de Entrega do Pedido
+Liberar Recursos Financeiros DEP Registrar Fatura do Pedido
+Liberar Recursos Financeiros DEP Reservar Recursos Financeiros para a Compra
+Efetuar Pagamento ao Fornecedor DEP Liberar Recursos Financeiros

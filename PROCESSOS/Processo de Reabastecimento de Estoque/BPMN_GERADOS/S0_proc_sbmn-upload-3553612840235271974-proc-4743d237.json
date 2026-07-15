@@ -1,0 +1,283 @@
+{
+  "fragments": [
+    {
+      "id": "Default_init",
+      "type": "START_EVENT",
+      "branch": "0.0.",
+      "inComing": [],
+      "outComing": [
+        "VNAE1"
+      ]
+    },
+    {
+      "id": "VNAE1",
+      "name": "Verificar Nível Atual de Estoque",
+      "type": "TASK",
+      "branch": "0.0.",
+      "inComing": [
+        "Default_init"
+      ],
+      "outComing": [
+        "G0"
+      ]
+    },
+    {
+      "id": "G0",
+      "name": "G0",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.",
+      "inComing": [
+        "VNAE1"
+      ],
+      "outComing": [
+        "CPC1",
+        "XORCLOSE23"
+      ]
+    },
+    {
+      "id": "CPC1",
+      "name": "Criar Pedido de Compra",
+      "type": "TASK",
+      "branch": "0.0.0.1.",
+      "inComing": [
+        "G0"
+      ],
+      "outComing": [
+        "XOR_JMPBB_RTPC1_RPC1"
+      ]
+    },
+    {
+      "id": "RPC1",
+      "name": "Revisar Pedido de Compra",
+      "type": "TASK",
+      "branch": "0.0.0.1.",
+      "inComing": [
+        "XOR_JMPBB_RTPC1_RPC1"
+      ],
+      "outComing": [
+        "G1"
+      ]
+    },
+    {
+      "id": "G1",
+      "name": "G1",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.0.1.",
+      "inComing": [
+        "RPC1"
+      ],
+      "outComing": [
+        "RTPC1",
+        "XORCLOSE22"
+      ]
+    },
+    {
+      "id": "RTPC1",
+      "name": "Retrabalhar Pedido de Compra",
+      "type": "TASK",
+      "branch": "0.0.0.1.0.2.",
+      "inComing": [
+        "G1"
+      ],
+      "outComing": [
+        "XOR_JMPAA_RTPC1_RPC1"
+      ]
+    },
+    {
+      "id": "APC1",
+      "name": "Aprovar Pedido de Compra",
+      "type": "TASK",
+      "branch": "0.0.0.1.0.2.",
+      "inComing": [
+        "XOR_JMPAA_RTPC1_RPC1"
+      ],
+      "outComing": [
+        "Par12"
+      ]
+    },
+    {
+      "id": "Par12",
+      "name": "PAR",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.0.1.0.2.",
+      "inComing": [
+        "APC1"
+      ],
+      "outComing": [
+        "RRF1",
+        "EPCF1"
+      ]
+    },
+    {
+      "id": "RRF1",
+      "name": "Reservar Recursos Financeiros para a Compra",
+      "type": "TASK",
+      "branch": "0.0.0.1.0.2.1.1.",
+      "inComing": [
+        "Par12"
+      ],
+      "outComing": [
+        "PARCLOSE16"
+      ]
+    },
+    {
+      "id": "EPCF1",
+      "name": "Enviar Pedido de Compra ao Fornecedor",
+      "type": "TASK",
+      "branch": "0.0.0.1.0.2.1.2.",
+      "inComing": [
+        "Par12"
+      ],
+      "outComing": [
+        "RREP1"
+      ]
+    },
+    {
+      "id": "RREP1",
+      "name": "Receber Romaneio de Entrega do Pedido",
+      "type": "TASK",
+      "branch": "0.0.0.1.0.2.1.2.",
+      "inComing": [
+        "EPCF1"
+      ],
+      "outComing": [
+        "PARCLOSE16"
+      ]
+    },
+    {
+      "id": "PARCLOSE16",
+      "name": "PARCLOSE16",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.0.1.0.2.1.2.",
+      "inComing": [
+        "RREP1",
+        "RRF1"
+      ],
+      "outComing": [
+        "RFatP1"
+      ]
+    },
+    {
+      "id": "RFatP1",
+      "name": "Receber Fatura do Pedido",
+      "type": "TASK",
+      "branch": "0.0.0.1.0.2.",
+      "inComing": [
+        "PARCLOSE16"
+      ],
+      "outComing": [
+        "RGFatP1"
+      ]
+    },
+    {
+      "id": "RGFatP1",
+      "name": "Registrar Fatura do Pedido",
+      "type": "TASK",
+      "branch": "0.0.0.1.0.2.",
+      "inComing": [
+        "RFatP1"
+      ],
+      "outComing": [
+        "RGREP1"
+      ]
+    },
+    {
+      "id": "RGREP1",
+      "name": "Registrar Romaneio de Entrega do Pedido",
+      "type": "TASK",
+      "branch": "0.0.0.1.0.2.",
+      "inComing": [
+        "RGFatP1"
+      ],
+      "outComing": [
+        "LRF1"
+      ]
+    },
+    {
+      "id": "LRF1",
+      "name": "Liberar Recursos Financeiros",
+      "type": "TASK",
+      "branch": "0.0.0.1.0.2.",
+      "inComing": [
+        "RGREP1"
+      ],
+      "outComing": [
+        "EPF1"
+      ]
+    },
+    {
+      "id": "EPF1",
+      "name": "Efetuar Pagamento ao Fornecedor",
+      "type": "TASK",
+      "branch": "0.0.0.1.0.2.",
+      "inComing": [
+        "LRF1"
+      ],
+      "outComing": [
+        "XORCLOSE22"
+      ]
+    },
+    {
+      "id": "XORCLOSE22",
+      "name": "XORCLOSE22",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.0.1.0.1.",
+      "inComing": [
+        "EPF1",
+        "G1"
+      ],
+      "outComing": [
+        "XORCLOSE23"
+      ]
+    },
+    {
+      "id": "XORCLOSE23",
+      "name": "XORCLOSE23",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.0.2.",
+      "inComing": [
+        "XORCLOSE22",
+        "G0"
+      ],
+      "outComing": [
+        "END"
+      ]
+    },
+    {
+      "id": "END",
+      "name": "END_EVENT",
+      "type": "END_EVENT",
+      "branch": "0.0.0.2.",
+      "inComing": [
+        "XORCLOSE23"
+      ],
+      "outComing": []
+    },
+    {
+      "id": "XOR_JMPAA_RTPC1_RPC1",
+      "name": "XOR_JMPAA_Retrabalhar Pedido de Compra",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.0.1.0.2.",
+      "inComing": [
+        "RTPC1"
+      ],
+      "outComing": [
+        "APC1",
+        "XOR_JMPBB_RTPC1_RPC1"
+      ]
+    },
+    {
+      "id": "XOR_JMPBB_RTPC1_RPC1",
+      "name": "XOR_JMPBB_Revisar Pedido de Compra",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.0.1.",
+      "inComing": [
+        "CPC1",
+        "XOR_JMPAA_RTPC1_RPC1"
+      ],
+      "outComing": [
+        "RPC1"
+      ]
+    }
+  ]
+}

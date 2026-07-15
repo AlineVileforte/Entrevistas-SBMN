@@ -1,0 +1,2622 @@
+1.
+
+Bem-vindo! Conduzirei uma entrevista estruturada SBMN seguindo rigorosamente o protocolo definido.
+
+**Próxima Pergunta:**
+
+Em qual idioma você gostaria de realizar a entrevista?
+
+**Resposta do entrevistado:**
+
+Português.
+
+---
+
+2.
+
+Perfeito. A entrevista será conduzida em português, seguindo rigorosamente as regras de elicitação SBMN. Farei uma pergunta por vez e não inferirei nenhuma informação que não seja explicitamente confirmada.
+
+**Próxima Pergunta:**
+
+Qual é o nome do processo que você deseja modelar?
+
+**Resposta do entrevistado:**
+
+Processo de Pagamento de Taxas.
+
+---
+
+3.
+
+Perfeito.
+
+Nome do processo registrado:
+
+**Processo de Pagamento de Taxas.**
+
+**Próxima Pergunta:**
+
+Em qual domínio esse processo se enquadra?
+
+**Resposta do entrevistado:**
+
+E-Commerce.
+
+---
+
+4.
+
+Perfeito.
+
+Até o momento temos:
+
+* Nome do processo: Processo de Pagamento de Taxas.
+* Domínio: E-Commerce.
+
+**Próxima Pergunta:**
+
+Liste todas as atividades (AFOs) do processo, do início ao fim.
+
+Informe apenas os nomes das atividades. Após essa lista ser confirmada, ela será congelada e não poderão ser adicionadas novas atividades durante a entrevista.
+
+**Resposta do entrevistado:**
+
+Pagar taxa dos livros
+
+Inserir novo endereço de entrega
+
+Escolher endereço de entrega existente
+
+Editar endereço de entrega existente
+
+Escolher detalhes da entrega
+
+Escolher uma preferência de entrega
+
+Escolher a velocidade de entrega
+
+Alterar quantidades ou remover itens
+
+Solicitar os itens de presente existentes
+
+Selecionar um método de pagamento
+
+Cartões de Crédito ou Débito
+
+Cartão da Loja Amazon.com
+
+Conta Corrente
+
+Cartões-Presente e Códigos Promocionais
+
+Revisar seu pedido
+
+Finalizar pedido
+
+Alterar moeda
+
+Alterar endereço de cobrança
+
+Finalizar pedido na moeda padrão
+
+---
+
+5.
+
+Perfeito.
+
+A lista de atividades foi registrada e congelada para o restante da entrevista.
+
+**Próxima Pergunta:**
+
+Para que a atividade **"Escolher detalhes da entrega"** ocorra, é obrigatório que antes tenha ocorrido **"Escolher endereço de entrega existente"**?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+6.
+
+Obrigado.
+
+Uma relação candidata foi identificada, porém ela ainda não pode ser classificada. Conforme o protocolo SBMN, é necessário esclarecer sua natureza antes do registro.
+
+**Próxima Pergunta:**
+
+Quando **"Escolher detalhes da entrega"** ocorre, **"Escolher endereço de entrega existente"** deve ocorrer:
+
+* Antes;
+* Depois;
+* Ou a ordem é irrelevante/desconhecida?
+
+**Resposta do entrevistado:**
+
+Antes.
+
+---
+
+7.
+
+Entendido.
+
+Foi confirmado que **"Escolher endereço de entrega existente"** ocorre antes de **"Escolher detalhes da entrega"**.
+
+**Próxima Pergunta:**
+
+**"Escolher endereço de entrega existente"** pode ocorrer sem que **"Escolher detalhes da entrega"** ocorra em alguma execução do processo?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+8.
+
+Perfeito.
+
+Com base nas respostas fornecidas, foi registrada a relação:
+
+**Escolher detalhes da entrega DEP Escolher endereço de entrega existente.**
+
+**Próxima Pergunta:**
+
+Para que a atividade **"Editar endereço de entrega existente"** ocorra, é obrigatório que antes tenha ocorrido **"Escolher endereço de entrega existente"**?
+
+**Resposta do entrevistado:**
+
+Não, ou ele edita ou ele escolhe o endereço.
+
+---
+
+9.
+
+Entendido.
+
+A resposta indica que essas duas atividades não podem ocorrer juntas na mesma instância do processo. Isso caracteriza uma possível relação de exclusão, porém ela precisa ser confirmada explicitamente.
+
+**Próxima Pergunta:**
+
+As atividades **"Editar endereço de entrega existente"** e **"Escolher endereço de entrega existente"** podem ocorrer juntas na mesma execução do processo?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+10.
+
+Perfeito.
+
+Foi registrada a relação:
+
+**Editar endereço de entrega existente XOR Escolher endereço de entrega existente.**
+
+**Próxima Pergunta:**
+
+Para que a atividade **"Escolher uma preferência de entrega"** ocorra, é obrigatório que antes tenha ocorrido **"Escolher detalhes da entrega"**?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+11.
+
+Entendido.
+
+Foi identificada uma nova dependência candidata.
+
+**Próxima Pergunta:**
+
+Quando **"Escolher uma preferência de entrega"** ocorre, **"Escolher detalhes da entrega"** deve ocorrer:
+
+* Antes;
+* Depois;
+* Ou a ordem é irrelevante?
+
+**Resposta do entrevistado:**
+
+Antes.
+
+---
+
+12.
+
+Entendido.
+
+Foi confirmado que **"Escolher detalhes da entrega"** ocorre antes de **"Escolher uma preferência de entrega"**.
+
+**Próxima Pergunta:**
+
+**"Escolher detalhes da entrega"** pode ocorrer sem que **"Escolher uma preferência de entrega"** ocorra em alguma execução?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+13.
+
+Perfeito.
+
+Foi registrada a relação:
+
+**Escolher uma preferência de entrega DEP Escolher detalhes da entrega.**
+
+Além disso, pela transitividade, **Escolher uma preferência de entrega DEP Escolher endereço de entrega existente** ficou inferida e não precisaria ser perguntada novamente.
+
+**Próxima Pergunta:**
+
+Para que **"Escolher a velocidade de entrega"** ocorra, é obrigatório que antes tenha ocorrido **"Escolher uma preferência de entrega"**?
+
+**Resposta do entrevistado:**
+
+Depois de escolher detalhes da entrega ele escolhe a preferência de entrega e a velocidade, juntas.
+
+---
+
+14.
+
+Entendido.
+
+A resposta indica que, após **"Escolher detalhes da entrega"**, as atividades **"Escolher uma preferência de entrega"** e **"Escolher a velocidade de entrega"** compartilham o mesmo predecessor e não foi possível inferir uma dependência entre elas.
+
+**Próxima Pergunta:**
+
+**"Escolher uma preferência de entrega"** e **"Escolher a velocidade de entrega"** podem ocorrer juntas na mesma execução do processo?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+15.
+
+Perfeito.
+
+A confirmação descarta uma relação XOR, porém ainda não permite concluir uma relação UNI.
+
+**Próxima Pergunta:**
+
+Existem execuções válidas do processo em que ocorra:
+
+* apenas "Escolher uma preferência de entrega";
+* apenas "Escolher a velocidade de entrega";
+* ambas as atividades?
+
+**Resposta do entrevistado:**
+
+Somente ambas.
+
+---
+
+16.
+
+Entendido.
+
+Como não existem execuções contendo apenas uma das atividades, a relação UNI foi descartada.
+
+**Próxima Pergunta:**
+
+Quando **"Escolher a velocidade de entrega"** ocorre, **"Escolher uma preferência de entrega"** deve ocorrer:
+
+* Antes;
+* Depois;
+* Ou a ordem é irrelevante?
+
+**Resposta do entrevistado:**
+
+A ordem é irrelevante.
+
+---
+
+17.
+
+Foi registrado que **Escolher a velocidade de entrega REQ Escolher uma preferência de entrega**.
+
+Em seguida foi iniciada a classificação da relação entre **"Escolher detalhes da entrega"** e **"Escolher a velocidade de entrega"**.
+
+**Próxima Pergunta:**
+
+**"Escolher detalhes da entrega"** pode ocorrer sem que **"Escolher a velocidade de entrega"** ocorra em alguma execução?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+18.
+
+Entendido.
+
+Foi identificado que **"Escolher detalhes da entrega"** não ocorre sem **"Escolher a velocidade de entrega"**, porém ainda faltava esclarecer a direção temporal.
+
+**Próxima Pergunta:**
+
+Quando **"Escolher a velocidade de entrega"** ocorre, **"Escolher detalhes da entrega"** deve ocorrer:
+
+* Antes;
+* Depois;
+* Ou a ordem é irrelevante?
+
+**Resposta do entrevistado:**
+
+Antes.
+
+---
+
+19.
+
+Perfeito.
+
+Foi registrada a relação:
+
+**Escolher a velocidade de entrega DEP Escolher detalhes da entrega.**
+
+Também ficou inferida por transitividade:
+
+**Escolher a velocidade de entrega DEP Escolher endereço de entrega existente.**
+
+**Próxima Pergunta:**
+
+Para que **"Selecionar um método de pagamento"** ocorra, é obrigatório que antes tenha ocorrido **"Revisar seu pedido"**?
+
+**Resposta do entrevistado:**
+
+Ele pode revisar o pedido e ir para selecionar o método de pagamento ou ir primeiro para selecionar o método de pagamento.
+
+---
+
+20.
+
+Entendido.
+
+A resposta indica que não existe dependência estrutural obrigatória entre **"Selecionar um método de pagamento"** e **"Revisar seu pedido"**. Como não é possível concluir uma relação SBMN apenas com essa informação, foi iniciada a verificação de uma possível relação UNI.
+
+**Próxima Pergunta:**
+
+Existem execuções válidas do processo em que ocorra:
+
+* apenas "Revisar seu pedido";
+* apenas "Selecionar um método de pagamento";
+* ambas as atividades?
+
+(Responda "Sim" apenas se as três possibilidades existirem.)
+
+**Resposta do entrevistado:**
+
+Eles escolhem ou revisar o pedido ou finalizar o pedido. Quando ele passa por selecionar método, ele pode ir direto para finalizar o pedido ou pode ir para revisar o pedido. Quando ele revisa, ele pode voltar para selecionar o método ou voltar para detalhes da entrega. Selecionar método de pagamento não acontece junto com revisar pedido. Antes de revisar o pedido existem outras atividades obrigatórias.
+
+21.
+
+Entendido.
+
+A resposta fornecida indica que **"Revisar seu pedido"** e **"Selecionar um método de pagamento"** representam alternativas em um determinado ponto do fluxo e que, após revisar, o usuário pode retornar para etapas anteriores. Essas possibilidades de retorno serão verificadas posteriormente na fase de identificação dos operadores **JMP**.
+
+Foi registrada a relação:
+
+**Revisar seu pedido XOR Selecionar um método de pagamento.**
+
+**Próxima Pergunta:**
+
+Qual atividade da lista é obrigatória imediatamente antes de **"Revisar seu pedido"**?
+
+**Resposta do entrevistado:**
+
+Se ele passar por selecionar método de pagamento ele precisa escolher um método de pagamento, entre: Cartões-Presente e Códigos Promocionais, Cartões de Crédito ou Débito, Cartão da Loja Amazon.com ou Conta Corrente.
+
+Caso ele não passe, as atividades anteriores obrigatórias são: Escolher uma preferência de entrega e Escolher a velocidade de entrega e pode ocorrer também Alterar quantidades ou remover itens e Solicitar os itens de presente existentes.
+
+---
+
+22.
+
+Entendido.
+
+A primeira informação explícita identificada foi que, quando o processo passa por **"Selecionar um método de pagamento"**, é obrigatório escolher um dos quatro métodos disponíveis.
+
+Como o protocolo exige classificar uma relação por vez, iniciou-se a investigação do primeiro método.
+
+**Próxima Pergunta:**
+
+Para que **"Cartões de Crédito ou Débito"** ocorra, é obrigatório que antes tenha ocorrido **"Selecionar um método de pagamento"**?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+23.
+
+Entendido.
+
+Foi identificada uma dependência candidata, porém ela ainda precisava ser classificada.
+
+**Próxima Pergunta:**
+
+Quando **"Cartões de Crédito ou Débito"** ocorre, **"Selecionar um método de pagamento"** deve ocorrer:
+
+* Antes;
+* Depois;
+* Ou a ordem é irrelevante?
+
+**Resposta do entrevistado:**
+
+Antes.
+
+---
+
+24.
+
+Entendido.
+
+Foi confirmado que **"Selecionar um método de pagamento"** ocorre antes de **"Cartões de Crédito ou Débito"**.
+
+**Próxima Pergunta:**
+
+**"Selecionar um método de pagamento"** pode ocorrer sem que **"Cartões de Crédito ou Débito"** ocorra em alguma execução?
+
+**Resposta do entrevistado:**
+
+Sim, porque Cartões de Crédito é um dos métodos que ele pode escolher, mas pode escolher outro entre as quatro opções.
+
+---
+
+25.
+
+Perfeito.
+
+Com base nas respostas fornecidas, foi registrada a relação:
+
+**Cartões de Crédito ou Débito REQ Selecionar um método de pagamento.**
+
+**Próxima Pergunta:**
+
+As atividades **"Cartões de Crédito ou Débito"** e **"Cartão da Loja Amazon.com"** podem ocorrer juntas na mesma execução do processo?
+
+**Resposta do entrevistado:**
+
+Não, uma ou outra.
+
+---
+
+26.
+
+Perfeito.
+
+Foi registrada a relação:
+
+**Cartões de Crédito ou Débito XOR Cartão da Loja Amazon.com.**
+
+**Próxima Pergunta:**
+
+As atividades **"Cartões de Crédito ou Débito"** e **"Conta Corrente"** podem ocorrer juntas na mesma execução do processo?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+27.
+
+Perfeito.
+
+Foi registrada a relação:
+
+**Cartões de Crédito ou Débito XOR Conta Corrente.**
+
+**Próxima Pergunta:**
+
+As atividades **"Cartões de Crédito ou Débito"** e **"Cartões-Presente e Códigos Promocionais"** podem ocorrer juntas na mesma execução do processo?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+28.
+
+Perfeito.
+
+Foi registrada a relação:
+
+**Cartões de Crédito ou Débito XOR Cartões-Presente e Códigos Promocionais.**
+
+**Próxima Pergunta:**
+
+As atividades **"Cartão da Loja Amazon.com"** e **"Conta Corrente"** podem ocorrer juntas na mesma execução do processo?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+29.
+
+Perfeito.
+
+Foi registrada a relação:
+
+**Cartão da Loja Amazon.com XOR Conta Corrente.**
+
+**Próxima Pergunta:**
+
+As atividades **"Cartão da Loja Amazon.com"** e **"Cartões-Presente e Códigos Promocionais"** podem ocorrer juntas na mesma execução do processo?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+30.
+
+Perfeito.
+
+Foi registrada a relação:
+
+**Cartão da Loja Amazon.com XOR Cartões-Presente e Códigos Promocionais.**
+
+**Próxima Pergunta:**
+
+As atividades **"Conta Corrente"** e **"Cartões-Presente e Códigos Promocionais"** podem ocorrer juntas na mesma execução do processo?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+31.
+
+Perfeito.
+
+Foi registrada a relação:
+
+**Conta Corrente XOR Cartões-Presente e Códigos Promocionais.**
+
+Como etapa de validação, restava apenas confirmar a última combinação entre os métodos de pagamento.
+
+**Próxima Pergunta:**
+
+As atividades **"Cartão da Loja Amazon.com"** e **"Cartões de Crédito ou Débito"** continuam mutuamente exclusivas ou podem ocorrer juntas?
+
+**Resposta do entrevistado:**
+
+Continuam mutuamente exclusivas.
+
+---
+
+32.
+
+Entendido.
+
+A resposta confirmou uma relação que já havia sido registrada anteriormente, portanto nenhuma nova relação foi adicionada.
+
+**Próxima Pergunta:**
+
+Para que **"Finalizar pedido"** ocorra, é obrigatório que antes tenha ocorrido **"Revisar seu pedido"**?
+
+**Resposta do entrevistado:**
+
+Não necessariamente. Mas pode ocorrer antes.
+
+---
+
+33.
+
+Entendido.
+
+Foi confirmado que não existe dependência estrutural obrigatória entre **"Revisar seu pedido"** e **"Finalizar pedido"**.
+
+**Próxima Pergunta:**
+
+As atividades **"Finalizar pedido"** e **"Revisar seu pedido"** podem ocorrer juntas na mesma execução do processo?
+
+**Resposta do entrevistado:**
+
+Sim. Ele tem que escolher entre revisar ou finalizar, mas quando escolhe revisar pode voltar em algumas etapas e depois seguir para finalizar.
+
+---
+
+34.
+
+Entendido.
+
+A resposta indicou que as duas atividades podem ocorrer na mesma execução, descartando a possibilidade de uma relação XOR.
+
+**Próxima Pergunta:**
+
+Sempre que **"Revisar seu pedido"** ocorrer, **"Finalizar pedido"** deverá ocorrer depois na mesma execução?
+
+**Resposta do entrevistado:**
+
+Se ele escolher revisar o pedido, o finalizar pedido vem depois, mas não imediatamente depois, pois podem existir outras atividades intermediárias.
+
+---
+
+35.
+
+Perfeito.
+
+Foi registrada a relação:
+
+**Finalizar pedido DEPC Revisar seu pedido.**
+
+**Próxima Pergunta:**
+
+Para que **"Finalizar pedido"** ocorra, é obrigatório que antes tenham ocorrido **"Escolher uma preferência de entrega"** e **"Escolher a velocidade de entrega"**?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+36.
+
+Entendido.
+
+Foi identificada uma dependência que precisava ser classificada individualmente, iniciando pela atividade **"Escolher uma preferência de entrega"**.
+
+**Próxima Pergunta:**
+
+Quando **"Finalizar pedido"** ocorre, **"Escolher uma preferência de entrega"** deve ocorrer:
+
+* Antes;
+* Depois;
+* Ou a ordem é irrelevante?
+
+**Resposta do entrevistado:**
+
+Antes.
+
+---
+
+37.
+
+Entendido.
+
+Foi confirmado que **"Escolher uma preferência de entrega"** ocorre antes de **"Finalizar pedido"**.
+
+**Próxima Pergunta:**
+
+**"Escolher uma preferência de entrega"** pode ocorrer sem que **"Finalizar pedido"** ocorra em alguma execução?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+38.
+
+Perfeito.
+
+Foi registrada a relação:
+
+**Finalizar pedido DEP Escolher uma preferência de entrega.**
+
+Em seguida iniciou-se a classificação da relação envolvendo **"Escolher a velocidade de entrega"**.
+
+**Próxima Pergunta:**
+
+Quando **"Finalizar pedido"** ocorre, **"Escolher a velocidade de entrega"** deve ocorrer:
+
+* Antes;
+* Depois;
+* Ou a ordem é irrelevante?
+
+**Resposta do entrevistado:**
+
+Antes.
+
+---
+
+39.
+
+Entendido.
+
+Foi confirmado que **"Escolher a velocidade de entrega"** ocorre antes de **"Finalizar pedido"**.
+
+**Próxima Pergunta:**
+
+**"Escolher a velocidade de entrega"** pode ocorrer sem que **"Finalizar pedido"** ocorra em alguma execução?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+40.
+
+Perfeito.
+
+Foi registrada a relação:
+
+**Finalizar pedido DEP Escolher a velocidade de entrega.**
+
+Também foi observado que essa relação era consistente com as demais dependências estruturais anteriormente estabelecidas.
+
+**Próxima Pergunta:**
+
+Para que **"Finalizar pedido"** ocorra, é obrigatório que antes tenha ocorrido **"Selecionar um método de pagamento"**?
+
+**Resposta do entrevistado:**
+
+Não. Ele pode pagar com moeda padrão.
+
+41.
+
+Entendido.
+
+Foi confirmado que **"Selecionar um método de pagamento"** não é um pré-requisito obrigatório para **"Finalizar pedido"**, pois existe um caminho alternativo envolvendo a finalização na moeda padrão.
+
+**Próxima Pergunta:**
+
+As atividades **"Finalizar pedido"** e **"Finalizar pedido na moeda padrão"** podem ocorrer juntas na mesma execução do processo?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+42.
+
+Entendido.
+
+Como as duas atividades podem ocorrer juntas, foi descartada a possibilidade de uma relação **XOR** entre elas.
+
+**Próxima Pergunta:**
+
+Para que **"Finalizar pedido na moeda padrão"** ocorra, é obrigatório que antes tenha ocorrido **"Alterar moeda"**?
+
+**Resposta do entrevistado:**
+
+Só se for necessário.
+
+---
+
+43.
+
+Entendido.
+
+A resposta indica uma dependência **condicional**, pois **"Alterar moeda"** ocorre apenas em determinadas execuções do processo.
+
+**Próxima Pergunta:**
+
+Quando **"Alterar moeda"** ocorre, **"Finalizar pedido na moeda padrão"** ocorre:
+
+* Depois;
+* Antes;
+* Ou a ordem é irrelevante?
+
+**Resposta do entrevistado:**
+
+Depois.
+
+---
+
+44.
+
+Entendido.
+
+Foi confirmado que **"Finalizar pedido na moeda padrão"** ocorre após **"Alterar moeda"**.
+
+**Próxima Pergunta:**
+
+**"Alterar moeda"** pode ocorrer sem que **"Finalizar pedido na moeda padrão"** ocorra na mesma execução?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+45.
+
+Perfeito.
+
+Foi registrada a relação:
+
+**Finalizar pedido na moeda padrão DEPC Alterar moeda.**
+
+**Próxima Pergunta:**
+
+Para que **"Alterar moeda"** ocorra, é obrigatório que antes tenha ocorrido **"Revisar seu pedido"**?
+
+**Resposta do entrevistado:**
+
+Não necessariamente, mas se ela ocorrer, ocorre antes.
+
+---
+
+46.
+
+Entendido.
+
+Foi identificado que **"Revisar seu pedido"** não é obrigatório para **"Alterar moeda"**, porém, quando ocorre na mesma execução, aparece antes.
+
+Ainda era necessário verificar se existia implicação existencial.
+
+**Próxima Pergunta:**
+
+**"Alterar moeda"** pode ocorrer sem que **"Revisar seu pedido"** ocorra?
+
+**Resposta do entrevistado:**
+
+Pode.
+
+---
+
+47.
+
+Entendido.
+
+Como **"Alterar moeda"** pode ocorrer sem **"Revisar seu pedido"**, concluiu-se que não existe relação **DEP**, **DEPC** ou **REQ** entre essas duas atividades.
+
+**Próxima Pergunta:**
+
+Para que **"Alterar endereço de cobrança"** ocorra, é obrigatório que antes tenha ocorrido **"Selecionar um método de pagamento"**?
+
+**Resposta do entrevistado:**
+
+Pode, mas não necessariamente.
+
+---
+
+48.
+
+Entendido.
+
+Foi confirmado que **"Selecionar um método de pagamento"** não é pré-requisito obrigatório para **"Alterar endereço de cobrança"**.
+
+**Próxima Pergunta:**
+
+Quando **"Alterar endereço de cobrança"** ocorre, ela sempre acontece depois de **"Finalizar pedido"**?
+
+**Resposta do entrevistado:**
+
+Não, ela ocorre depois.
+
+---
+
+49.
+
+Entendido.
+
+Foi confirmado que **"Alterar endereço de cobrança"** ocorre após **"Finalizar pedido"**, mas ainda era necessário verificar a reciprocidade para classificar a relação.
+
+**Próxima Pergunta:**
+
+**"Finalizar pedido"** pode ocorrer sem que **"Alterar endereço de cobrança"** ocorra?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+50.
+
+Perfeito.
+
+Foi registrada a relação:
+
+**Alterar endereço de cobrança DEPC Finalizar pedido.**
+
+**Próxima Pergunta:**
+
+Para que **"Finalizar pedido na moeda padrão"** ocorra, é obrigatório que antes tenha ocorrido **"Finalizar pedido"**?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+51.
+
+Entendido.
+
+Foi identificada uma nova dependência candidata que precisava ser classificada.
+
+**Próxima Pergunta:**
+
+Quando **"Finalizar pedido na moeda padrão"** ocorre, **"Finalizar pedido"** deve ocorrer:
+
+* Antes;
+* Depois;
+* Ou a ordem é irrelevante?
+
+**Resposta do entrevistado:**
+
+Antes.
+
+---
+
+52.
+
+Entendido.
+
+Foi confirmado que **"Finalizar pedido"** ocorre antes de **"Finalizar pedido na moeda padrão"**.
+
+**Próxima Pergunta:**
+
+**"Finalizar pedido"** pode ocorrer sem que **"Finalizar pedido na moeda padrão"** ocorra?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+53.
+
+Perfeito.
+
+Foi registrada a relação:
+
+**Finalizar pedido na moeda padrão DEP Finalizar pedido.**
+
+Também foi observado que essa relação era consistente com a relação anteriormente registrada envolvendo **Alterar moeda**.
+
+**Próxima Pergunta:**
+
+Para que **"Pagar taxa dos livros"** ocorra, é obrigatório que antes tenha ocorrido **"Finalizar pedido na moeda padrão"**?
+
+**Resposta do entrevistado:**
+
+Não. Pagar taxa dos livros é a primeira atividade do processo.
+
+---
+
+54.
+
+Entendido.
+
+Foi registrado que **"Pagar taxa dos livros"** é a atividade inicial do processo.
+
+**Próxima Pergunta:**
+
+Após **"Pagar taxa dos livros"**, é obrigatório seguir para **"Inserir novo endereço de entrega"**, ou o processo pode seguir diretamente para **"Escolher endereço de entrega existente"**?
+
+**Resposta do entrevistado:**
+
+Após pagar taxa ele tem que escolher se vai inserir um novo endereço, escolher um existente ou editar um existente.
+
+---
+
+55.
+
+Entendido.
+
+A resposta mostrou que, após **"Pagar taxa dos livros"**, existe um ponto de decisão entre três alternativas de endereço.
+
+Pelas regras do protocolo, era necessário confirmar explicitamente se essas alternativas eram mutuamente exclusivas.
+
+**Próxima Pergunta:**
+
+Em uma mesma execução, o usuário pode realizar mais de uma dessas três atividades ou deve executar exatamente uma delas?
+
+**Resposta do entrevistado:**
+
+Uma delas.
+
+---
+
+56.
+
+Perfeito.
+
+Foi confirmado que as três atividades representam alternativas exclusivas.
+
+Como o protocolo exige confirmação par a par, iniciou-se a validação da terceira alternativa.
+
+**Próxima Pergunta:**
+
+As atividades **"Inserir novo endereço de entrega"** e **"Escolher endereço de entrega existente"** podem ocorrer juntas na mesma execução?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+57.
+
+Perfeito.
+
+Foi registrada a relação:
+
+**Inserir novo endereço de entrega XOR Escolher endereço de entrega existente.**
+
+**Próxima Pergunta:**
+
+As atividades **"Inserir novo endereço de entrega"** e **"Editar endereço de entrega existente"** podem ocorrer juntas na mesma execução?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+58.
+
+Perfeito.
+
+Foi registrada a relação:
+
+**Inserir novo endereço de entrega XOR Editar endereço de entrega existente.**
+
+**Próxima Pergunta:**
+
+Quando **"Escolher detalhes da entrega"** ocorre após a decisão de endereço, ela pode ocorrer depois de qualquer uma das três alternativas (**Inserir**, **Escolher** ou **Editar**)?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+59.
+
+Entendido.
+
+Foi confirmado que **"Escolher detalhes da entrega"** pode seguir qualquer uma das três alternativas de endereço.
+
+Entretanto, pelas regras SBMN, não era possível inferir automaticamente as dependências individuais.
+
+**Próxima Pergunta:**
+
+Para que **"Escolher detalhes da entrega"** ocorra, é obrigatório que antes tenha ocorrido **"Inserir novo endereço de entrega"**?
+
+**Resposta do entrevistado:**
+
+Ou inserir ou escolher ou editar; um dos três é obrigatório.
+
+---
+
+60.
+
+Entendido.
+
+Foi identificado que nenhuma das três atividades de endereço é individualmente obrigatória; o obrigatório é que **uma delas** ocorra antes de **"Escolher detalhes da entrega"**.
+
+Por isso, não foi possível registrar imediatamente um **DEP** individual.
+
+**Próxima Pergunta:**
+
+Para que **"Escolher detalhes da entrega"** ocorra, **"Inserir novo endereço de entrega"** pode ocorrer sem que **"Escolher detalhes da entrega"** ocorra em alguma execução?
+
+**Resposta do entrevistado:**
+
+Não.
+
+61.
+
+Entendido.
+
+Foi confirmado que **"Inserir novo endereço de entrega"**, quando ocorre, sempre é seguido por **"Escolher detalhes da entrega"**.
+
+Ainda era necessário confirmar se existia algum caminho alternativo após essa atividade.
+
+**Próxima Pergunta:**
+
+Quando **"Inserir novo endereço de entrega"** ocorre, **"Escolher detalhes da entrega"** ocorre sempre depois ou existe alguma execução em que o processo termina ou segue por outro caminho?
+
+**Resposta do entrevistado:**
+
+Depois.
+
+---
+
+62.
+
+Perfeito.
+
+Com base nas respostas, foi registrada a relação:
+
+**Escolher detalhes da entrega DEP Inserir novo endereço de entrega.**
+
+Como existem caminhos alternativos pelas outras duas opções de endereço, elas também precisavam ser investigadas individualmente.
+
+**Próxima Pergunta:**
+
+Para que **"Escolher detalhes da entrega"** ocorra, é obrigatório que antes tenha ocorrido **"Editar endereço de entrega existente"**?
+
+**Resposta do entrevistado:**
+
+Se ele ocorrer, sim.
+
+---
+
+63.
+
+Entendido.
+
+A resposta indicou uma dependência condicional: quando **"Editar endereço de entrega existente"** ocorre, **"Escolher detalhes da entrega"** ocorre depois.
+
+Ainda era necessário verificar a reciprocidade.
+
+**Próxima Pergunta:**
+
+**"Editar endereço de entrega existente"** pode ocorrer sem que **"Escolher detalhes da entrega"** ocorra?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+64.
+
+Perfeito.
+
+Foi registrada a relação:
+
+**Escolher detalhes da entrega DEP Editar endereço de entrega existente.**
+
+Restava apenas completar a investigação da terceira alternativa de endereço.
+
+**Próxima Pergunta:**
+
+Quando a alternativa **"Escolher endereço de entrega existente"** é utilizada, ela sempre é seguida por **"Escolher detalhes da entrega"**?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+65.
+
+Perfeito.
+
+Foi registrada a relação:
+
+**Escolher detalhes da entrega DEP Escolher endereço de entrega existente.**
+
+As três alternativas de endereço passaram a convergir para a atividade **"Escolher detalhes da entrega"**.
+
+**Próxima Pergunta:**
+
+Após **"Finalizar pedido na moeda padrão"**, o processo termina sempre ou existe alguma possibilidade de retornar para uma atividade anterior?
+
+**Resposta do entrevistado:**
+
+Termina.
+
+---
+
+66.
+
+Entendido.
+
+Foi registrado que **"Finalizar pedido na moeda padrão"** é uma atividade terminal.
+
+Em seguida iniciou-se a investigação dos possíveis retornos (**JMP**) mencionados anteriormente.
+
+**Próxima Pergunta:**
+
+Quando o usuário está em **"Revisar seu pedido"**, ele pode retornar para **"Selecionar um método de pagamento"**?
+
+**Resposta do entrevistado:**
+
+Sim, ou para **"Escolher detalhes da entrega"**.
+
+---
+
+67.
+
+Perfeito.
+
+Foram registrados como candidatos a **JMP**:
+
+* Revisar seu pedido JMP Selecionar um método de pagamento.
+* Revisar seu pedido JMP Escolher detalhes da entrega.
+
+**Próxima Pergunta:**
+
+Quando o usuário está em **"Escolher detalhes da entrega"**, ele pode retornar para alguma atividade anterior ou apenas seguir em frente?
+
+**Resposta do entrevistado:**
+
+Segue.
+
+---
+
+68.
+
+Entendido.
+
+Foi registrado que **"Escolher detalhes da entrega"** não possui retorno para atividades anteriores.
+
+**Próxima Pergunta:**
+
+Quando o usuário está em **"Selecionar um método de pagamento"**, ele pode retornar para alguma atividade anterior ou apenas seguir para frente?
+
+**Resposta do entrevistado:**
+
+Apenas segue em frente.
+
+---
+
+69.
+
+Entendido.
+
+Foi registrado que **"Selecionar um método de pagamento"** também não possui retorno para atividades anteriores.
+
+Até aquele momento, os únicos candidatos a **JMP** eram os dois retornos originados em **"Revisar seu pedido"**.
+
+**Próxima Pergunta:**
+
+Quando o usuário está em **"Finalizar pedido"**, ele pode retornar para alguma atividade anterior ou apenas seguir para **"Finalizar pedido na moeda padrão"**?
+
+**Resposta do entrevistado:**
+
+Ele não retorna. Segue para **"Finalizar pedido na moeda padrão"**, mas antes pode alterar a moeda ou alterar o endereço de cobrança.
+
+---
+
+70.
+
+Entendido.
+
+Foi registrado que **"Finalizar pedido"** não possui retorno (**JMP**).
+
+Também foi identificado que, após essa atividade, existem duas atividades opcionais:
+
+* Alterar moeda;
+* Alterar endereço de cobrança.
+
+Essas atividades precisavam ser classificadas individualmente.
+
+**Próxima Pergunta:**
+
+Quando **"Alterar endereço de cobrança"** ocorre, **"Finalizar pedido na moeda padrão"** obrigatoriamente ocorre depois?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+71.
+
+Perfeito.
+
+Foi registrada a relação:
+
+**Finalizar pedido na moeda padrão DEPC Alterar endereço de cobrança.**
+
+**Próxima Pergunta:**
+
+Quando **"Alterar moeda"** ocorre, **"Alterar endereço de cobrança"** também pode ocorrer na mesma execução ou são mutuamente exclusivos?
+
+**Resposta do entrevistado:**
+
+Elas são mutuamente exclusivas.
+
+---
+
+72.
+
+Perfeito.
+
+Foi registrada a relação:
+
+**Alterar moeda XOR Alterar endereço de cobrança.**
+
+**Próxima Pergunta:**
+
+Quando **"Alterar moeda"** ocorre, **"Finalizar pedido na moeda padrão"** ocorre imediatamente depois ou ainda podem existir outras atividades intermediárias?
+
+**Resposta do entrevistado:**
+
+Sim, logo depois.
+
+---
+
+73.
+
+Entendido.
+
+Foi confirmado que **"Alterar moeda"** é seguido imediatamente por **"Finalizar pedido na moeda padrão"**.
+
+Essa informação não alterou a classificação SBMN anteriormente registrada.
+
+**Próxima Pergunta:**
+
+Quando **"Finalizar pedido"** ocorre e o usuário não escolhe nem **"Alterar moeda"** nem **"Alterar endereço de cobrança"**, ele segue diretamente para **"Finalizar pedido na moeda padrão"**?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+74.
+
+Entendido.
+
+Foi confirmado que existe um caminho direto entre **"Finalizar pedido"** e **"Finalizar pedido na moeda padrão"** quando nenhuma atividade opcional é executada.
+
+**Próxima Pergunta:**
+
+Existe alguma outra atividade, além de **"Revisar seu pedido"**, a partir da qual o usuário possa retornar para uma atividade anterior?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+75.
+
+Perfeito.
+
+Foi registrado que não existem outros retornos além dos já identificados.
+
+Em seguida iniciou-se a investigação das atividades opcionais do bloco de entrega.
+
+**Próxima Pergunta:**
+
+A atividade **"Alterar quantidades ou remover itens"** é opcional e, quando ocorre, acontece antes de **"Revisar seu pedido"**, antes de **"Finalizar pedido"** ou antes de ambos?
+
+**Resposta do entrevistado:**
+
+Se **"Alterar quantidades ou remover itens"** ocorrer, ela ocorre depois de **"Escolher detalhes da entrega"**.
+
+---
+
+76.
+
+Entendido.
+
+Foi identificado que a atividade ocorre após **"Escolher detalhes da entrega"**, porém ainda era necessário verificar a obrigatoriedade.
+
+**Próxima Pergunta:**
+
+**"Alterar quantidades ou remover itens"** pode ocorrer sem que **"Escolher detalhes da entrega"** tenha ocorrido antes?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+77.
+
+Entendido.
+
+Foi confirmado que **"Alterar quantidades ou remover itens"** depende de **"Escolher detalhes da entrega"**, mas ainda era necessária a verificação da reciprocidade.
+
+**Próxima Pergunta:**
+
+**"Escolher detalhes da entrega"** pode ocorrer sem que **"Alterar quantidades ou remover itens"** ocorra?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+78.
+
+Perfeito.
+
+Foi registrada a relação:
+
+**Alterar quantidades ou remover itens REQ Escolher detalhes da entrega.**
+
+Em seguida iniciou-se a investigação da atividade **"Solicitar os itens de presente existentes"**.
+
+**Próxima Pergunta:**
+
+A atividade **"Solicitar os itens de presente existentes"** também ocorre somente depois de **"Escolher detalhes da entrega"**?
+
+**Resposta do entrevistado:**
+
+Se ele ocorrer, sim.
+
+---
+
+79.
+
+Entendido.
+
+Foi identificada uma dependência condicional para **"Solicitar os itens de presente existentes"**.
+
+Ainda era necessário confirmar se a atividade poderia ocorrer sem **"Escolher detalhes da entrega"**.
+
+**Próxima Pergunta:**
+
+**"Solicitar os itens de presente existentes"** pode ocorrer sem que **"Escolher detalhes da entrega"** tenha ocorrido antes?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+80.
+
+Entendido.
+
+Foi confirmado que **"Solicitar os itens de presente existentes"** somente pode ocorrer após **"Escolher detalhes da entrega"**.
+
+Ainda faltava apenas a verificação da reciprocidade para concluir a classificação.
+
+**Próxima Pergunta:**
+
+**"Escolher detalhes da entrega"** pode ocorrer sem que **"Solicitar os itens de presente existentes"** ocorra em alguma execução?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+81.
+
+Perfeito.
+
+Com base nas respostas fornecidas, foi registrada a relação:
+
+**Solicitar os itens de presente existentes REQ Escolher detalhes da entrega.**
+
+**Próxima Pergunta:**
+
+Após **"Alterar quantidades ou remover itens"**, o processo obrigatoriamente segue para **"Selecionar um método de pagamento"**, ou o usuário também pode seguir diretamente para **"Revisar seu pedido"** ou **"Finalizar pedido"**?
+
+**Resposta do entrevistado:**
+
+Isso mesmo, segue para selecionar ou pode também escolher entre revisar ou finalizar pedido.
+
+---
+
+82.
+
+Entendido.
+
+Foi registrado que, após **"Alterar quantidades ou remover itens"**, o processo pode seguir para:
+
+* Selecionar um método de pagamento;
+* Revisar seu pedido;
+* Finalizar pedido.
+
+Essas possibilidades representam apenas alternativas de fluxo e não geram uma nova relação SBMN.
+
+**Próxima Pergunta:**
+
+Quando **"Solicitar os itens de presente existentes"** ocorre, o usuário também pode seguir para **"Selecionar um método de pagamento"**, **"Revisar seu pedido"** ou **"Finalizar pedido"** da mesma forma?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+83.
+
+Entendido.
+
+Foi registrado que **"Solicitar os itens de presente existentes"** possui o mesmo comportamento posterior de **"Alterar quantidades ou remover itens"**, sem introduzir novas relações estruturais.
+
+**Próxima Pergunta:**
+
+Após **"Pagar taxa dos livros"**, o processo sempre segue para exatamente uma das três opções de endereço ou existe algum outro caminho possível?
+
+**Resposta do entrevistado:**
+
+Isso, uma das três.
+
+---
+
+84.
+
+Perfeito.
+
+Foi confirmado que, após **"Pagar taxa dos livros"**, o processo sempre segue para exatamente uma das três alternativas de endereço.
+
+Essa confirmação reforçou as relações **XOR** anteriormente registradas.
+
+**Próxima Pergunta:**
+
+Quando o usuário escolhe um dos quatro métodos de pagamento, todos possuem exatamente o mesmo comportamento posterior?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+85.
+
+Perfeito.
+
+Foi registrado que todos os quatro métodos de pagamento possuem exatamente o mesmo comportamento posterior, permitindo seguir para **"Revisar seu pedido"** ou **"Finalizar pedido"**.
+
+Também foi observado que ainda existiam algumas relações residuais a serem verificadas antes da conclusão da entrevista.
+
+**Próxima Pergunta:**
+
+Para que **"Conta Corrente"** ocorra, é obrigatório que antes tenha ocorrido **"Selecionar um método de pagamento"**?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+86.
+
+Entendido.
+
+Foi identificada uma nova dependência candidata.
+
+**Próxima Pergunta:**
+
+Quando **"Conta Corrente"** ocorre, **"Selecionar um método de pagamento"** deve ocorrer:
+
+* Antes;
+* Depois;
+* Ou a ordem é irrelevante?
+
+**Resposta do entrevistado:**
+
+Antes.
+
+---
+
+87.
+
+Entendido.
+
+Foi confirmado que **"Selecionar um método de pagamento"** ocorre antes de **"Conta Corrente"**.
+
+**Próxima Pergunta:**
+
+**"Selecionar um método de pagamento"** pode ocorrer sem que **"Conta Corrente"** ocorra?
+
+**Resposta do entrevistado:**
+
+Sim, porque existem outros três métodos de pagamento.
+
+---
+
+88.
+
+Perfeito.
+
+Foi registrada a relação:
+
+**Conta Corrente REQ Selecionar um método de pagamento.**
+
+**Próxima Pergunta:**
+
+Para que **"Cartão da Loja Amazon.com"** ocorra, é obrigatório que antes tenha ocorrido **"Selecionar um método de pagamento"**?
+
+**Resposta do entrevistado:**
+
+Sim, a mesma lógica de Conta Corrente.
+
+---
+
+89.
+
+Entendido.
+
+Foi aplicada a mesma lógica já confirmada anteriormente.
+
+Foi registrada a relação:
+
+**Cartão da Loja Amazon.com REQ Selecionar um método de pagamento.**
+
+**Próxima Pergunta:**
+
+A atividade **"Cartões-Presente e Códigos Promocionais"** segue exatamente a mesma lógica?
+
+**Resposta do entrevistado:**
+
+Sim, e Cartões de Crédito ou Débito também.
+
+---
+
+90.
+
+Perfeito.
+
+Foram consolidadas as relações:
+
+* Cartão da Loja Amazon.com REQ Selecionar um método de pagamento.
+* Cartões-Presente e Códigos Promocionais REQ Selecionar um método de pagamento.
+* Cartões de Crédito ou Débito REQ Selecionar um método de pagamento.
+
+**Próxima Pergunta:**
+
+Existe alguma relação entre **"Alterar quantidades ou remover itens"** e **"Solicitar os itens de presente existentes"**?
+
+**Resposta do entrevistado:**
+
+Ele pode escolher um dos dois, os dois ou até mesmo nenhum dos dois.
+
+---
+
+91.
+
+Entendido.
+
+A resposta corresponde exatamente à semântica do operador **UNI**, pois existem execuções contendo:
+
+* apenas Alterar quantidades;
+* apenas Solicitar itens de presente;
+* ambas as atividades.
+
+Foi registrada a relação:
+
+**Alterar quantidades ou remover itens UNI Solicitar os itens de presente existentes.**
+
+**Próxima Pergunta:**
+
+Após **"Escolher detalhes da entrega"**, essas duas atividades opcionais podem ocorrer em qualquer ordem ou existe uma ordem obrigatória entre elas?
+
+**Resposta do entrevistado:**
+
+Qualquer ordem.
+
+---
+
+92.
+
+Entendido.
+
+Foi confirmado que não existe precedência obrigatória entre essas duas atividades, mantendo a consistência da relação **UNI**.
+
+**Próxima Pergunta:**
+
+Depois de **"Escolher detalhes da entrega"**, é obrigatório que ocorra pelo menos uma destas atividades antes de chegar a **"Revisar seu pedido"** ou **"Finalizar pedido"**?
+
+* Alterar quantidades;
+* Solicitar itens de presente;
+* Selecionar método de pagamento.
+
+Ou o processo pode seguir diretamente?
+
+**Resposta do entrevistado:**
+
+Todas podem ocorrer, mas nenhuma é obrigatória.
+
+---
+
+93.
+
+Entendido.
+
+Foi registrado que as três atividades são opcionais.
+
+Consequentemente, nenhuma nova relação **DEP**, **REQ** ou **DEPC** pôde ser registrada.
+
+**Próxima Pergunta:**
+
+Após **"Pagar taxa dos livros"**, o usuário pode seguir diretamente para **"Escolher detalhes da entrega"**, sem passar por uma das três atividades de endereço?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+94.
+
+Entendido.
+
+Foi confirmado que obrigatoriamente uma das três alternativas de endereço ocorre antes de **"Escolher detalhes da entrega"**.
+
+**Próxima Pergunta:**
+
+A atividade **"Escolher detalhes da entrega"** pode ocorrer mais de uma vez na mesma execução do processo?
+
+**Resposta do entrevistado:**
+
+Sim, pode ocorrer mais de uma vez.
+
+---
+
+95.
+
+Entendido.
+
+Foi registrado que **"Escolher detalhes da entrega"** pode ser repetida devido ao retorno originado em **"Revisar seu pedido"**.
+
+**Próxima Pergunta:**
+
+**"Selecionar um método de pagamento"** também pode ocorrer mais de uma vez na mesma execução?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+96.
+
+Entendido.
+
+Foi registrado que **"Selecionar um método de pagamento"** também pode ser repetido em função do retorno **JMP**.
+
+**Próxima Pergunta:**
+
+A atividade **"Revisar seu pedido"** também pode ocorrer mais de uma vez na mesma execução?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+97.
+
+Entendido.
+
+Foi registrado que **"Revisar seu pedido"** pode ocorrer diversas vezes durante uma mesma execução do processo.
+
+**Próxima Pergunta:**
+
+Quando o usuário retorna para **"Escolher detalhes da entrega"**, ele pode novamente alterar quantidades, solicitar itens de presente, selecionar método de pagamento e voltar para revisar quantas vezes desejar?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+98.
+
+Perfeito.
+
+Foi confirmado que o processo permite múltiplos ciclos de revisão utilizando os operadores **JMP** anteriormente registrados.
+
+**Próxima Pergunta:**
+
+Existe algum caminho no processo em que o usuário consiga chegar a **"Finalizar pedido na moeda padrão"** sem antes passar por **"Finalizar pedido"**?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+99.
+
+Perfeito.
+
+Foi reforçada a relação:
+
+**Finalizar pedido na moeda padrão DEP Finalizar pedido.**
+
+Também foi observado que ainda existiam algumas relações residuais envolvendo atividades opcionais que precisavam ser verificadas.
+
+**Próxima Pergunta:**
+
+A atividade **"Alterar endereço de cobrança"** pode ocorrer mais de uma vez na mesma execução do processo?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+100.
+
+Entendido.
+
+Foi registrado que **"Alterar endereço de cobrança"** ocorre no máximo uma vez por execução e não possui repetição nem retorno.
+
+**Próxima Pergunta:**
+
+A atividade **"Alterar moeda"** também ocorre no máximo uma vez por execução do processo?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+101.
+
+Perfeito.
+
+Foi registrado que **"Alterar moeda"** ocorre apenas uma vez por execução do processo e não possui repetição nem retorno.
+
+**Próxima Pergunta:**
+
+A atividade **"Finalizar pedido"** também ocorre apenas uma vez por execução do processo?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+102.
+
+Perfeito.
+
+Foi registrado que **"Finalizar pedido"** ocorre apenas uma vez por execução.
+
+A possibilidade de múltiplas revisões não implica múltiplas finalizações.
+
+**Próxima Pergunta:**
+
+A atividade **"Finalizar pedido na moeda padrão"** também ocorre apenas uma vez por execução?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+103.
+
+Perfeito.
+
+Foi registrado que **"Finalizar pedido na moeda padrão"** ocorre apenas uma vez por execução.
+
+Durante os testes de consistência foi identificado um conflito: como as três atividades de endereço estão em **XOR**, **"Escolher detalhes da entrega"** não pode possuir relações **DEP** individuais para cada uma delas. Essas relações deveriam ser consolidadas posteriormente.
+
+**Próxima Pergunta:**
+
+Quando **"Inserir novo endereço de entrega"** ocorre, **"Pagar taxa dos livros"** deve ter ocorrido antes?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+104.
+
+Entendido.
+
+Foi confirmado que **"Pagar taxa dos livros"** ocorre antes de **"Inserir novo endereço de entrega"**.
+
+Ainda era necessário verificar a reciprocidade.
+
+**Próxima Pergunta:**
+
+**"Pagar taxa dos livros"** pode ocorrer sem que **"Inserir novo endereço de entrega"** ocorra?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+105.
+
+Perfeito.
+
+Foi registrada a relação:
+
+**Inserir novo endereço de entrega REQ Pagar taxa dos livros.**
+
+**Próxima Pergunta:**
+
+**"Escolher endereço de entrega existente"** também só pode ocorrer depois de **"Pagar taxa dos livros"**?
+
+**Resposta do entrevistado:**
+
+Sim, mesma lógica de inserir novo endereço e também para editar endereço existente.
+
+---
+
+106.
+
+Perfeito.
+
+Foram registradas as relações:
+
+* **Escolher endereço de entrega existente REQ Pagar taxa dos livros.**
+* **Editar endereço de entrega existente REQ Pagar taxa dos livros.**
+
+As três alternativas de endereço passaram a estar corretamente vinculadas à atividade inicial.
+
+**Próxima Pergunta:**
+
+Após **"Pagar taxa dos livros"**, o usuário é obrigado a escolher imediatamente uma das três alternativas de endereço ou existe alguma atividade intermediária?
+
+**Resposta do entrevistado:**
+
+É obrigado imediatamente.
+
+---
+
+107.
+
+Perfeito.
+
+Foi registrado que não existe nenhuma atividade intermediária entre **"Pagar taxa dos livros"** e a decisão de endereço.
+
+**Próxima Pergunta:**
+
+A atividade **"Revisar seu pedido"** pode ser ignorada definitivamente ou existe alguma situação em que ela é obrigatória?
+
+**Resposta do entrevistado:**
+
+Pode ser ignorada.
+
+---
+
+108.
+
+Entendido.
+
+Foi registrado que **"Revisar seu pedido"** é uma atividade opcional.
+
+Essa confirmação reforçou a consistência da relação:
+
+**Finalizar pedido DEPC Revisar seu pedido.**
+
+**Próxima Pergunta:**
+
+**"Selecionar um método de pagamento"** também pode ser completamente ignorado ou existe alguma situação em que essa atividade é obrigatória?
+
+**Resposta do entrevistado:**
+
+Pode ser ignorada.
+
+---
+
+109.
+
+Entendido.
+
+Foi registrado que **"Selecionar um método de pagamento"** também é uma atividade opcional.
+
+Isso manteve a consistência do fluxo alternativo de pagamento.
+
+**Próxima Pergunta:**
+
+Quando **"Finalizar pedido"** ocorre, o usuário deve escolher exatamente uma das seguintes opções antes do término do processo?
+
+* Alterar moeda;
+* Alterar endereço de cobrança;
+* Nenhuma das duas.
+
+Ou é possível executar mais de uma dessas opções?
+
+**Resposta do entrevistado:**
+
+Isso.
+
+---
+
+110.
+
+Entendido.
+
+Foi registrado que, após **"Finalizar pedido"**, o usuário escolhe exatamente uma das três alternativas:
+
+* Alterar moeda;
+* Alterar endereço de cobrança;
+* Nenhuma das duas.
+
+Essa confirmação manteve consistente a relação **Alterar moeda XOR Alterar endereço de cobrança**.
+
+**Próxima Pergunta:**
+
+As alternativas **"Alterar moeda"** e **"Alterar endereço de cobrança"** são ambas opcionais ou pelo menos uma delas deve obrigatoriamente ser escolhida?
+
+**Resposta do entrevistado:**
+
+Ambas opcionais.
+
+---
+
+111.
+
+Perfeito.
+
+Foi registrado que ambas as atividades são opcionais.
+
+Também foi confirmado que o usuário pode seguir diretamente para **"Finalizar pedido na moeda padrão"** sem executar nenhuma delas.
+
+**Próxima Pergunta:**
+
+A atividade **"Pagar taxa dos livros"** ocorre exatamente uma vez durante toda execução do processo?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+112.
+
+Perfeito.
+
+Foi registrado que **"Pagar taxa dos livros"** ocorre exatamente uma vez por execução e não possui repetição.
+
+**Próxima Pergunta:**
+
+A atividade **"Escolher detalhes da entrega"** é obrigatória em todas as execuções do processo?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+113.
+
+Entendido.
+
+Foi confirmado que **"Escolher detalhes da entrega"** é obrigatória em todas as execuções.
+
+**Próxima Pergunta:**
+
+**"Pagar taxa dos livros"** pode ocorrer sem que **"Escolher detalhes da entrega"** ocorra posteriormente?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+114.
+
+Entendido.
+
+Foi confirmado que toda execução contendo **"Pagar taxa dos livros"** também contém **"Escolher detalhes da entrega"**.
+
+Foi observado que essa confirmação servia para validar a consistência do modelo, mas não permitia criar um **DEP** direto devido ao ponto de decisão existente entre essas atividades.
+
+**Próxima Pergunta:**
+
+A atividade **"Escolher uma preferência de entrega"** também é obrigatória em todas as execuções?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+115.
+
+Perfeito.
+
+Foi registrado que **"Escolher uma preferência de entrega"** é obrigatória em todas as execuções do processo.
+
+Essa informação reforçou a relação já estabelecida com **"Escolher detalhes da entrega"**.
+
+**Próxima Pergunta:**
+
+**"Escolher a velocidade de entrega"** também é obrigatória em todas as execuções?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+116.
+
+Perfeito.
+
+Foi registrado que **"Escolher a velocidade de entrega"** também é obrigatória.
+
+Além disso, ficou reforçado que as duas atividades obrigatórias não possuem precedência entre si.
+
+**Próxima Pergunta:**
+
+Após concluir **"Escolher uma preferência de entrega"** e **"Escolher a velocidade de entrega"**, o usuário é obrigado a seguir para pelo menos uma destas atividades:
+
+* Alterar quantidades;
+* Solicitar itens de presente;
+* Selecionar método de pagamento;
+* Revisar pedido;
+* Finalizar pedido.
+
+Ou existe algum outro caminho?
+
+**Resposta do entrevistado:**
+
+Se Alterar quantidades ou Solicitar itens ocorrerem, elas acontecem junto das escolhas de preferência e velocidade.
+
+Depois dessas atividades o processo segue para Selecionar método de pagamento, Revisar pedido ou Finalizar pedido.
+
+---
+
+117.
+
+Entendido.
+
+Foi registrado que:
+
+* Preferência e velocidade pertencem ao mesmo bloco.
+* Alterar quantidades e Solicitar itens, quando ocorrem, pertencem ao mesmo bloco.
+* Após esse bloco, o processo segue para Selecionar método, Revisar ou Finalizar.
+
+Nenhuma nova relação estrutural pôde ser registrada.
+
+**Próxima Pergunta:**
+
+O usuário pode ir diretamente desse bloco para **"Finalizar pedido"**, sem passar por **"Selecionar um método de pagamento"** nem por **"Revisar seu pedido"**?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+118.
+
+Perfeito.
+
+Foi confirmado que existe um caminho direto entre o bloco de entrega e **"Finalizar pedido"**, sem necessidade de revisão nem seleção de método de pagamento.
+
+**Próxima Pergunta:**
+
+As atividades **"Escolher uma preferência de entrega"** e **"Escolher a velocidade de entrega"** podem ser executadas em paralelo ou existe uma ordem obrigatória entre elas?
+
+**Resposta do entrevistado:**
+
+Em paralelo.
+
+---
+
+119.
+
+Entendido.
+
+Foi registrado que as duas atividades podem ser executadas em paralelo e não existe relação de precedência entre elas.
+
+**Próxima Pergunta:**
+
+Depois que o usuário escolhe uma das três opções de endereço (**Inserir**, **Escolher** ou **Editar**), ele pode voltar para essa decisão em algum momento do processo?
+
+**Resposta do entrevistado:**
+
+Não pode voltar.
+
+---
+
+120.
+
+Perfeito.
+
+Foi registrado que a decisão de endereço nunca é revisitada durante uma mesma execução do processo.
+
+Assim, os únicos retornos (**JMP**) permanecem aqueles originados em **"Revisar seu pedido"**.
+
+**Próxima Pergunta:**
+
+A atividade **"Escolher uma preferência de entrega"** também ocorre apenas uma vez por execução, mesmo quando existe retorno para **"Escolher detalhes da entrega"**?
+
+**Resposta do entrevistado:**
+
+Quando voltar para **"Escolher detalhes da entrega"**, ele pode escolher novamente preferência de entrega e velocidade, bem como alterar quantidades e solicitar os itens de presente.
+
+121.
+
+Entendido.
+
+Foi confirmado que, quando o processo retorna para **"Escolher detalhes da entrega"**, o usuário pode executar novamente:
+
+* Escolher uma preferência de entrega;
+* Escolher a velocidade de entrega;
+* Alterar quantidades ou remover itens;
+* Solicitar os itens de presente existentes.
+
+Isso mostrou que essas atividades podem ser repetidas em função do operador **JMP**.
+
+**Próxima Pergunta:**
+
+Nesse retorno, **"Escolher uma preferência de entrega"** e **"Escolher a velocidade de entrega"** voltam a ser obrigatórias ou o usuário pode executar apenas uma delas?
+
+**Resposta do entrevistado:**
+
+São novamente obrigatórias.
+
+---
+
+122.
+
+Perfeito.
+
+Foi registrado que, sempre que o processo retorna para **"Escolher detalhes da entrega"**, as atividades:
+
+* Escolher uma preferência de entrega;
+* Escolher a velocidade de entrega;
+
+devem ser executadas novamente antes da continuação do processo.
+
+As atividades opcionais permanecem opcionais.
+
+**Próxima Pergunta:**
+
+Quando o processo retorna para **"Selecionar um método de pagamento"**, o usuário pode escolher novamente qualquer um dos quatro métodos de pagamento?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+123.
+
+Entendido.
+
+Foi registrado que, após o retorno para **"Selecionar um método de pagamento"**, qualquer um dos quatro métodos pode ser escolhido novamente, preservando todas as relações **REQ** e **XOR** anteriormente estabelecidas.
+
+**Próxima Pergunta:**
+
+Após retornar para **"Selecionar um método de pagamento"** e escolher um novo método, o usuário pode novamente optar por **"Revisar seu pedido"** ou **"Finalizar pedido"**, repetindo esse ciclo quantas vezes desejar?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+124.
+
+Perfeito.
+
+Foi confirmado que o laço de revisão pode ser repetido indefinidamente até que o usuário decida finalizar o pedido.
+
+Essa confirmação consolidou os operadores **JMP** já registrados.
+
+**Próxima Pergunta:**
+
+Após **"Finalizar pedido"**, se o usuário escolher **"Alterar moeda"**, ele ainda pode desistir da troca de moeda ou, uma vez escolhida essa opção, ela sempre é concluída antes da finalização?
+
+**Resposta do entrevistado:**
+
+De **Alterar moeda** ele segue para **Finalizar pedido na moeda padrão**.
+
+---
+
+125.
+
+Entendido.
+
+Foi registrado que, quando **"Alterar moeda"** ocorre, o fluxo segue obrigatoriamente para **"Finalizar pedido na moeda padrão"**, sem caminhos alternativos.
+
+Essa confirmação reforçou a relação **DEPC** anteriormente registrada.
+
+**Próxima Pergunta:**
+
+Quando o usuário escolhe **"Alterar endereço de cobrança"**, após concluir essa atividade ele segue obrigatoriamente para **"Finalizar pedido na moeda padrão"**?
+
+**Resposta do entrevistado:**
+
+Mesma coisa de **Alterar moeda**.
+
+---
+
+126.
+
+Perfeito.
+
+Foi registrado que **"Alterar endereço de cobrança"** possui exatamente o mesmo comportamento de **"Alterar moeda"**, seguindo obrigatoriamente para **"Finalizar pedido na moeda padrão"**.
+
+**Próxima Pergunta:**
+
+Existe alguma atividade da lista inicial sobre a qual ainda não conversamos e que possua alguma dependência, exclusão, união ou retorno importante?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+127.
+
+Perfeito.
+
+Foi registrado que não existem outras relações relevantes além das já explicitamente confirmadas.
+
+Durante a consolidação do modelo, entretanto, foram identificadas algumas inconsistências lógicas que precisavam ser resolvidas antes da geração do SBMN final.
+
+A primeira delas dizia respeito à relação entre **"Escolher uma preferência de entrega"** e **"Escolher a velocidade de entrega"**.
+
+**Próxima Pergunta:**
+
+Quando **"Escolher uma preferência de entrega"** ocorre, **"Escolher a velocidade de entrega"** precisa obrigatoriamente ocorrer antes ou elas podem realmente ser executadas em qualquer ordem?
+
+**Resposta do entrevistado:**
+
+Qualquer ordem.
+
+---
+
+128.
+
+Perfeito.
+
+Foi consolidado que:
+
+* Não existe precedência entre **"Escolher uma preferência de entrega"** e **"Escolher a velocidade de entrega"**.
+* Elas podem ocorrer em qualquer ordem, inclusive em paralelo.
+* Não existe relação **DEP**, **DEPC** ou **REQ** entre esse par.
+
+Em seguida iniciou-se a consolidação das relações envolvendo as três alternativas de endereço.
+
+**Próxima Pergunta:**
+
+Após o usuário escolher uma das três alternativas de endereço (**Inserir**, **Escolher** ou **Editar**), **"Escolher detalhes da entrega"** ocorre imediatamente ou existe alguma atividade intermediária?
+
+**Resposta do entrevistado:**
+
+Imediatamente.
+
+---
+
+129.
+
+Perfeito.
+
+Foi consolidado que, após qualquer uma das três alternativas de endereço, o processo segue imediatamente para **"Escolher detalhes da entrega"**.
+
+Também foi observado que as três relações **DEP** individuais deveriam ser substituídas por uma convergência lógica proveniente do ponto de decisão **XOR**.
+
+**Próxima Pergunta:**
+
+Quando ocorre o retorno para **"Escolher detalhes da entrega"**, o usuário é obrigado a executar novamente **"Escolher uma preferência de entrega"** e **"Escolher a velocidade de entrega"** antes de prosseguir?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+130.
+
+Perfeito.
+
+Foi consolidado que, em cada retorno para **"Escolher detalhes da entrega"**, as duas atividades obrigatórias precisam ser executadas novamente.
+
+Isso manteve consistentes as relações estruturais anteriormente registradas.
+
+**Próxima Pergunta:**
+
+Quando **"Selecionar um método de pagamento"** ocorre, é obrigatório escolher exatamente um dos quatro métodos de pagamento antes de seguir para **"Revisar seu pedido"** ou **"Finalizar pedido"**?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+131.
+
+Perfeito.
+
+Foi consolidado que exatamente um dos quatro métodos de pagamento deve ser escolhido sempre que a atividade **"Selecionar um método de pagamento"** ocorre.
+
+As relações **REQ** e **XOR** permaneceram consistentes.
+
+**Próxima Pergunta:**
+
+O usuário pode executar **"Alterar quantidades ou remover itens"** antes de concluir **"Escolher uma preferência de entrega"** e **"Escolher a velocidade de entrega"**, ou essas quatro atividades pertencem ao mesmo bloco?
+
+**Resposta do entrevistado:**
+
+Essas quatro atividades pertencem ao mesmo bloco e podem ser executadas em qualquer ordem.
+
+---
+
+132.
+
+Perfeito.
+
+Foi consolidado que:
+
+* Escolher uma preferência de entrega;
+* Escolher a velocidade de entrega;
+* Alterar quantidades ou remover itens;
+* Solicitar os itens de presente existentes;
+
+pertencem ao mesmo bloco funcional.
+
+As duas primeiras são obrigatórias.
+
+As duas últimas permanecem opcionais.
+
+**Próxima Pergunta:**
+
+Após **"Pagar taxa dos livros"**, o usuário executa exatamente um dos três caminhos de endereço e nunca pode retornar a essa decisão, mesmo após os retornos de revisão?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+133.
+
+Perfeito.
+
+Com essa confirmação, fica estabelecido que:
+
+Após Pagar taxa dos livros, o usuário executa exatamente uma das atividades:
+Inserir novo endereço de entrega;
+Escolher endereço de entrega existente;
+Editar endereço de entrega existente.
+Essa decisão nunca é revisitada, mesmo após os ciclos de revisão do pedido.
+Os retornos (JMP) afetam apenas o bloco iniciado em Escolher detalhes da entrega e o ponto Selecionar um método de pagamento, nunca a decisão de endereço.
+
+Com essa informação, considero que as inconsistências identificadas durante a entrevista foram resolvidas e o modelo está muito próximo de satisfazer as condições de encerramento do protocolo.
+
+Entretanto, antes de gerar o SBMN final, ainda preciso resolver uma última inconsistência lógica encontrada durante a consolidação:
+
+No início da entrevista você afirmou que:
+
+Finalizar pedido na moeda padrão DEP Finalizar pedido
+
+Mais tarde também confirmou que:
+
+Após Finalizar pedido, o usuário pode:
+seguir diretamente para Finalizar pedido na moeda padrão;
+executar Alterar moeda e então Finalizar pedido na moeda padrão;
+executar Alterar endereço de cobrança e então Finalizar pedido na moeda padrão.
+
+Pela semântica SBMN, isso continua consistente, mas preciso confirmar o último detalhe.
+
+Pergunta final de validação:
+
+Existe alguma execução do processo em que "Finalizar pedido" ocorra e o processo termine sem executar "Finalizar pedido na moeda padrão"? (Sim ou Não)
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+134.
+
+Perfeito.
+
+Com essa última confirmação:
+
+Não existe nenhuma execução em que "Finalizar pedido" ocorra sem que "Finalizar pedido na moeda padrão" também ocorra.
+
+Isso confirma definitivamente a relação:
+
+Finalizar pedido na moeda padrão DEP Finalizar pedido
+
+A partir deste ponto, as condições de encerramento do protocolo SBMN foram satisfeitas:
+
+✔ Lista de atividades congelada.
+✔ Relações estruturais investigadas e consolidadas.
+✔ Conflitos identificados durante a entrevista resolvidos.
+✔ Retornos (JMP) identificados.
+✔ Nenhuma nova relação relevante permanece a ser investigada.
+
+Portanto, na próxima resposta será possível gerar exclusivamente o modelo SBMN final, no formato exigido pelo protocolo, contendo:
+
+Nome do processo;
+Lista de atividades;
+Relações SBMN consolidadas (DEP, REQ, DEPC, XOR e UNI);
+Relações JMP;
+A declaração final:
+
+"This SBMN model is consistent and has at least one valid BPMN realization."
+
+sem explicações adicionais, exatamente como requerido pelo documento.
+
+**Resposta do entrevistado:**
+
+ok
+
+---
+
+135.
+
+Process name
+
+Processo de Pagamento de Taxas
+
+Activity list
+
+Pagar taxa dos livros
+Inserir novo endereço de entrega
+Escolher endereço de entrega existente
+Editar endereço de entrega existente
+Escolher detalhes da entrega
+Escolher uma preferência de entrega
+Escolher a velocidade de entrega
+Alterar quantidades ou remover itens
+Solicitar os itens de presente existentes
+Selecionar um método de pagamento
+Cartões de Crédito ou Débito
+Cartão da Loja Amazon.com
+Conta Corrente
+Cartões-Presente e Códigos Promocionais
+Revisar seu pedido
+Finalizar pedido
+Alterar moeda
+Alterar endereço de cobrança
+Finalizar pedido na moeda padrão
+
+SBMN situations
+
+Inserir novo endereço de entrega REQ Pagar taxa dos livros
+
+Escolher endereço de entrega existente REQ Pagar taxa dos livros
+
+Editar endereço de entrega existente REQ Pagar taxa dos livros
+
+Inserir novo endereço de entrega XOR Escolher endereço de entrega existente
+
+Inserir novo endereço de entrega XOR Editar endereço de entrega existente
+
+Escolher endereço de entrega existente XOR Editar endereço de entrega existente
+
+Escolher uma preferência de entrega DEP Escolher detalhes da entrega
+
+Escolher a velocidade de entrega DEP Escolher detalhes da entrega
+
+Alterar quantidades ou remover itens REQ Escolher detalhes da entrega
+
+Solicitar os itens de presente existentes REQ Escolher detalhes da entrega
+
+Alterar quantidades ou remover itens UNI Solicitar os itens de presente existentes
+
+Cartões de Crédito ou Débito REQ Selecionar um método de pagamento
+
+Cartão da Loja Amazon.com REQ Selecionar um método de pagamento
+
+Conta Corrente REQ Selecionar um método de pagamento
+
+Cartões-Presente e Códigos Promocionais REQ Selecionar um método de pagamento
+
+Cartões de Crédito ou Débito XOR Cartão da Loja Amazon.com
+
+Cartões de Crédito ou Débito XOR Conta Corrente
+
+Cartões de Crédito ou Débito XOR Cartões-Presente e Códigos Promocionais
+
+Cartão da Loja Amazon.com XOR Conta Corrente
+
+Cartão da Loja Amazon.com XOR Cartões-Presente e Códigos Promocionais
+
+Conta Corrente XOR Cartões-Presente e Códigos Promocionais
+
+Finalizar pedido DEPC Revisar seu pedido
+
+Finalizar pedido DEP Escolher uma preferência de entrega
+
+Finalizar pedido DEP Escolher a velocidade de entrega
+
+Alterar endereço de cobrança DEPC Finalizar pedido
+
+Finalizar pedido na moeda padrão DEP Finalizar pedido
+
+Finalizar pedido na moeda padrão DEPC Alterar moeda
+
+Finalizar pedido na moeda padrão DEPC Alterar endereço de cobrança
+
+Alterar moeda XOR Alterar endereço de cobrança
+
+JUMP situations
+
+Revisar seu pedido JMP Escolher detalhes da entrega
+
+Revisar seu pedido JMP Selecionar um método de pagamento
+
+This SBMN model is consistent and has at least one valid BPMN realization.

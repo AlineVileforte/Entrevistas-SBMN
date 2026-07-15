@@ -1,0 +1,53 @@
+Inserir novo endereço de entrega XOR Escolher endereço de entrega existente
+Inserir novo endereço de entrega XOR Editar endereço de entrega existente
+Escolher endereço de entrega existente XOR Editar endereço de entrega existente
+Inserir novo endereço de entrega DEP Pagar taxa dos livros
+Escolher endereço de entrega existente DEP Pagar taxa dos livros
+Editar endereço de entrega existente DEP Pagar taxa dos livros
+Escolher detalhes da entrega DEPC Inserir novo endereço de entrega
+Escolher detalhes da entrega DEPC Escolher endereço de entrega existente
+Escolher detalhes da entrega DEPC Editar endereço de entrega existente
+Escolher uma preferência de entrega DEP Escolher detalhes da entrega
+Escolher a velocidade de entrega DEP Escolher detalhes da entrega
+Alterar quantidades ou remover itens DEP Escolher detalhes da entrega
+Solicitar os itens de presente existentes DEP Escolher detalhes da entrega
+Alterar quantidades ou remover itens UNI Solicitar os itens de presente existentes
+Selecionar um método de pagamento DEP Escolher uma preferência de entrega
+Selecionar um método de pagamento DEP Escolher a velocidade de entrega
+Selecionar um método de pagamento DEPC Alterar quantidades ou remover itens
+Selecionar um método de pagamento DEPC Solicitar os itens de presente existentes
+Cartões de Crédito ou Débito DEP Selecionar um método de pagamento
+Cartão da Loja Amazon.com DEP Selecionar um método de pagamento
+Conta Corrente DEP Selecionar um método de pagamento
+Cartões-Presente e Códigos Promocionais DEP Selecionar um método de pagamento
+Cartões de Crédito ou Débito XOR Cartão da Loja Amazon.com
+Cartões de Crédito ou Débito XOR Conta Corrente
+Cartões de Crédito ou Débito XOR Cartões-Presente e Códigos Promocionais
+Cartão da Loja Amazon.com XOR Conta Corrente
+Cartão da Loja Amazon.com XOR Cartões-Presente e Códigos Promocionais
+Conta Corrente XOR Cartões-Presente e Códigos Promocionais
+Revisar seu pedido DEPC Cartões de Crédito ou Débito
+Revisar seu pedido DEPC Cartão da Loja Amazon.com
+Revisar seu pedido DEPC Conta Corrente
+Revisar seu pedido DEPC Cartões-Presente e Códigos Promocionais
+Revisar seu pedido DEP Escolher uma preferência de entrega
+Revisar seu pedido DEP Escolher a velocidade de entrega
+Revisar seu pedido DEPC Alterar quantidades ou remover itens
+Revisar seu pedido DEPC Solicitar os itens de presente existentes
+Finalizar pedido XOR Revisar seu pedido
+Finalizar pedido DEP Escolher uma preferência de entrega
+Finalizar pedido DEP Escolher a velocidade de entrega
+Finalizar pedido DEPC Alterar quantidades ou remover itens
+Finalizar pedido DEPC Solicitar os itens de presente 
+Finalizar pedido DEPC Cartões de Crédito ou Débito
+Finalizar pedido DEPC Cartão da Loja Amazon.com
+Finalizar pedido DEPC Conta Corrente
+Finalizar pedido DEPC Cartões-Presente e Códigos Promocionais
+Alterar endereço de cobrança DEPC Finalizar pedido
+Alterar moeda DEPC Finalizar pedido
+Finalizar pedido na moeda padrão DEP Finalizar pedido
+Finalizar pedido na moeda padrão DEPC Alterar moeda
+Finalizar pedido na moeda padrão DEPC Alterar endereço de cobrança
+Alterar moeda XOR Alterar endereço de cobrança
+Revisar seu pedido JMP Escolher detalhes da entrega
+Revisar seu pedido JMP Selecionar um método de pagamento

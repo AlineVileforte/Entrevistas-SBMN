@@ -1,0 +1,591 @@
+{
+  "fragments": [
+    {
+      "id": "Default_init",
+      "type": "START_EVENT",
+      "branch": "0.0.",
+      "inComing": [],
+      "outComing": [
+        "Par0"
+      ]
+    },
+    {
+      "id": "Par0",
+      "name": "PAR",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.",
+      "inComing": [
+        "Default_init"
+      ],
+      "outComing": [
+        "G0",
+        "XOR_JMPBB_RSP1_EDE1"
+      ]
+    },
+    {
+      "id": "EDE1",
+      "name": "Escolher detalhes da entrega",
+      "type": "TASK",
+      "branch": "0.0.1.1.",
+      "inComing": [
+        "Par0",
+        "XOR_JMPBB_RSP1_EDE1"
+      ],
+      "outComing": [
+        "Par5"
+      ]
+    },
+    {
+      "id": "G0",
+      "name": "G0",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.2.",
+      "inComing": [
+        "Par0"
+      ],
+      "outComing": [
+        "RSP1",
+        "XORCLOSE10"
+      ]
+    },
+    {
+      "id": "RSP1",
+      "name": "Revisar seu pedido",
+      "type": "TASK",
+      "branch": "0.0.1.2.1.2.",
+      "inComing": [
+        "G0"
+      ],
+      "outComing": [
+        "XOR_JMPAA_RSP1"
+      ]
+    },
+    {
+      "id": "Par5",
+      "name": "PAR",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.1.1.",
+      "inComing": [
+        "EDE1"
+      ],
+      "outComing": [
+        "PTL1",
+        "G1"
+      ]
+    },
+    {
+      "id": "PTL1",
+      "name": "Pagar taxa dos livros",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.1.",
+      "inComing": [
+        "Par5"
+      ],
+      "outComing": [
+        "XOR_JMPBB_RSP1_SMP1"
+      ]
+    },
+    {
+      "id": "G1",
+      "name": "G1",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.1.2.2.",
+      "inComing": [
+        "Par5"
+      ],
+      "outComing": [
+        "AQRI1",
+        "SIPE1"
+      ]
+    },
+    {
+      "id": "AQRI1",
+      "name": "Alterar quantidades ou remover itens",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.2.2.1.",
+      "inComing": [
+        "G1"
+      ],
+      "outComing": [
+        "XORCLOSE12"
+      ]
+    },
+    {
+      "id": "SIPE1",
+      "name": "Solicitar os itens de presente existentes",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.2.2.2.",
+      "inComing": [
+        "G1"
+      ],
+      "outComing": [
+        "XORCLOSE12"
+      ]
+    },
+    {
+      "id": "XORCLOSE10",
+      "name": "XORCLOSE10",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.2.1.1.",
+      "inComing": [
+        "G0",
+        "XOR_JMPAA_RSP1"
+      ],
+      "outComing": [
+        "G3"
+      ]
+    },
+    {
+      "id": "SMP1",
+      "name": "Selecionar um método de pagamento",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.1.",
+      "inComing": [
+        "PTL1",
+        "XOR_JMPBB_RSP1_SMP1"
+      ],
+      "outComing": [
+        "EPD1"
+      ]
+    },
+    {
+      "id": "XORCLOSE12",
+      "name": "XORCLOSE12",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.1.2.2.2.1.",
+      "inComing": [
+        "AQRI1",
+        "SIPE1"
+      ],
+      "outComing": [
+        "EVD1"
+      ]
+    },
+    {
+      "id": "G3",
+      "name": "G3",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.2.",
+      "inComing": [
+        "XORCLOSE10"
+      ],
+      "outComing": [
+        "INEE1",
+        "G6"
+      ]
+    },
+    {
+      "id": "INEE1",
+      "name": "Inserir novo endereço de entrega",
+      "type": "TASK",
+      "branch": "0.0.1.2.1.1.",
+      "inComing": [
+        "G3"
+      ],
+      "outComing": [
+        "XORCLOSE25"
+      ]
+    },
+    {
+      "id": "EPD1",
+      "name": "Escolher uma preferência de entrega",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.1.",
+      "inComing": [
+        "SMP1"
+      ],
+      "outComing": [
+        "G7"
+      ]
+    },
+    {
+      "id": "EVD1",
+      "name": "Escolher a velocidade de entrega",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.2.",
+      "inComing": [
+        "XORCLOSE12"
+      ],
+      "outComing": [
+        "PARCLOSE32"
+      ]
+    },
+    {
+      "id": "G6",
+      "name": "G6",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.2.1.2.",
+      "inComing": [
+        "G3"
+      ],
+      "outComing": [
+        "EEDE1",
+        "EDEE1"
+      ]
+    },
+    {
+      "id": "EEDE1",
+      "name": "Escolher endereço de entrega existente",
+      "type": "TASK",
+      "branch": "0.0.1.2.1.2.1.1.",
+      "inComing": [
+        "G6"
+      ],
+      "outComing": [
+        "XORCLOSE22"
+      ]
+    },
+    {
+      "id": "EDEE1",
+      "name": "Editar endereço de entrega existente",
+      "type": "TASK",
+      "branch": "0.0.1.2.1.2.1.2.",
+      "inComing": [
+        "G6"
+      ],
+      "outComing": [
+        "XORCLOSE22"
+      ]
+    },
+    {
+      "id": "G7",
+      "name": "G7",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.1.2.1.",
+      "inComing": [
+        "EPD1"
+      ],
+      "outComing": [
+        "CCD1",
+        "G8"
+      ]
+    },
+    {
+      "id": "CCD1",
+      "name": "Cartões de Crédito ou Débito",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.1.2.1.",
+      "inComing": [
+        "G7"
+      ],
+      "outComing": [
+        "XORCLOSE31"
+      ]
+    },
+    {
+      "id": "XORCLOSE22",
+      "name": "XORCLOSE22",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.2.1.2.1.1.",
+      "inComing": [
+        "EEDE1",
+        "EDEE1"
+      ],
+      "outComing": [
+        "XORCLOSE25"
+      ]
+    },
+    {
+      "id": "G8",
+      "name": "G8",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.1.2.1.2.2.",
+      "inComing": [
+        "G7"
+      ],
+      "outComing": [
+        "CLA1",
+        "G9"
+      ]
+    },
+    {
+      "id": "CLA1",
+      "name": "Cartão da Loja Amazon.com",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.1.2.2.2.1.",
+      "inComing": [
+        "G8"
+      ],
+      "outComing": [
+        "XORCLOSE30"
+      ]
+    },
+    {
+      "id": "XORCLOSE25",
+      "name": "XORCLOSE25",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.2.1.1.",
+      "inComing": [
+        "INEE1",
+        "XORCLOSE22"
+      ],
+      "outComing": [
+        "PARCLOSE33"
+      ]
+    },
+    {
+      "id": "G9",
+      "name": "G9",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.1.2.1.2.2.2.2.",
+      "inComing": [
+        "G8"
+      ],
+      "outComing": [
+        "CC1",
+        "CPCP1"
+      ]
+    },
+    {
+      "id": "CC1",
+      "name": "Conta Corrente",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.1.2.2.2.2.2.1.",
+      "inComing": [
+        "G9"
+      ],
+      "outComing": [
+        "XORCLOSE29"
+      ]
+    },
+    {
+      "id": "CPCP1",
+      "name": "Cartões-Presente e Códigos Promocionais",
+      "type": "TASK",
+      "branch": "0.0.1.1.2.1.2.2.2.2.2.2.",
+      "inComing": [
+        "G9"
+      ],
+      "outComing": [
+        "XORCLOSE29"
+      ]
+    },
+    {
+      "id": "XORCLOSE29",
+      "name": "XORCLOSE29",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.1.2.1.2.2.2.2.2.1.",
+      "inComing": [
+        "CC1",
+        "CPCP1"
+      ],
+      "outComing": [
+        "XORCLOSE30"
+      ]
+    },
+    {
+      "id": "XORCLOSE30",
+      "name": "XORCLOSE30",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.1.2.1.2.2.2.1.",
+      "inComing": [
+        "CLA1",
+        "XORCLOSE29"
+      ],
+      "outComing": [
+        "XORCLOSE31"
+      ]
+    },
+    {
+      "id": "XORCLOSE31",
+      "name": "XORCLOSE31",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.1.2.1.2.1.",
+      "inComing": [
+        "CCD1",
+        "XORCLOSE30"
+      ],
+      "outComing": [
+        "PARCLOSE32"
+      ]
+    },
+    {
+      "id": "PARCLOSE32",
+      "name": "PARCLOSE32",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.1.1.2.2.",
+      "inComing": [
+        "EVD1",
+        "XORCLOSE31"
+      ],
+      "outComing": [
+        "PARCLOSE33"
+      ]
+    },
+    {
+      "id": "PARCLOSE33",
+      "name": "PARCLOSE33",
+      "type": "PARALLEL_GATEWAY",
+      "branch": "0.0.1.2.",
+      "inComing": [
+        "XORCLOSE25",
+        "PARCLOSE32"
+      ],
+      "outComing": [
+        "G10"
+      ]
+    },
+    {
+      "id": "G10",
+      "name": "G10",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.",
+      "inComing": [
+        "PARCLOSE33"
+      ],
+      "outComing": [
+        "FP1",
+        "XORCLOSE43"
+      ]
+    },
+    {
+      "id": "FP1",
+      "name": "Finalizar pedido",
+      "type": "TASK",
+      "branch": "0.0.0.2.",
+      "inComing": [
+        "G10"
+      ],
+      "outComing": [
+        "G11"
+      ]
+    },
+    {
+      "id": "G11",
+      "name": "G11",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.0.2.",
+      "inComing": [
+        "FP1"
+      ],
+      "outComing": [
+        "AM1",
+        "AEC1"
+      ]
+    },
+    {
+      "id": "AM1",
+      "name": "Alterar moeda",
+      "type": "TASK",
+      "branch": "0.0.0.2.0.1.",
+      "inComing": [
+        "G11"
+      ],
+      "outComing": [
+        "FPM1__1"
+      ]
+    },
+    {
+      "id": "AEC1",
+      "name": "Alterar endereço de cobrança",
+      "type": "TASK",
+      "branch": "0.0.0.2.0.2.",
+      "inComing": [
+        "G11"
+      ],
+      "outComing": [
+        "FPM1__2"
+      ]
+    },
+    {
+      "id": "FPM1__1",
+      "name": "Finalizar pedido na moeda padrão",
+      "type": "TASK",
+      "branch": "0.0.0.2.0.1.",
+      "inComing": [
+        "AM1"
+      ],
+      "outComing": [
+        "XORCLOSE42"
+      ]
+    },
+    {
+      "id": "FPM1__2",
+      "name": "Finalizar pedido na moeda padrão",
+      "type": "TASK",
+      "branch": "0.0.0.2.0.2.",
+      "inComing": [
+        "AEC1"
+      ],
+      "outComing": [
+        "XORCLOSE42"
+      ]
+    },
+    {
+      "id": "XORCLOSE42",
+      "name": "XORCLOSE42",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.0.2.0.1.",
+      "inComing": [
+        "FPM1__1",
+        "FPM1__2"
+      ],
+      "outComing": [
+        "XORCLOSE43"
+      ]
+    },
+    {
+      "id": "XORCLOSE43",
+      "name": "XORCLOSE43",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.0.1.",
+      "inComing": [
+        "XORCLOSE42",
+        "G10"
+      ],
+      "outComing": [
+        "END"
+      ]
+    },
+    {
+      "id": "END",
+      "name": "END_EVENT",
+      "type": "END_EVENT",
+      "branch": "0.0.0.1.",
+      "inComing": [
+        "XORCLOSE43"
+      ],
+      "outComing": []
+    },
+    {
+      "id": "XOR_JMPAA_RSP1",
+      "name": "XOR_JMPAA_Revisar seu pedido",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.2.1.2.",
+      "inComing": [
+        "RSP1"
+      ],
+      "outComing": [
+        "XORCLOSE10",
+        "XOR_JMPBB_RSP1_EDE1",
+        "XOR_JMPBB_RSP1_SMP1"
+      ]
+    },
+    {
+      "id": "XOR_JMPBB_RSP1_EDE1",
+      "name": "XOR_JMPBB_Escolher detalhes da entrega",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.1.",
+      "inComing": [
+        "XOR_JMPAA_RSP1",
+        "Par0"
+      ],
+      "outComing": [
+        "EDE1"
+      ]
+    },
+    {
+      "id": "XOR_JMPBB_RSP1_SMP1",
+      "name": "XOR_JMPBB_Selecionar um método de pagamento",
+      "type": "EXCLUSIVE_GATEWAY",
+      "branch": "0.0.1.1.2.1.",
+      "inComing": [
+        "XOR_JMPAA_RSP1",
+        "PTL1"
+      ],
+      "outComing": [
+        "SMP1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1524 @@
+# Pergunta 1
+
+**Próxima pergunta:**
+
+Qual idioma você gostaria de utilizar na entrevista? (Por exemplo: Português, Inglês, Espanhol etc.)
+
+**Resposta do entrevistado:**
+
+Portuguese
+
+---
+
+# Pergunta 2
+
+Perfeito! A entrevista será conduzida em **português**. Seguirei o protocolo SBMN e farei **uma pergunta por vez**.
+
+**Próxima pergunta:**
+
+Qual é o nome do processo que você deseja modelar?
+
+**Resposta do entrevistado:**
+
+Processo de Reabastecimento de Estoque
+
+---
+
+# Pergunta 3
+
+Perfeito.
+
+**Nome do processo registrado (e congelado):**
+
+* Processo de Reabastecimento de Estoque
+
+**Próxima pergunta:**
+
+A qual domínio ou área esse processo pertence? (Por exemplo: logística, cadeia de suprimentos, varejo, manufatura, saúde etc.)
+
+**Resposta do entrevistado:**
+
+Gestão da Cadeia de Suprimentos
+
+---
+
+# Pergunta 4
+
+Perfeito.
+
+**Informações registradas até o momento:**
+
+* Nome do processo: Processo de Reabastecimento de Estoque
+* Domínio: Gestão da Cadeia de Suprimentos
+
+**Próxima pergunta:**
+
+Quais são todas as atividades (AFOs) que compõem esse processo?
+
+Por favor, liste todas as atividades que fazem parte do processo de reabastecimento de estoque. Após essa etapa, a lista será congelada e não poderá ser alterada durante a entrevista.
+
+**Resposta do entrevistado:**
+
+* Verificar Nível Atual de Estoque
+* Criar Pedido de Compra
+* Revisar Pedido de Compra
+* Retrabalhar Pedido de Compra
+* Aprovar Pedido de Compra
+* Reservar Recursos Financeiros para a Compra
+* Enviar Pedido de Compra ao Fornecedor
+* Receber Romaneio de Entrega do Pedido
+* Registrar Romaneio de Entrega do Pedido
+* Receber Fatura do Pedido
+* Registrar Fatura do Pedido
+* Liberar Recursos Financeiros
+* Efetuar Pagamento ao Fornecedor
+
+---
+
+# Pergunta 5
+
+Perfeito. A lista de atividades foi registrada e, conforme o protocolo SBMN, **a lista de AFOs está agora congelada**, não sendo mais permitida a inclusão ou remoção de atividades durante a entrevista.
+
+Agora iniciaremos a elicitação das relações, seguindo a política de priorizar pares adjacentes.
+
+**Próxima pergunta:**
+
+**"Criar Pedido de Compra" depende da execução prévia de "Verificar Nível Atual de Estoque"?**
+
+Em outras palavras, **é obrigatório verificar o nível atual de estoque antes de criar um pedido de compra?**
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+# Pergunta 6
+
+Entendido. Foi detectada uma possível relação de dependência, mas ainda **não posso classificá-la**. Pelo protocolo SBMN, preciso realizar a clarificação temporal antes de registrar a relação.
+
+**Próxima pergunta:**
+
+Quando **"Criar Pedido de Compra"** ocorre, **"Verificar Nível Atual de Estoque"** deve ocorrer:
+
+1. Antes;
+2. Depois; ou
+3. A ordem é irrelevante/desconhecida?
+
+**Resposta do entrevistado:**
+
+Antes.
+
+---
+
+# Pergunta 7
+
+Entendido. Foi estabelecido que **"Verificar Nível Atual de Estoque" deve ocorrer antes de "Criar Pedido de Compra"**. Ainda falta a segunda etapa obrigatória da classificação.
+
+**Próxima pergunta:**
+
+**"Verificar Nível Atual de Estoque" pode ocorrer sem que "Criar Pedido de Compra" ocorra em alguma execução do processo?**
+
+Ou seja, existem execuções em que o nível de estoque é verificado, mas **nenhum pedido de compra é criado**?
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+# Pergunta 8
+
+Entendido.
+
+Com base nas suas respostas:
+
+* "Criar Pedido de Compra" não pode ocorrer sem "Verificar Nível Atual de Estoque";
+* "Verificar Nível Atual de Estoque" deve ocorrer **antes** de "Criar Pedido de Compra";
+* "Verificar Nível Atual de Estoque" **pode** ocorrer sem que "Criar Pedido de Compra" ocorra.
+
+A relação é classificada como:
+
+**Criar Pedido de Compra REQ Verificar Nível Atual de Estoque**
+
+Prosseguindo com o próximo par adjacente.
+
+**Próxima pergunta:**
+
+**"Revisar Pedido de Compra" depende da execução prévia de "Criar Pedido de Compra"?**
+
+Em outras palavras, **é obrigatório criar um pedido de compra antes de revisá-lo?**
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+# Pergunta 9
+
+Entendido. Foi detectada uma possível relação de dependência, mas ainda **não posso classificá-la**. Pelo protocolo SBMN, preciso realizar a clarificação temporal antes de registrar a relação.
+
+**Próxima pergunta:**
+
+Quando **"Revisar Pedido de Compra"** ocorre, **"Criar Pedido de Compra"** deve ocorrer:
+
+1. Antes;
+2. Depois; ou
+3. A ordem é irrelevante/desconhecida?
+
+**Resposta do entrevistado:**
+
+Antes.
+
+---
+
+# Pergunta 10
+
+Entendido. Foi estabelecido que **"Criar Pedido de Compra" deve ocorrer antes de "Revisar Pedido de Compra"**. Ainda falta a segunda etapa obrigatória da classificação da relação.
+
+**Próxima pergunta:**
+
+**"Criar Pedido de Compra" pode ocorrer sem que "Revisar Pedido de Compra" ocorra em alguma execução do processo?**
+
+Ou seja, existem execuções em que um pedido de compra é criado, mas **não é revisado**?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+# Pergunta 11
+
+Entendido.
+
+Com base nas suas respostas:
+
+* "Revisar Pedido de Compra" não pode ocorrer sem "Criar Pedido de Compra";
+* "Criar Pedido de Compra" deve ocorrer **antes** de "Revisar Pedido de Compra";
+* "Criar Pedido de Compra" **não pode** ocorrer sem que "Revisar Pedido de Compra" ocorra.
+
+A relação é classificada como:
+
+**Revisar Pedido de Compra DEP Criar Pedido de Compra**
+
+**Próxima pergunta:**
+
+**"Retrabalhar Pedido de Compra" depende da execução prévia de "Revisar Pedido de Compra"?**
+
+Em outras palavras, **é obrigatório revisar um pedido de compra antes de retrabalhá-lo?**
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+# Pergunta 12
+
+Entendido. Foi detectada uma possível relação de dependência, mas ainda **não posso classificá-la**. Pelo protocolo SBMN, preciso realizar a clarificação temporal antes de registrar a relação.
+
+**Próxima pergunta:**
+
+Quando **"Retrabalhar Pedido de Compra"** ocorre, **"Revisar Pedido de Compra"** deve ocorrer:
+
+1. Antes;
+2. Depois; ou
+3. A ordem é irrelevante/desconhecida?
+
+**Resposta do entrevistado:**
+
+Primeiro "Revisar Pedido de Compra" ocorre antes; depois de "Retrabalhar Pedido de Compra", ele volta a revisar o pedido de compra.
+
+---
+
+# Pergunta 13
+
+Entendido. Sua resposta estabelece dois fatos distintos:
+
+1. Na primeira ocorrência, **"Revisar Pedido de Compra" ocorre antes de "Retrabalhar Pedido de Compra"**.
+2. Após **"Retrabalhar Pedido de Compra"**, o processo **retorna para "Revisar Pedido de Compra"**, caracterizando um possível **JMP (retorno de fluxo)**, que será avaliado apenas na fase específica de detecção de JMP.
+
+Neste momento, para classificar corretamente a relação entre essas duas atividades, ainda falta a segunda pergunta obrigatória.
+
+**Próxima pergunta:**
+
+**"Revisar Pedido de Compra" pode ocorrer sem que "Retrabalhar Pedido de Compra" ocorra em alguma execução do processo?**
+
+Ou seja, existem execuções em que o pedido é revisado e **não precisa ser retrabalhado**?
+
+**Resposta do entrevistado:**
+
+Sim, se o pedido for aprovado, ele só retrabalha se o pedido for rejeitado.
+
+---
+
+# Pergunta 14
+
+Entendido.
+
+Com base nas suas respostas:
+
+* "Retrabalhar Pedido de Compra" não pode ocorrer sem que "Revisar Pedido de Compra" tenha ocorrido antes;
+* "Revisar Pedido de Compra" ocorre **antes** de "Retrabalhar Pedido de Compra";
+* "Revisar Pedido de Compra" **pode** ocorrer sem que "Retrabalhar Pedido de Compra" ocorra (quando o pedido é aprovado).
+
+A relação é classificada como:
+
+**Retrabalhar Pedido de Compra REQ Revisar Pedido de Compra**
+
+Também foi registrada internamente a informação de que, quando ocorre retrabalho, **o fluxo retorna para "Revisar Pedido de Compra"**. Essa informação será validada na fase de detecção de JMP.
+
+**Próxima pergunta:**
+
+**"Aprovar Pedido de Compra" depende da execução prévia de "Retrabalhar Pedido de Compra"?**
+
+Em outras palavras, **é obrigatório retrabalhar um pedido antes de aprová-lo?**
+
+**Resposta do entrevistado:**
+
+Ele só [retrabalha] se o pedido for rejeitado. Então ele precisa retrabalhar para que até ele seja aprovado, mas pode acontecer do pedido ser aprovado sem retrabalhar.
+
+---
+
+# Pergunta 15
+
+Entendido. Sua resposta indica que **não é obrigatório retrabalhar o pedido antes da aprovação**, pois há execuções em que o pedido é aprovado diretamente após a revisão. Portanto, **não posso concluir uma dependência de "Aprovar Pedido de Compra" em relação a "Retrabalhar Pedido de Compra"**.
+
+Como você confirmou uma dependência, o protocolo exige a clarificação temporal.
+
+**Próxima pergunta:**
+
+Quando **"Aprovar Pedido de Compra"** ocorre **após um retrabalho**, **"Retrabalhar Pedido de Compra"** deve ocorrer:
+
+1. Antes;
+2. Depois; ou
+3. A ordem é irrelevante/desconhecida?
+
+**Resposta do entrevistado:**
+
+Antes.
+
+# Pergunta 16
+
+Entendido. Foi estabelecido que **"Retrabalhar Pedido de Compra" ocorre antes de "Aprovar Pedido de Compra"** quando há retrabalho.
+
+**Próxima pergunta:**
+
+**"Retrabalhar Pedido de Compra" pode ocorrer sem que "Aprovar Pedido de Compra" ocorra em alguma execução do processo?**
+
+Ou seja, existe algum caso em que o pedido é retrabalhado, mas **nunca chega a ser aprovado**?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+# Pergunta 17
+
+Entendido.
+
+Com base nas suas respostas:
+
+* Quando há retrabalho, ele ocorre **antes** da aprovação.
+* Todo retrabalho acaba levando a uma aprovação (não existem execuções em que o pedido é retrabalhado e nunca é aprovado).
+* Entretanto, a aprovação pode ocorrer sem retrabalho, quando o pedido é aprovado diretamente após a revisão.
+
+Como a dependência entre essas atividades existe **apenas nas execuções em que ocorre o retrabalho**, trata-se de uma **dependência circunstancial**, e não de uma dependência estrutural incondicional.
+
+Assim, a relação é classificada como:
+
+**Aprovar Pedido de Compra DEPC Retrabalhar Pedido de Compra**
+
+**Próxima pergunta:**
+
+**"Aprovar Pedido de Compra" depende da execução prévia de "Revisar Pedido de Compra"?**
+
+Em outras palavras, **é obrigatório revisar um pedido de compra antes de aprová-lo?**
+
+**Resposta do entrevistado:**
+
+Sim, é na revisão que ele aprova ou rejeita.
+
+---
+
+# Pergunta 18
+
+Entendido. Foi detectada uma possível relação de dependência, mas ainda **não posso classificá-la**. Pelo protocolo SBMN, preciso concluir a sequência obrigatória de classificação.
+
+Você confirmou que:
+
+* **"Revisar Pedido de Compra" é a atividade na qual o pedido é aprovado ou rejeitado**;
+* Portanto, quando ocorre **"Aprovar Pedido de Compra"**, a atividade **"Revisar Pedido de Compra"** deve ocorrer antes.
+
+**Próxima pergunta:**
+
+**"Revisar Pedido de Compra" pode ocorrer sem que "Aprovar Pedido de Compra" ocorra em alguma execução do processo?**
+
+Ou seja, existem execuções em que um pedido é revisado, **mas não é aprovado nessa revisão** (por exemplo, ele é rejeitado e segue para retrabalho)?
+
+**Resposta do entrevistado:**
+
+Não, porque para o processo dar andamento, ele precisa do pedido aprovado.
+
+---
+
+# Pergunta 19
+
+Entendido.
+
+Com base nas suas respostas:
+
+* "Aprovar Pedido de Compra" não pode ocorrer sem que "Revisar Pedido de Compra" tenha ocorrido antes;
+* "Revisar Pedido de Compra" deve ocorrer **antes** da aprovação;
+* "Revisar Pedido de Compra" não pode ocorrer sem que, ao final da execução do processo, haja uma aprovação do pedido.
+
+A relação é classificada como:
+
+**Aprovar Pedido de Compra DEP Revisar Pedido de Compra**
+
+**Próxima pergunta:**
+
+**"Reservar Recursos Financeiros para a Compra" depende da execução prévia de "Aprovar Pedido de Compra"?**
+
+Em outras palavras, **é obrigatório aprovar o pedido de compra antes de reservar os recursos financeiros para a compra?**
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+# Pergunta 20
+
+Entendido. Foi detectada uma possível relação de dependência, mas ainda **não posso classificá-la**. Pelo protocolo SBMN, preciso realizar a clarificação temporal antes de registrar a relação.
+
+**Próxima pergunta:**
+
+Quando **"Reservar Recursos Financeiros para a Compra"** ocorre, **"Aprovar Pedido de Compra"** deve ocorrer:
+
+1. Antes;
+2. Depois; ou
+3. A ordem é irrelevante/desconhecida?
+
+**Resposta do entrevistado:**
+
+Antes.
+
+---
+
+# Pergunta 21
+
+Entendido. Foi estabelecido que **"Aprovar Pedido de Compra" deve ocorrer antes de "Reservar Recursos Financeiros para a Compra"**. Ainda falta a segunda etapa obrigatória da classificação da relação.
+
+**Próxima pergunta:**
+
+**"Aprovar Pedido de Compra" pode ocorrer sem que "Reservar Recursos Financeiros para a Compra" ocorra em alguma execução do processo?**
+
+Ou seja, existem execuções em que o pedido é aprovado, mas **os recursos financeiros não são reservados**?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+# Pergunta 22
+
+Entendido.
+
+Com base nas suas respostas:
+
+* **"Reservar Recursos Financeiros para a Compra"** não pode ocorrer sem que **"Aprovar Pedido de Compra"** tenha ocorrido antes;
+* **"Aprovar Pedido de Compra"** deve ocorrer **antes** da reserva de recursos financeiros;
+* **"Aprovar Pedido de Compra"** não pode ocorrer sem que os recursos financeiros sejam reservados.
+
+A relação é classificada como:
+
+**Reservar Recursos Financeiros para a Compra DEP Aprovar Pedido de Compra**
+
+**Próxima pergunta:**
+
+**"Enviar Pedido de Compra ao Fornecedor" depende da execução prévia de "Reservar Recursos Financeiros para a Compra"?**
+
+Em outras palavras, **é obrigatório reservar os recursos financeiros antes de enviar o pedido de compra ao fornecedor?**
+
+**Resposta do entrevistado:**
+
+Não, eles ocorrem juntos, quando o pedido é aprovado eles reservam o recurso e enviam o pedido para o fornecedor.
+
+---
+
+# Pergunta 23
+
+Entendido. Sua resposta indica que **"Enviar Pedido de Compra ao Fornecedor" não depende estruturalmente de "Reservar Recursos Financeiros para a Compra"**, pois ambas são iniciadas após a aprovação do pedido e podem ocorrer em paralelo.
+
+Entretanto, pelo protocolo SBMN, **não posso concluir independência com uma única resposta negativa**. É obrigatória a verificação da direção oposta antes de descartar uma relação de dependência.
+
+**Próxima pergunta:**
+
+**"Reservar Recursos Financeiros para a Compra" depende da execução prévia de "Enviar Pedido de Compra ao Fornecedor"?**
+
+Em outras palavras, **é obrigatório enviar o pedido ao fornecedor antes de reservar os recursos financeiros?**
+
+**Resposta do entrevistado:**
+
+Não, eles ocorrem juntos.
+
+---
+
+# Pergunta 24
+
+Entendido.
+
+Com suas respostas, foi estabelecido que:
+
+* **"Enviar Pedido de Compra ao Fornecedor" não depende de "Reservar Recursos Financeiros para a Compra".**
+* **"Reservar Recursos Financeiros para a Compra" também não depende de "Enviar Pedido de Compra ao Fornecedor".**
+
+Portanto, **não existe relação de DEP, DEPC ou REQ entre esse par de atividades**.
+
+Como não há dependência estrutural entre elas, o próximo passo do protocolo é avaliar uma possível relação de escolha ou coexistência.
+
+**Próxima pergunta:**
+
+É possível haver execuções do processo com:
+
+* apenas **"Reservar Recursos Financeiros para a Compra"**;
+* apenas **"Enviar Pedido de Compra ao Fornecedor"**; e
+* **ambas** as atividades?
+
+Ou, após a aprovação do pedido, **essas duas atividades sempre ocorrem juntas**, sem existir uma execução contendo apenas uma delas?
+
+**Resposta do entrevistado:**
+
+Somente ambas.
+
+---
+
+# Pergunta 25
+
+Entendido.
+
+Sua resposta indica que:
+
+* Não existem execuções com apenas **"Reservar Recursos Financeiros para a Compra"**.
+* Não existem execuções com apenas **"Enviar Pedido de Compra ao Fornecedor"**.
+* As duas atividades **sempre ocorrem juntas** após a aprovação.
+
+Assim:
+
+* **Não é possível registrar uma relação UNI**, pois UNI exige que existam execuções com apenas A, apenas B e ambas.
+* **Também não é possível registrar uma relação XOR**, pois as atividades coexistem.
+* **Nenhuma relação SBMN é inserida entre esse par**, uma vez que elas apenas ocorrem em paralelo.
+
+**Próxima pergunta:**
+
+**"Receber Romaneio de Entrega do Pedido" depende da execução prévia de "Enviar Pedido de Compra ao Fornecedor"?**
+
+Em outras palavras, **é obrigatório enviar o pedido ao fornecedor antes que o romaneio de entrega seja recebido?**
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+# Pergunta 26
+
+Entendido.
+
+**Próxima pergunta:**
+
+Quando **"Receber Romaneio de Entrega do Pedido"** ocorre, **"Enviar Pedido de Compra ao Fornecedor"** deve ocorrer:
+
+1. Antes;
+2. Depois; ou
+3. A ordem é irrelevante/desconhecida?
+
+**Resposta do entrevistado:**
+
+Antes.
+
+---
+
+# Pergunta 27
+
+Entendido. Foi estabelecido que **"Enviar Pedido de Compra ao Fornecedor" deve ocorrer antes de "Receber Romaneio de Entrega do Pedido"**. Ainda falta a segunda etapa obrigatória da classificação da relação.
+
+**Próxima pergunta:**
+
+**"Enviar Pedido de Compra ao Fornecedor" pode ocorrer sem que "Receber Romaneio de Entrega do Pedido" ocorra em alguma execução do processo?**
+
+Ou seja, existe alguma execução em que o pedido é enviado ao fornecedor, mas **o romaneio de entrega nunca é recebido**?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+# Pergunta 28
+
+Entendido.
+
+Com base nas suas respostas:
+
+* **"Receber Romaneio de Entrega do Pedido"** não pode ocorrer sem que **"Enviar Pedido de Compra ao Fornecedor"** tenha ocorrido antes;
+* **"Enviar Pedido de Compra ao Fornecedor"** deve ocorrer **antes** do recebimento do romaneio;
+* **"Enviar Pedido de Compra ao Fornecedor"** não pode ocorrer sem que o romaneio seja posteriormente recebido.
+
+A relação é classificada como:
+
+**Receber Romaneio de Entrega do Pedido DEP Enviar Pedido de Compra ao Fornecedor**
+
+**Próxima pergunta:**
+
+**"Registrar Romaneio de Entrega do Pedido" depende da execução prévia de "Receber Romaneio de Entrega do Pedido"?**
+
+Em outras palavras, **é obrigatório receber o romaneio de entrega antes de registrá-lo?**
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+# Pergunta 29
+
+Entendido. Foi detectada uma possível relação de dependência, mas ainda **não posso classificá-la**. Pelo protocolo SBMN, preciso realizar a clarificação temporal antes de registrar a relação.
+
+**Próxima pergunta:**
+
+Quando **"Registrar Romaneio de Entrega do Pedido"** ocorre, **"Receber Romaneio de Entrega do Pedido"** deve ocorrer:
+
+1. Antes;
+2. Depois; ou
+3. A ordem é irrelevante/desconhecida?
+
+**Resposta do entrevistado:**
+
+Antes.
+
+---
+
+# Pergunta 30
+
+Entendido. Foi estabelecido que **"Receber Romaneio de Entrega do Pedido" deve ocorrer antes de "Registrar Romaneio de Entrega do Pedido"**. Ainda falta a segunda etapa obrigatória da classificação da relação.
+
+**Próxima pergunta:**
+
+**"Receber Romaneio de Entrega do Pedido" pode ocorrer sem que "Registrar Romaneio de Entrega do Pedido" ocorra em alguma execução do processo?**
+
+Ou seja, existe alguma execução em que o romaneio é recebido, mas **não é registrado**?
+
+**Resposta do entrevistado:**
+
+Não.
+
+# Pergunta 31
+
+Entendido.
+
+Com base nas suas respostas:
+
+* **"Registrar Romaneio de Entrega do Pedido"** não pode ocorrer sem que **"Receber Romaneio de Entrega do Pedido"** tenha ocorrido antes;
+* **"Receber Romaneio de Entrega do Pedido"** deve ocorrer **antes** do registro;
+* **"Receber Romaneio de Entrega do Pedido"** **não pode** ocorrer sem que o romaneio seja registrado.
+
+A relação é classificada como:
+
+**Registrar Romaneio de Entrega do Pedido DEP Receber Romaneio de Entrega do Pedido**
+
+**Próxima pergunta:**
+
+**"Receber Fatura do Pedido" depende da execução prévia de "Registrar Romaneio de Entrega do Pedido"?**
+
+Em outras palavras, **é obrigatório registrar o romaneio de entrega antes de receber a fatura do pedido?**
+
+**Resposta do entrevistado:**
+
+Não, eles ocorrem juntos.
+
+---
+
+# Pergunta 32
+
+Entendido. Sua resposta indica que **"Receber Fatura do Pedido" não depende estruturalmente de "Registrar Romaneio de Entrega do Pedido"**, pois ambas podem ocorrer em paralelo.
+
+Entretanto, pelo protocolo SBMN, **não posso concluir independência com uma única resposta negativa**. É obrigatória a verificação da direção oposta antes de descartar uma relação de dependência.
+
+**Próxima pergunta:**
+
+**"Registrar Romaneio de Entrega do Pedido" depende da execução prévia de "Receber Fatura do Pedido"?**
+
+Em outras palavras, **é obrigatório receber a fatura do pedido antes de registrar o romaneio de entrega?**
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+# Pergunta 33
+
+Entendido.
+
+Com suas respostas, foi estabelecido que:
+
+* **"Receber Fatura do Pedido" não depende de "Registrar Romaneio de Entrega do Pedido".**
+* **"Registrar Romaneio de Entrega do Pedido" também não depende de "Receber Fatura do Pedido".**
+
+Portanto, **não existe relação de DEP, DEPC ou REQ entre esse par de atividades**.
+
+Como não há dependência estrutural entre elas, o protocolo determina verificar se existe uma relação de escolha (XOR) ou união inclusiva (UNI).
+
+**Próxima pergunta:**
+
+É possível haver execuções do processo com:
+
+* apenas **"Registrar Romaneio de Entrega do Pedido"**;
+* apenas **"Receber Fatura do Pedido"**; e
+* **ambas** as atividades?
+
+Ou, na prática, **essas duas atividades sempre ocorrem juntas**, sem existir uma execução contendo apenas uma delas?
+
+**Resposta do entrevistado:**
+
+Somente ambas.
+
+---
+
+# Pergunta 34
+
+Entendido.
+
+Sua resposta indica que:
+
+* Não existem execuções com apenas **"Registrar Romaneio de Entrega do Pedido"**.
+* Não existem execuções com apenas **"Receber Fatura do Pedido"**.
+* As duas atividades **sempre ocorrem juntas**.
+
+Assim:
+
+* **Não é possível registrar uma relação UNI**, pois UNI exige execuções com apenas uma das atividades e também com ambas.
+* **Também não é possível registrar uma relação XOR**, pois as atividades coexistem.
+* **Nenhuma relação SBMN é inserida entre esse par**, pois o protocolo não permite representar simples paralelismo por meio de uma relação.
+
+**Próxima pergunta:**
+
+**"Registrar Fatura do Pedido" depende da execução prévia de "Receber Fatura do Pedido"?**
+
+Em outras palavras, **é obrigatório receber a fatura do pedido antes de registrá-la?**
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+# Pergunta 35
+
+Entendido.
+
+**Próxima pergunta:**
+
+Quando **"Registrar Fatura do Pedido"** ocorre, **"Receber Fatura do Pedido"** deve ocorrer:
+
+1. Antes;
+2. Depois; ou
+3. A ordem é irrelevante/desconhecida?
+
+**Resposta do entrevistado:**
+
+Antes.
+
+---
+
+# Pergunta 36
+
+Entendido. Foi estabelecido que **"Receber Fatura do Pedido" deve ocorrer antes de "Registrar Fatura do Pedido"**.
+
+**Próxima pergunta:**
+
+**"Receber Fatura do Pedido" pode ocorrer sem que "Registrar Fatura do Pedido" ocorra em alguma execução do processo?**
+
+Ou seja, existe algum caso em que a fatura é recebida, mas **não é registrada**?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+# Pergunta 37
+
+Entendido.
+
+Com base nas suas respostas:
+
+* **"Registrar Fatura do Pedido"** não pode ocorrer sem que **"Receber Fatura do Pedido"** tenha ocorrido antes;
+* **"Receber Fatura do Pedido"** deve ocorrer **antes** do registro da fatura;
+* **"Receber Fatura do Pedido"** **não pode** ocorrer sem que a fatura seja registrada.
+
+A relação é classificada como:
+
+**Registrar Fatura do Pedido DEP Receber Fatura do Pedido**
+
+**Próxima pergunta:**
+
+**"Liberar Recursos Financeiros" depende da execução prévia de "Registrar Fatura do Pedido"?**
+
+Em outras palavras, **é obrigatório registrar a fatura do pedido antes de liberar os recursos financeiros?**
+
+**Resposta do entrevistado:**
+
+Sim, para liberar o recurso eu dependo de ter registrado o romaneio de entrega e a fatura do pedido.
+
+---
+
+# Pergunta 38
+
+Entendido. Sua resposta introduz uma informação importante: você confirmou que **"Liberar Recursos Financeiros" depende tanto de "Registrar Fatura do Pedido" quanto de "Registrar Romaneio de Entrega do Pedido"**.
+
+Como estamos classificando primeiro a relação com **"Registrar Fatura do Pedido"**, preciso concluir o protocolo obrigatório para esse par antes de analisar a segunda dependência.
+
+Foi estabelecido que existe dependência. Agora preciso da clarificação temporal.
+
+**Próxima pergunta:**
+
+Quando **"Liberar Recursos Financeiros"** ocorre, **"Registrar Fatura do Pedido"** deve ocorrer:
+
+1. Antes;
+2. Depois; ou
+3. A ordem é irrelevante/desconhecida?
+
+**Resposta do entrevistado:**
+
+Antes.
+
+---
+
+# Pergunta 39
+
+Entendido. Foi estabelecido que **"Registrar Fatura do Pedido" deve ocorrer antes de "Liberar Recursos Financeiros"**. Ainda falta a segunda etapa obrigatória da classificação da relação.
+
+**Próxima pergunta:**
+
+**"Registrar Fatura do Pedido" pode ocorrer sem que "Liberar Recursos Financeiros" ocorra em alguma execução do processo?**
+
+Ou seja, existe alguma execução em que a fatura é registrada, **mas os recursos financeiros não são liberados**?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+# Pergunta 40
+
+Entendido.
+
+Com base nas suas respostas:
+
+* **"Liberar Recursos Financeiros"** não pode ocorrer sem que **"Registrar Fatura do Pedido"** tenha ocorrido antes;
+* **"Registrar Fatura do Pedido"** deve ocorrer **antes** da liberação dos recursos financeiros;
+* **"Registrar Fatura do Pedido"** **não pode** ocorrer sem que os recursos financeiros sejam posteriormente liberados.
+
+A relação é classificada como:
+
+**Liberar Recursos Financeiros DEP Registrar Fatura do Pedido**
+
+Além disso, foi registrada internamente a informação de que **"Liberar Recursos Financeiros" também depende de "Registrar Romaneio de Entrega do Pedido"**. Essa segunda relação será classificada seguindo o mesmo protocolo, respeitando as verificações de consistência e transitividade.
+
+**Próxima pergunta:**
+
+Quando **"Liberar Recursos Financeiros"** ocorre, **"Registrar Romaneio de Entrega do Pedido"** deve ocorrer:
+
+1. Antes;
+2. Depois; ou
+3. A ordem é irrelevante/desconhecida?
+
+**Resposta do entrevistado:**
+
+Antes.
+
+---
+
+# Pergunta 41
+
+Entendido. Foi estabelecido que **"Registrar Romaneio de Entrega do Pedido" deve ocorrer antes de "Liberar Recursos Financeiros"**.
+
+**Próxima pergunta:**
+
+**"Registrar Romaneio de Entrega do Pedido" pode ocorrer sem que "Liberar Recursos Financeiros" ocorra em alguma execução do processo?**
+
+Ou seja, existe alguma execução em que o romaneio é registrado, **mas os recursos financeiros não são liberados**?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+# Pergunta 42
+
+Entendido.
+
+Com base nas suas respostas:
+
+* **"Liberar Recursos Financeiros"** não pode ocorrer sem que **"Registrar Romaneio de Entrega do Pedido"** tenha ocorrido antes;
+* **"Registrar Romaneio de Entrega do Pedido"** deve ocorrer **antes** da liberação dos recursos financeiros;
+* **"Registrar Romaneio de Entrega do Pedido"** **não pode** ocorrer sem que os recursos financeiros sejam posteriormente liberados.
+
+A relação é classificada como:
+
+**Liberar Recursos Financeiros DEP Registrar Romaneio de Entrega do Pedido**
+
+Essa relação é consistente com o modelo atual, pois não introduz ciclos nem conflitos com as relações já estabelecidas.
+
+**Próxima pergunta:**
+
+**"Efetuar Pagamento ao Fornecedor" depende da execução prévia de "Liberar Recursos Financeiros"?**
+
+Em outras palavras, **é obrigatório liberar os recursos financeiros antes de efetuar o pagamento ao fornecedor?**
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+# Pergunta 43
+
+Entendido. Foi detectada uma possível relação de dependência, mas ainda **não posso classificá-la**. Pelo protocolo SBMN, preciso realizar a clarificação temporal antes de registrar a relação.
+
+**Próxima pergunta:**
+
+Quando **"Efetuar Pagamento ao Fornecedor"** ocorre, **"Liberar Recursos Financeiros"** deve ocorrer:
+
+1. Antes;
+2. Depois; ou
+3. A ordem é irrelevante/desconhecida?
+
+**Resposta do entrevistado:**
+
+Antes.
+
+---
+
+# Pergunta 44
+
+Entendido. Foi estabelecido que **"Liberar Recursos Financeiros" deve ocorrer antes de "Efetuar Pagamento ao Fornecedor"**. Ainda falta a segunda etapa obrigatória da classificação da relação.
+
+**Próxima pergunta:**
+
+**"Liberar Recursos Financeiros" pode ocorrer sem que "Efetuar Pagamento ao Fornecedor" ocorra em alguma execução do processo?**
+
+Ou seja, existe alguma execução em que os recursos financeiros são liberados, **mas o pagamento ao fornecedor não é efetuado**?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+# Pergunta 45
+
+Entendido.
+
+Com base nas suas respostas:
+
+* **"Efetuar Pagamento ao Fornecedor"** não pode ocorrer sem que **"Liberar Recursos Financeiros"** tenha ocorrido antes;
+* **"Liberar Recursos Financeiros"** deve ocorrer **antes** do pagamento ao fornecedor;
+* **"Liberar Recursos Financeiros"** **não pode** ocorrer sem que o pagamento ao fornecedor seja posteriormente efetuado.
+
+A relação é classificada como:
+
+**Efetuar Pagamento ao Fornecedor DEP Liberar Recursos Financeiros**
+
+Prosseguindo com a elicitação, agora precisamos verificar uma relação que você já indicou anteriormente.
+
+**Próxima pergunta:**
+
+**"Liberar Recursos Financeiros" depende da execução prévia de BOTH "Registrar Romaneio de Entrega do Pedido" e "Registrar Fatura do Pedido"?**
+
+Em outras palavras, **os dois registros precisam obrigatoriamente estar concluídos antes da liberação dos recursos financeiros, ou basta apenas um deles?**
+
+**Resposta do entrevistado:**
+
+Sim.
+
+# Pergunta 46
+
+Entendido.
+
+Fica confirmado que:
+
+* **"Liberar Recursos Financeiros"** somente pode ocorrer **após o registro do romaneio de entrega e o registro da fatura do pedido**.
+* Portanto, as duas relações já registradas permanecem consistentes:
+
+  * **Liberar Recursos Financeiros DEP Registrar Romaneio de Entrega do Pedido**
+  * **Liberar Recursos Financeiros DEP Registrar Fatura do Pedido**
+
+Agora seguiremos o protocolo para identificar possíveis relações ainda não exploradas entre atividades adjacentes e, posteriormente, relações de escolha (XOR/UNI) e JMP.
+
+**Próxima pergunta:**
+
+**"Receber Fatura do Pedido" depende da execução prévia de "Enviar Pedido de Compra ao Fornecedor"?**
+
+Em outras palavras, **é obrigatório enviar o pedido ao fornecedor antes que a fatura do pedido seja recebida?**
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+# Pergunta 47
+
+Entendido.
+
+**Próxima pergunta:**
+
+Quando **"Receber Fatura do Pedido"** ocorre, **"Enviar Pedido de Compra ao Fornecedor"** deve ocorrer:
+
+1. Antes;
+2. Depois; ou
+3. A ordem é irrelevante/desconhecida?
+
+**Resposta do entrevistado:**
+
+Antes.
+
+---
+
+# Pergunta 48
+
+Entendido. Foi estabelecido que **"Enviar Pedido de Compra ao Fornecedor" deve ocorrer antes de "Receber Fatura do Pedido"**.
+
+**Próxima pergunta:**
+
+**"Enviar Pedido de Compra ao Fornecedor" pode ocorrer sem que "Receber Fatura do Pedido" ocorra em alguma execução do processo?**
+
+Ou seja, existe alguma execução em que o pedido é enviado ao fornecedor, mas **a fatura nunca é recebida**?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+# Pergunta 49
+
+Entendido.
+
+Com base nas suas respostas:
+
+* **"Receber Fatura do Pedido"** não pode ocorrer sem que **"Enviar Pedido de Compra ao Fornecedor"** tenha ocorrido antes;
+* **"Enviar Pedido de Compra ao Fornecedor"** deve ocorrer **antes** do recebimento da fatura;
+* **"Enviar Pedido de Compra ao Fornecedor"** **não pode** ocorrer sem que a fatura seja posteriormente recebida.
+
+A relação é classificada como:
+
+**Receber Fatura do Pedido DEP Enviar Pedido de Compra ao Fornecedor**
+
+**Próxima pergunta:**
+
+**"Aprovar Pedido de Compra" e "Retrabalhar Pedido de Compra" podem ocorrer juntos na mesma instância do processo?**
+
+Ou seja, existe uma execução em que um pedido é **aprovado** e **retrabalhado** na mesma instância do processo, ou essas duas atividades são mutuamente exclusivas?
+
+**Resposta do entrevistado:**
+
+Não, é um ou outro, mas depois de retrabalhar, o pedido poderá ser aprovado e seguir para Aprovar pedido.
+
+---
+
+# Pergunta 50
+
+Entendido. A sua resposta é importante e **não permite registrar uma relação XOR**.
+
+Você informou que:
+
+* Quando o pedido é rejeitado, ocorre **"Retrabalhar Pedido de Compra"**.
+* Após o retrabalho, o processo **retorna para "Revisar Pedido de Compra"**.
+* Em uma revisão posterior, o pedido **pode ser aprovado**.
+
+Portanto, **"Retrabalhar Pedido de Compra" e "Aprovar Pedido de Compra" podem ocorrer na mesma instância do processo**, apenas **não simultaneamente**. Como o operador **XOR** em SBMN significa que as duas atividades **nunca coexistem na mesma execução**, essa relação **deve ser rejeitada**. Além disso, a informação reforça o possível **JMP** de **Retrabalhar Pedido de Compra → Revisar Pedido de Compra**, que será validado na fase de JMP.
+
+**Próxima pergunta:**
+
+**"Aprovar Pedido de Compra" depende da execução prévia de "Criar Pedido de Compra"?**
+
+Em outras palavras, **é obrigatório criar um pedido de compra antes que ele possa ser aprovado?**
+
+**Resposta do entrevistado:**
+
+Sim, depois de criar pedido a gente revisa o pedido e envia para aprovação.
+
+---
+
+# Pergunta 51
+
+Entendido. Como já foi confirmado que:
+
+* **Revisar Pedido de Compra DEP Criar Pedido de Compra**; e
+* **Aprovar Pedido de Compra DEP Revisar Pedido de Compra**,
+
+a relação
+
+**Aprovar Pedido de Compra DEP Criar Pedido de Compra**
+
+é inferida por transitividade e não precisa ser perguntada nem registrada separadamente.
+
+**Próxima pergunta:**
+
+**"Aprovar Pedido de Compra" pode ocorrer sem que "Enviar Pedido de Compra ao Fornecedor" ocorra em alguma execução do processo?**
+
+Ou seja, existe algum caso em que o pedido é aprovado, mas **não é enviado ao fornecedor**?
+
+**Resposta do entrevistado:**
+
+Não, uma vez aprovado a gente envia para fornecedor.
+
+---
+
+# Pergunta 52
+
+Entendido. Foi detectada uma possível relação de dependência, mas ainda **não posso classificá-la**. Pelo protocolo SBMN, preciso concluir a sequência obrigatória de classificação.
+
+Você confirmou que:
+
+* **Uma vez aprovado, o pedido sempre é enviado ao fornecedor.**
+
+Agora falta a clarificação temporal.
+
+**Próxima pergunta:**
+
+Quando **"Enviar Pedido de Compra ao Fornecedor"** ocorre, **"Aprovar Pedido de Compra"** deve ocorrer:
+
+1. Antes;
+2. Depois; ou
+3. A ordem é irrelevante/desconhecida?
+
+**Resposta do entrevistado:**
+
+Antes.
+
+---
+
+# Pergunta 53
+
+Entendido. Foi estabelecido que **"Aprovar Pedido de Compra" deve ocorrer antes de "Enviar Pedido de Compra ao Fornecedor"**.
+
+**Próxima pergunta:**
+
+**"Aprovar Pedido de Compra" pode ocorrer sem que "Enviar Pedido de Compra ao Fornecedor" ocorra em alguma execução do processo?**
+
+Ou seja, existe alguma execução em que o pedido é aprovado, **mas nunca é enviado ao fornecedor**?
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+# Pergunta 54
+
+Entendido.
+
+Com base nas suas respostas:
+
+* **"Enviar Pedido de Compra ao Fornecedor"** não pode ocorrer sem que **"Aprovar Pedido de Compra"** tenha ocorrido antes;
+* **"Aprovar Pedido de Compra"** deve ocorrer **antes** do envio ao fornecedor;
+* **"Aprovar Pedido de Compra"** **não pode** ocorrer sem que o pedido seja posteriormente enviado ao fornecedor.
+
+A relação é classificada como:
+
+**Enviar Pedido de Compra ao Fornecedor DEP Aprovar Pedido de Compra**
+
+**Próxima pergunta:**
+
+Você informou anteriormente que, quando o pedido é rejeitado, ocorre **"Retrabalhar Pedido de Compra"** e, em seguida, o processo **retorna para "Revisar Pedido de Compra"**.
+
+Para confirmar formalmente a relação de retorno de fluxo (JMP):
+
+**Após concluir "Retrabalhar Pedido de Compra", o processo pode retornar para "Revisar Pedido de Compra" antes de seguir adiante?**
+
+**Resposta do entrevistado:**
+
+Sim, deve retornar.
+
+---
+
+# Pergunta 55
+
+Entendido.
+
+Foi confirmada a relação de retorno de fluxo:
+
+**Retrabalhar Pedido de Compra JMP Revisar Pedido de Compra**
+
+Essa relação é consistente com o modelo atual, pois:
+
+* não cria uma nova obrigação lógica;
+* representa um retorno a uma atividade anterior após o retrabalho;
+* não viola as dependências já estabelecidas.
+
+**Próxima pergunta:**
+
+**Após "Efetuar Pagamento ao Fornecedor", o processo pode retornar para alguma atividade anterior ou saltar diretamente para alguma atividade posterior que não seja sua sucessora estrutural imediata?**
+
+Se sim, informe para qual atividade. Caso contrário, responda **não**.
+
+**Resposta do entrevistado:**
+
+Não, ele se encerra.
+
+---
+
+# Pergunta 56
+
+Entendido.
+
+Foi registrado que:
+
+* **Após "Efetuar Pagamento ao Fornecedor" o processo é encerrado.**
+* Portanto, **não existe relação JMP** a partir dessa atividade.
+
+Até o momento, a única relação **JMP** confirmada é:
+
+* **Retrabalhar Pedido de Compra JMP Revisar Pedido de Compra**
+
+**Próxima pergunta:**
+
+**Após concluir "Revisar Pedido de Compra" (independentemente de o pedido ser aprovado ou rejeitado), o processo pode retornar para alguma atividade anterior ou saltar diretamente para alguma atividade posterior que não seja sua sucessora estrutural imediata?**
+
+Se sim, informe para qual atividade. Caso contrário, responda **não**.
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+# Pergunta 57
+
+Entendido.
+
+Foi registrado que:
+
+* **Após "Revisar Pedido de Compra" não existe retorno nem salto de fluxo**, além do fluxo estrutural normal.
+* Portanto, **não há relação JMP** a partir dessa atividade.
+
+**Próxima pergunta:**
+
+**Após concluir "Aprovar Pedido de Compra", o processo pode retornar para alguma atividade anterior ou saltar diretamente para alguma atividade posterior que não seja sua sucessora estrutural imediata?**
+
+Se sim, informe para qual atividade. Caso contrário, responda **não**.
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+# Pergunta 58
+
+Entendido.
+
+Foi registrado que:
+
+* **Após "Aprovar Pedido de Compra" não existe retorno nem salto de fluxo** além do fluxo estrutural normal.
+
+* Portanto, **não há relação JMP** a partir dessa atividade. A única relação JMP confirmada até o momento permanece:
+
+* **Retrabalhar Pedido de Compra JMP Revisar Pedido de Compra**
+
+**Próxima pergunta:**
+
+**Após concluir "Enviar Pedido de Compra ao Fornecedor", o processo pode retornar para alguma atividade anterior ou saltar diretamente para alguma atividade posterior que não seja sua sucessora estrutural imediata?**
+
+Se sim, informe para qual atividade. Caso contrário, responda **não**.
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+# Pergunta 59
+
+Entendido.
+
+Foi registrado que:
+
+* **Após "Enviar Pedido de Compra ao Fornecedor" não existe retorno nem salto de fluxo** além do fluxo estrutural normal.
+* Portanto, **não há relação JMP** a partir dessa atividade.
+
+Até o momento, a única relação **JMP** confirmada é:
+
+* **Retrabalhar Pedido de Compra JMP Revisar Pedido de Compra**
+
+**Próxima pergunta:**
+
+**Após concluir "Reservar Recursos Financeiros para a Compra", o processo pode retornar para alguma atividade anterior ou saltar diretamente para alguma atividade posterior que não seja sua sucessora estrutural imediata?**
+
+Se sim, informe para qual atividade. Caso contrário, responda **não**.
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+# Pergunta 60
+
+Entendido.
+
+Foi registrado que:
+
+* **Após "Reservar Recursos Financeiros para a Compra" não existe retorno nem salto de fluxo** além do fluxo estrutural normal.
+* Portanto, **não há relação JMP** a partir dessa atividade.
+
+A única relação **JMP** confirmada até o momento continua sendo:
+
+* **Retrabalhar Pedido de Compra JMP Revisar Pedido de Compra**
+
+**Próxima pergunta:**
+
+**Após concluir "Liberar Recursos Financeiros", o processo pode retornar para alguma atividade anterior ou saltar diretamente para alguma atividade posterior que não seja sua sucessora estrutural imediata?**
+
+Se sim, informe para qual atividade. Caso contrário, responda **não**.
+
+**Resposta do entrevistado:**
+
+Não.
+
+# Pergunta 61
+
+Entendido.
+
+Foi registrado que:
+
+* **Após "Liberar Recursos Financeiros" não existe retorno nem salto de fluxo** além do fluxo estrutural normal.
+* Portanto, **não há relação JMP** a partir dessa atividade.
+
+A única relação **JMP** confirmada até o momento permanece:
+
+* **Retrabalhar Pedido de Compra JMP Revisar Pedido de Compra**
+
+**Próxima pergunta:**
+
+**Após concluir "Receber Romaneio de Entrega do Pedido", o processo pode retornar para alguma atividade anterior ou saltar diretamente para alguma atividade posterior que não seja sua sucessora estrutural imediata?**
+
+Se sim, informe para qual atividade. Caso contrário, responda **não**.
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+# Pergunta 62
+
+Entendido.
+
+Foi registrado que:
+
+* **Após "Receber Romaneio de Entrega do Pedido" não existe retorno nem salto de fluxo** além do fluxo estrutural normal.
+* Portanto, **não há relação JMP** a partir dessa atividade.
+
+A única relação **JMP** confirmada até o momento continua sendo:
+
+* **Retrabalhar Pedido de Compra JMP Revisar Pedido de Compra**
+
+**Próxima pergunta:**
+
+**Após concluir "Registrar Romaneio de Entrega do Pedido", o processo pode retornar para alguma atividade anterior ou saltar diretamente para alguma atividade posterior que não seja sua sucessora estrutural imediata?**
+
+Se sim, informe para qual atividade. Caso contrário, responda **não**.
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+# Pergunta 63
+
+Entendido.
+
+Foi registrado que:
+
+* **Após "Registrar Romaneio de Entrega do Pedido" não existe retorno nem salto de fluxo** além do fluxo estrutural normal.
+* Portanto, **não há relação JMP** a partir dessa atividade.
+
+A única relação **JMP** confirmada até o momento continua sendo:
+
+* **Retrabalhar Pedido de Compra JMP Revisar Pedido de Compra**
+
+**Próxima pergunta:**
+
+**Após concluir "Receber Fatura do Pedido", o processo pode retornar para alguma atividade anterior ou saltar diretamente para alguma atividade posterior que não seja sua sucessora estrutural imediata?**
+
+Se sim, informe para qual atividade. Caso contrário, responda **não**.
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+# Pergunta 64
+
+Entendido.
+
+Foi registrado que:
+
+* **Após "Receber Fatura do Pedido" não existe retorno nem salto de fluxo** além do fluxo estrutural normal.
+* Portanto, **não há relação JMP** a partir dessa atividade.
+
+A única relação **JMP** confirmada até o momento continua sendo:
+
+* **Retrabalhar Pedido de Compra JMP Revisar Pedido de Compra**
+
+**Próxima pergunta:**
+
+**Após concluir "Registrar Fatura do Pedido", o processo pode retornar para alguma atividade anterior ou saltar diretamente para alguma atividade posterior que não seja sua sucessora estrutural imediata?**
+
+Se sim, informe para qual atividade. Caso contrário, responda **não**.
+
+**Resposta do entrevistado:**
+
+Não.
+
+---
+
+# Pergunta 65
+
+Entendido.
+
+Foi registrado que:
+
+* **Após "Registrar Fatura do Pedido" não existe retorno nem salto de fluxo** além do fluxo estrutural normal.
+* Portanto, **não há relação JMP** a partir dessa atividade.
+
+A única relação **JMP** confirmada até o momento continua sendo:
+
+* **Retrabalhar Pedido de Compra JMP Revisar Pedido de Compra**
+
+**Próxima pergunta:**
+
+**Após concluir "Verificar Nível Atual de Estoque", o processo pode retornar para alguma atividade anterior ou saltar diretamente para alguma atividade posterior que não seja sua sucessora estrutural imediata?**
+
+Se sim, informe para qual atividade. Caso contrário, responda **não**.
+
+**Resposta do entrevistado:**
+
+Se o nível do estoque estiver acima do mínimo, o processo se encerra.
+
+---
+
+# Pergunta 66
+
+Entendido. Essa informação **não caracteriza uma relação JMP**. Ela descreve um **encerramento antecipado do processo** quando, após **"Verificar Nível Atual de Estoque"**, constata-se que o estoque está acima do nível mínimo. Portanto, **não será registrada como JMP**.
+
+Essa informação indica que a atividade **"Criar Pedido de Compra"** é executada **somente quando a verificação identifica necessidade de reabastecimento**. Para classificá-la corretamente em SBMN, preciso seguir o protocolo de classificação.
+
+**Próxima pergunta:**
+
+**"Verificar Nível Atual de Estoque" pode ocorrer sem que "Criar Pedido de Compra" ocorra em alguma execução do processo?**
+
+Em outras palavras, quando o estoque está acima do nível mínimo e o processo é encerrado, **é correto afirmar que a verificação ocorre, mas nenhum pedido de compra é criado?**
+
+**Resposta do entrevistado:**
+
+Sim.
+
+---
+
+# Pergunta 67
+
+Entendido.
+
+Essa resposta **confirma e reforça** uma relação que já havia sido registrada anteriormente:
+
+* **Criar Pedido de Compra REQ Verificar Nível Atual de Estoque**
+
+Ela permanece consistente, pois:
+
+* **"Verificar Nível Atual de Estoque"** pode ocorrer **sem** que **"Criar Pedido de Compra"** ocorra (quando o estoque está acima do nível mínimo).
+* **"Criar Pedido de Compra"** somente ocorre após a verificação indicar necessidade de reabastecimento.
+
+Pelas respostas fornecidas até o momento, todas as atividades foram cobertas, a única relação **JMP** foi validada, e não há novas relações evidentes a investigar sem repetir pares já resolvidos por confirmação ou transitividade.
+
+Conforme o protocolo, resta apenas verificar se você deseja encerrar a entrevista.
+
+**Próxima pergunta:**
+
+**Você considera que todas as relações relevantes do processo foram informadas e deseja encerrar a entrevista para que eu gere o modelo SBMN final?**
+
+**Resposta do entrevistado:**
+
+Sim.
+
+**Processo:** Processo de Reabastecimento de Estoque
+
+**Atividades:**
+
+* Verificar Nível Atual de Estoque
+* Criar Pedido de Compra
+* Revisar Pedido de Compra
+* Retrabalhar Pedido de Compra
+* Aprovar Pedido de Compra
+* Reservar Recursos Financeiros para a Compra
+* Enviar Pedido de Compra ao Fornecedor
+* Receber Romaneio de Entrega do Pedido
+* Registrar Romaneio de Entrega do Pedido
+* Receber Fatura do Pedido
+* Registrar Fatura do Pedido
+* Liberar Recursos Financeiros
+* Efetuar Pagamento ao Fornecedor
+
+**Situações SBMN:**
+
+Criar Pedido de Compra REQ Verificar Nível Atual de Estoque
+
+Revisar Pedido de Compra DEP Criar Pedido de Compra
+
+Retrabalhar Pedido de Compra REQ Revisar Pedido de Compra
+
+Aprovar Pedido de Compra DEP Revisar Pedido de Compra
+
+Aprovar Pedido de Compra DEPC Retrabalhar Pedido de Compra
+
+Reservar Recursos Financeiros para a Compra DEP Aprovar Pedido de Compra
+
+Enviar Pedido de Compra ao Fornecedor DEP Aprovar Pedido de Compra
+
+Receber Romaneio de Entrega do Pedido DEP Enviar Pedido de Compra ao Fornecedor
+
+Registrar Romaneio de Entrega do Pedido DEP Receber Romaneio de Entrega do Pedido
+
+Receber Fatura do Pedido DEP Enviar Pedido de Compra ao Fornecedor
+
+Registrar Fatura do Pedido DEP Receber Fatura do Pedido
+
+Liberar Recursos Financeiros DEP Registrar Romaneio de Entrega do Pedido
+
+Liberar Recursos Financeiros DEP Registrar Fatura do Pedido
+
+Efetuar Pagamento ao Fornecedor DEP Liberar Recursos Financeiros
+
+**Situações JMP:**
+
+Retrabalhar Pedido de Compra JMP Revisar Pedido de Compra
+
+**This SBMN model is consistent and has at least one valid BPMN realization.**
+
+
+
