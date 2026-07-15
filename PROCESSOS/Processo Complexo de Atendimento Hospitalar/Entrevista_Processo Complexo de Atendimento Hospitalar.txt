@@ -1,0 +1,1325 @@
+Entrevistador:
+Bem-vindo! Conduzirei uma entrevista estruturada SBMN. Em qual idioma você gostaria de realizar esta entrevista?
+
+Entrevistado:
+Português.
+
+------------------------------------------------------------
+
+Pergunta 1
+
+Entrevistador:
+Qual é o nome do processo que você deseja modelar?
+
+Entrevistado:
+Processo Complexo de Atendimento Hospitalar.
+
+------------------------------------------------------------
+
+Pergunta 2
+
+Entrevistador:
+Qual é o domínio desse processo?
+
+Entrevistado:
+Administração Médica e de Serviços de Saúde.
+
+------------------------------------------------------------
+
+Pergunta 3
+
+Entrevistador:
+Por favor, informe a lista completa de atividades (AFOs) do processo. Após esta etapa, a lista será congelada.
+
+Entrevistado:
+Chegada do paciente
+Registro administrativo
+Triagem inicial de enfermagem
+Médico analisa os sintomas
+Preparar procedimentos de Internação
+Monitorar custos e aprovações
+Tratar autorização do convênio
+Solicitar exames
+Administrar medicação inicial
+Processar/ realizar exames
+Revisar diagnóstico
+Tratamento em andamento
+Consultar especialista
+Solicitar exames adicionais
+Entregar orientações finais
+Preparar procedimentos de alta
+
+------------------------------------------------------------
+
+Pergunta 4
+
+Entrevistador:
+A atividade "Registro administrativo" depende da atividade "Chegada do paciente" para ocorrer? Ou seja, o Registro administrativo só pode acontecer se a Chegada do paciente tiver ocorrido antes?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 5
+
+Entrevistador:
+Quando "Registro administrativo" ocorre, a "Chegada do paciente" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 6
+
+Entrevistador:
+Considerando apenas execuções válidas e completas do processo, é correto afirmar que sempre que ocorre a "Chegada do paciente", o "Registro administrativo" também ocorre posteriormente?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 7
+
+Entrevistador:
+A atividade "Triagem inicial de enfermagem" depende da atividade "Registro administrativo" para ocorrer? Ou seja, a Triagem inicial de enfermagem só pode acontecer se o Registro administrativo tiver ocorrido antes?
+
+Entrevistado:
+A triagem ocorre junto, em paralelo, com o registro. Ela não depende do registro para ser executada.
+
+------------------------------------------------------------
+
+Pergunta 8
+
+Entrevistador:
+O "Registro administrativo" depende da "Triagem inicial de enfermagem" para ocorrer? Ou seja, o Registro administrativo só pode acontecer se a Triagem inicial de enfermagem tiver ocorrido antes?
+
+Entrevistado:
+É o mesmo conceito anterior. Registro e triagem acontecem em paralelo.
+
+------------------------------------------------------------
+
+Pergunta 9
+
+Entrevistador:
+A atividade "Médico analisa os sintomas" depende da atividade "Triagem inicial de enfermagem" para ocorrer? Ou seja, o médico só pode analisar os sintomas se a triagem inicial de enfermagem tiver ocorrido antes?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 10
+
+Entrevistador:
+Quando "Médico analisa os sintomas" ocorre, a "Triagem inicial de enfermagem" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 11
+
+Entrevistador:
+A atividade "Triagem inicial de enfermagem" pode ocorrer sem que "Médico analisa os sintomas" ocorra em alguma execução válida do processo?
+
+Entrevistado:
+Sempre que triagem ocorrer, em seguida o médico analisa os sintomas.
+
+------------------------------------------------------------
+
+Pergunta 12
+
+Entrevistador:
+A atividade "Preparar procedimentos de Internação" depende da atividade "Médico analisa os sintomas" para ocorrer? Ou seja, os procedimentos de internação só podem ser preparados se o médico tiver analisado os sintomas antes?
+
+Entrevistado:
+Sim, vai depender dos sintomas analisados pelo médico.
+
+------------------------------------------------------------
+
+Pergunta 13
+
+Entrevistador:
+Quando "Preparar procedimentos de Internação" ocorre, a atividade "Médico analisa os sintomas" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 14
+
+Entrevistador:
+A atividade "Médico analisa os sintomas" pode ocorrer sem que "Preparar procedimentos de Internação" ocorra em alguma execução válida do processo?
+
+Entrevistado:
+Sim, dependendo da análise, não tem internação.
+
+------------------------------------------------------------
+
+Pergunta 15
+
+Entrevistador:
+A atividade "Monitorar custos e aprovações" depende da atividade "Preparar procedimentos de Internação" para ocorrer? Ou seja, o monitoramento de custos e aprovações só pode acontecer se os procedimentos de internação tiverem sido preparados antes?
+
+Entrevistado:
+Monitorar custos e aprovações ocorre depois do registro administrativo.
+
+------------------------------------------------------------
+
+Pergunta 16
+
+Entrevistador:
+A atividade "Monitorar custos e aprovações" depende da atividade "Registro administrativo" para ocorrer? Ou seja, o monitoramento de custos e aprovações só pode acontecer se o Registro administrativo tiver ocorrido antes?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 17
+
+Entrevistador:
+Quando "Monitorar custos e aprovações" ocorre, o "Registro administrativo" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 18
+
+Entrevistador:
+A atividade "Registro administrativo" pode ocorrer sem que "Monitorar custos e aprovações" ocorra em alguma execução válida do processo?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 19
+
+Entrevistador:
+A atividade "Tratar autorização do convênio" depende da atividade "Monitorar custos e aprovações" para ocorrer? Ou seja, o tratamento da autorização do convênio só pode acontecer se o monitoramento de custos e aprovações tiver ocorrido antes?
+
+Entrevistado:
+Não, tratar autorização ocorre paralelamente com monitoramento de custos.
+
+------------------------------------------------------------
+
+Pergunta 20
+
+Entrevistador:
+A atividade "Monitorar custos e aprovações" depende da atividade "Tratar autorização do convênio" para ocorrer? Ou seja, o monitoramento de custos e aprovações só pode acontecer se o tratamento da autorização do convênio tiver ocorrido antes?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 21
+
+Entrevistador:
+A atividade "Solicitar exames" depende da atividade "Médico analisa os sintomas" para ocorrer? Ou seja, a solicitação de exames só pode acontecer se o médico tiver analisado os sintomas antes?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 22
+
+Entrevistador:
+Quando "Solicitar exames" ocorre, a atividade "Médico analisa os sintomas" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 23
+
+Entrevistador:
+A atividade "Médico analisa os sintomas" pode ocorrer sem que "Solicitar exames" ocorra em alguma execução válida do processo?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 24
+
+Entrevistador:
+A atividade "Processar/realizar exames" depende da atividade "Solicitar exames" para ocorrer? Ou seja, os exames só podem ser processados/realizados se tiverem sido solicitados antes?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 25
+
+Entrevistador:
+Quando "Processar/realizar exames" ocorre, a atividade "Solicitar exames" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 26
+
+Entrevistador:
+A atividade "Solicitar exames" pode ocorrer sem que "Processar/realizar exames" ocorra em alguma execução válida do processo?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 27
+
+Entrevistador:
+A atividade "Revisar diagnóstico" depende da atividade "Processar/realizar exames" para ocorrer? Ou seja, a revisão do diagnóstico só pode acontecer se os exames tiverem sido processados/realizados antes?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 28
+
+Entrevistador:
+Quando "Revisar diagnóstico" ocorre, a atividade "Processar/realizar exames" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 29
+
+Entrevistador:
+A atividade "Processar/realizar exames" pode ocorrer sem que "Revisar diagnóstico" ocorra em alguma execução válida do processo?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 30
+
+Entrevistador:
+A atividade "Tratamento em andamento" depende da atividade "Revisar diagnóstico" para ocorrer? Ou seja, o tratamento em andamento só pode começar se o diagnóstico tiver sido revisado antes?
+
+Entrevistado:
+Não, elas ocorrem em paralelo.
+
+------------------------------------------------------------
+
+Pergunta 31
+
+Entrevistador:
+A atividade "Revisar diagnóstico" depende da atividade "Tratamento em andamento" para ocorrer? Ou seja, a revisão do diagnóstico só pode acontecer se o tratamento em andamento tiver ocorrido antes?
+
+Entrevistado:
+Não, elas ocorrem em paralelo.
+
+------------------------------------------------------------
+
+Pergunta 32
+
+Entrevistador:
+A atividade "Consultar especialista" depende da atividade "Tratamento em andamento" para ocorrer? Ou seja, a consulta ao especialista só pode acontecer se o tratamento em andamento já tiver ocorrido antes?
+
+Entrevistado:
+A consulta com especialista vai ocorrer depois de revisar o diagnóstico.
+
+------------------------------------------------------------
+
+Pergunta 33
+
+Entrevistador:
+A atividade "Consultar especialista" depende da atividade "Revisar diagnóstico" para ocorrer? Ou seja, a consulta ao especialista só pode acontecer se a revisão do diagnóstico tiver ocorrido antes?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 34
+
+Entrevistador:
+Quando "Consultar especialista" ocorre, a atividade "Revisar diagnóstico" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 35
+
+Entrevistador:
+A atividade "Revisar diagnóstico" pode ocorrer sem que "Consultar especialista" ocorra em alguma execução válida do processo?
+
+Entrevistado:
+Pode.
+
+------------------------------------------------------------
+
+Pergunta 36
+
+Entrevistador:
+A atividade "Solicitar exames adicionais" depende da atividade "Consultar especialista" para ocorrer? Ou seja, a solicitação de exames adicionais só pode acontecer se a consulta ao especialista tiver ocorrido antes?
+
+Entrevistado:
+Eu posso solicitar exames adicionais depois de revisar o diagnóstico ou depois da consulta com especialista.
+
+------------------------------------------------------------
+
+Pergunta 37
+
+Entrevistador:
+A atividade "Solicitar exames adicionais" sempre exige que "Revisar diagnóstico" tenha ocorrido antes, independentemente de haver ou não consulta ao especialista?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 38
+
+Entrevistador:
+A atividade "Solicitar exames adicionais" pode ocorrer apenas após a "Revisar diagnóstico", sem que a "Consultar especialista" tenha ocorrido?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 39
+
+Entrevistador:
+A atividade "Entregar orientações finais" depende da atividade "Tratamento em andamento" para ocorrer? Ou seja, as orientações finais só podem ser entregues se o tratamento em andamento tiver ocorrido antes?
+
+Entrevistado:
+Sim. Para entregar as orientações finais ele deve ter concluído o tratamento em andamento, deve ter concluído a revisão do diagnóstico, deve ter monitorado os custos e aprovações e tratado da autorização do convênio.
+
+------------------------------------------------------------
+
+Pergunta 40
+
+Entrevistador:
+Quando "Entregar orientações finais" ocorre, a atividade "Tratamento em andamento" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 31
+
+Entrevistador:
+A atividade "Revisar diagnóstico" depende da atividade "Tratamento em andamento" para ocorrer? Ou seja, a revisão do diagnóstico só pode acontecer se o tratamento em andamento tiver ocorrido antes?
+
+Entrevistado:
+Não, elas ocorrem em paralelo.
+
+------------------------------------------------------------
+
+Pergunta 32
+
+Entrevistador:
+A atividade "Consultar especialista" depende da atividade "Tratamento em andamento" para ocorrer? Ou seja, a consulta ao especialista só pode acontecer se o tratamento em andamento já tiver ocorrido antes?
+
+Entrevistado:
+A consulta com especialista vai ocorrer depois de revisar o diagnóstico.
+
+------------------------------------------------------------
+
+Pergunta 33
+
+Entrevistador:
+A atividade "Consultar especialista" depende da atividade "Revisar diagnóstico" para ocorrer? Ou seja, a consulta ao especialista só pode acontecer se a revisão do diagnóstico tiver ocorrido antes?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 34
+
+Entrevistador:
+Quando "Consultar especialista" ocorre, a atividade "Revisar diagnóstico" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 35
+
+Entrevistador:
+A atividade "Revisar diagnóstico" pode ocorrer sem que "Consultar especialista" ocorra em alguma execução válida do processo?
+
+Entrevistado:
+Pode.
+
+------------------------------------------------------------
+
+Pergunta 36
+
+Entrevistador:
+A atividade "Solicitar exames adicionais" depende da atividade "Consultar especialista" para ocorrer? Ou seja, a solicitação de exames adicionais só pode acontecer se a consulta ao especialista tiver ocorrido antes?
+
+Entrevistado:
+Eu posso solicitar exames adicionais depois de revisar o diagnóstico ou depois da consulta com especialista.
+
+------------------------------------------------------------
+
+Pergunta 37
+
+Entrevistador:
+A atividade "Solicitar exames adicionais" sempre exige que "Revisar diagnóstico" tenha ocorrido antes, independentemente de haver ou não consulta ao especialista?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 38
+
+Entrevistador:
+A atividade "Solicitar exames adicionais" pode ocorrer apenas após a "Revisar diagnóstico", sem que a "Consultar especialista" tenha ocorrido?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 39
+
+Entrevistador:
+A atividade "Entregar orientações finais" depende da atividade "Tratamento em andamento" para ocorrer? Ou seja, as orientações finais só podem ser entregues se o tratamento em andamento tiver ocorrido antes?
+
+Entrevistado:
+Sim. Para entregar as orientações finais ele deve ter concluído o tratamento em andamento, deve ter concluído a revisão do diagnóstico, deve ter monitorado os custos e aprovações e tratado da autorização do convênio.
+
+------------------------------------------------------------
+
+Pergunta 40
+
+Entrevistador:
+Quando "Entregar orientações finais" ocorre, a atividade "Tratamento em andamento" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 41
+
+Entrevistador:
+A atividade "Tratamento em andamento" pode ocorrer sem que "Entregar orientações finais" ocorra em alguma execução válida do processo?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 42
+
+Entrevistador:
+A atividade "Entregar orientações finais" depende da atividade "Revisar diagnóstico" para ocorrer? Ou seja, as orientações finais só podem ser entregues se a revisão do diagnóstico tiver ocorrido antes?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 43
+
+Entrevistador:
+Quando "Entregar orientações finais" ocorre, a atividade "Revisar diagnóstico" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 44
+
+Entrevistador:
+A atividade "Revisar diagnóstico" pode ocorrer sem que "Entregar orientações finais" ocorra em alguma execução válida do processo?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 45
+
+Entrevistador:
+A atividade "Entregar orientações finais" depende da atividade "Monitorar custos e aprovações" para ocorrer? Ou seja, as orientações finais só podem ser entregues se o monitoramento de custos e aprovações tiver ocorrido antes?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 46
+
+Entrevistador:
+Quando "Entregar orientações finais" ocorre, a atividade "Monitorar custos e aprovações" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 47
+
+Entrevistador:
+A atividade "Monitorar custos e aprovações" pode ocorrer sem que "Entregar orientações finais" ocorra em alguma execução válida do processo?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 48
+
+Entrevistador:
+Quando "Entregar orientações finais" ocorre, a atividade "Tratar autorização do convênio" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 49
+
+Entrevistador:
+A atividade "Tratar autorização do convênio" pode ocorrer sem que "Entregar orientações finais" ocorra em alguma execução válida do processo?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 50
+
+Entrevistador:
+A atividade "Preparar procedimentos de alta" depende da atividade "Entregar orientações finais" para ocorrer? Ou seja, os procedimentos de alta só podem ser preparados se as orientações finais tiverem sido entregues antes?
+
+Entrevistado:
+Elas ocorrem em paralelo, após as mesmas atividades.
+
+------------------------------------------------------------
+
+Pergunta 51
+
+Entrevistador:
+A atividade "Entregar orientações finais" depende da atividade "Preparar procedimentos de alta" para ocorrer? Ou seja, as orientações finais só podem ser entregues se os procedimentos de alta tiverem sido preparados antes?
+
+Entrevistado:
+Elas ocorrem em paralelo, após as mesmas atividades.
+
+------------------------------------------------------------
+
+Pergunta 52
+
+Entrevistador:
+A atividade "Preparar procedimentos de alta" depende de "Tratamento em andamento" para ocorrer? Ou seja, os procedimentos de alta só podem ser preparados se o tratamento em andamento tiver ocorrido antes?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 53
+
+Entrevistador:
+Quando "Preparar procedimentos de alta" ocorre, a atividade "Tratamento em andamento" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 54
+
+Entrevistador:
+A atividade "Tratamento em andamento" pode ocorrer sem que "Preparar procedimentos de alta" ocorra em alguma execução válida do processo?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 55
+
+Entrevistador:
+A atividade "Preparar procedimentos de alta" depende da atividade "Revisar diagnóstico" para ocorrer? Ou seja, os procedimentos de alta só podem ser preparados se a revisão do diagnóstico tiver ocorrido antes?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 56
+
+Entrevistador:
+Quando "Preparar procedimentos de alta" ocorre, a atividade "Revisar diagnóstico" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 57
+
+Entrevistador:
+A atividade "Revisar diagnóstico" pode ocorrer sem que "Preparar procedimentos de alta" ocorra em alguma execução válida do processo?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 58
+
+Entrevistador:
+A atividade "Preparar procedimentos de alta" depende da atividade "Monitorar custos e aprovações" para ocorrer? Ou seja, os procedimentos de alta só podem ser preparados se o monitoramento de custos e aprovações tiver ocorrido antes?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 59
+
+Entrevistador:
+Quando "Preparar procedimentos de alta" ocorre, a atividade "Monitorar custos e aprovações" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 60
+
+Entrevistador:
+A atividade "Monitorar custos e aprovações" pode ocorrer sem que "Preparar procedimentos de alta" ocorra em alguma execução válida do processo?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 61
+
+Entrevistador:
+Quando "Preparar procedimentos de alta" ocorre, a atividade "Tratar autorização do convênio" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 62
+
+Entrevistador:
+A atividade "Tratar autorização do convênio" pode ocorrer sem que "Preparar procedimentos de alta" ocorra em alguma execução válida do processo?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 63
+
+Entrevistador:
+A atividade "Administrar medicação inicial" depende da atividade "Médico analisa os sintomas" para ocorrer? Ou seja, a medicação inicial só pode ser administrada se o médico tiver analisado os sintomas antes?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 64
+
+Entrevistador:
+Quando "Administrar medicação inicial" ocorre, a atividade "Médico analisa os sintomas" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 65
+
+Entrevistador:
+A atividade "Médico analisa os sintomas" pode ocorrer sem que "Administrar medicação inicial" ocorra em alguma execução válida do processo?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 66
+
+Entrevistador:
+A atividade "Tratamento em andamento" depende da atividade "Administrar medicação inicial" para ocorrer? Ou seja, o tratamento em andamento só pode começar se a medicação inicial tiver sido administrada antes?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 67
+
+Entrevistador:
+Quando "Tratamento em andamento" ocorre, a atividade "Administrar medicação inicial" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 68
+
+Entrevistador:
+A atividade "Administrar medicação inicial" pode ocorrer sem que "Tratamento em andamento" ocorra em alguma execução válida do processo?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 69
+
+Entrevistador:
+A atividade "Tratar autorização do convênio" depende da atividade "Registro administrativo" para ocorrer? Ou seja, o tratamento da autorização do convênio só pode acontecer se o registro administrativo tiver ocorrido antes?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 70
+
+Entrevistador:
+Quando "Tratar autorização do convênio" ocorre, a atividade "Registro administrativo" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 71
+
+Entrevistador:
+A atividade "Registro administrativo" pode ocorrer sem que "Tratar autorização do convênio" ocorra em alguma execução válida do processo?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 72
+
+Entrevistador:
+A atividade "Preparar procedimentos de Internação" e a atividade "Preparar procedimentos de alta" podem ocorrer na mesma instância do processo, ou seja, há execuções em que ambas acontecem juntas?
+
+Entrevistado:
+Se preparar internação acontecer, ele vai acontecer antes do procedimento de alta.
+
+------------------------------------------------------------
+
+Pergunta 73
+
+Entrevistador:
+A atividade "Preparar procedimentos de alta" só pode ocorrer se "Preparar procedimentos de Internação" tiver ocorrido antes?
+
+Entrevistado:
+Não. A internação pode não ter ocorrido, mas se ela ocorrer será antes da alta.
+
+------------------------------------------------------------
+
+Pergunta 74
+
+Entrevistador:
+Sempre que "Preparar procedimentos de Internação" ocorre, a atividade "Preparar procedimentos de alta" obrigatoriamente ocorre depois, na mesma execução do processo?
+
+Entrevistado:
+Sim, a alta será depois da internação, mas não logo em seguida. Só depois de outras atividades terem ocorrido antes.
+
+------------------------------------------------------------
+
+Pergunta 75
+
+Entrevistador:
+Após "Solicitar exames adicionais", o processo retorna à atividade "Solicitar exames" para realizar um novo ciclo de exames, ou os exames adicionais seguem um fluxo diferente?
+
+Entrevistado:
+Depois dos exames adicionais ele segue para orientações finais.
+
+------------------------------------------------------------
+
+Pergunta 76
+
+Entrevistador:
+A atividade "Entregar orientações finais" depende da atividade "Solicitar exames adicionais" para ocorrer? Ou seja, sempre que forem solicitados exames adicionais, as orientações finais só poderão ser entregues após essa solicitação?
+
+Entrevistado:
+Se exames adicionais forem solicitados, sim.
+
+------------------------------------------------------------
+
+Pergunta 77
+
+Entrevistador:
+Quando "Solicitar exames adicionais" ocorre, "Entregar orientações finais" deve ocorrer depois dessa atividade?
+
+Entrevistado:
+Sim, depois.
+
+------------------------------------------------------------
+
+Pergunta 78
+
+Entrevistador:
+Após a atividade "Preparar procedimentos de alta", existe alguma situação em que o processo retorna a uma atividade anterior ou salta diretamente para uma atividade posterior não imediatamente sucessora?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 79
+
+Entrevistador:
+Após a atividade "Entregar orientações finais", existe alguma situação em que o processo retorna a uma atividade anterior ou salta diretamente para uma atividade posterior não imediatamente sucessora?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 80
+
+Entrevistador:
+Após a atividade "Revisar diagnóstico", existe alguma situação em que o processo retorna a uma atividade anterior ou salta diretamente para uma atividade posterior não imediatamente sucessora?
+
+Entrevistado:
+Dependendo da revisão do diagnóstico, ele vai para uma consulta com especialista e dependendo será solicitado novos exames, mas dependendo ele pode ir direto para entregar orientações finais, sem passar por especialista e sem pedir novos exames adicionais.
+
+------------------------------------------------------------
+
+Pergunta 81
+
+Entrevistador:
+Após a atividade "Consultar especialista", existe alguma situação em que o processo retorna a uma atividade anterior ou salta diretamente para uma atividade posterior não imediatamente sucessora?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 82
+
+Entrevistador:
+Após a atividade "Solicitar exames", existe alguma situação em que o processo retorna a uma atividade anterior ou salta diretamente para uma atividade posterior não imediatamente sucessora?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 83
+
+Entrevistador:
+Após a atividade "Processar/realizar exames", existe alguma situação em que o processo retorna a uma atividade anterior ou salta diretamente para uma atividade posterior não imediatamente sucessora?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 84
+
+Entrevistador:
+Após a atividade "Tratamento em andamento", existe alguma situação em que o processo retorna a uma atividade anterior ou salta diretamente para uma atividade posterior não imediatamente sucessora?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 85
+
+Entrevistador:
+Após a atividade "Administrar medicação inicial", existe alguma situação em que o processo retorna a uma atividade anterior ou salta diretamente para uma atividade posterior não imediatamente sucessora?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 86
+
+Entrevistador:
+Após a atividade "Monitorar custos e aprovações", existe alguma situação em que o processo retorna a uma atividade anterior ou salta diretamente para uma atividade posterior não imediatamente sucessora?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 87
+
+Entrevistador:
+Após a atividade "Tratar autorização do convênio", existe alguma situação em que o processo retorna a uma atividade anterior ou salta diretamente para uma atividade posterior não imediatamente sucessora?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 88
+
+Entrevistador:
+Após a atividade "Preparar procedimentos de Internação", existe alguma situação em que o processo retorna a uma atividade anterior ou salta diretamente para uma atividade posterior não imediatamente sucessora?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 89
+
+Entrevistador:
+Após a atividade "Registro administrativo", existe alguma situação em que o processo retorna a uma atividade anterior ou salta diretamente para uma atividade posterior não imediatamente sucessora?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 90
+
+Entrevistador:
+Após a atividade "Triagem inicial de enfermagem", existe alguma situação em que o processo retorna a uma atividade anterior ou salta diretamente para uma atividade posterior não imediatamente sucessora?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 91
+
+Entrevistador:
+Após a atividade "Chegada do paciente", existe alguma situação em que o processo retorna a uma atividade anterior ou salta diretamente para uma atividade posterior não imediatamente sucessora?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Pergunta 92
+
+Entrevistador:
+Entre as atividades "Consultar especialista" e "Solicitar exames adicionais", elas podem ocorrer na mesma instância do processo (ou seja, ambas acontecerem para o mesmo paciente), ou a ocorrência de uma exclui a outra?
+
+Entrevistado:
+Podem ocorrer juntas.
+
+------------------------------------------------------------
+
+Pergunta 93
+
+Entrevistador:
+Considerando "Consultar especialista" e "Solicitar exames adicionais", existem execuções válidas do processo com:
+1. Apenas "Consultar especialista";
+2. Apenas "Solicitar exames adicionais";
+3. Ambas as atividades?
+
+Entrevistado:
+Sim as três, e como também nenhuma das opções pode ocorrer, nem consultar especialista e nem exames adicionais.
+
+------------------------------------------------------------
+
+Pergunta 94
+
+Entrevistador:
+As atividades "Preparar procedimentos de Internação" e "Consultar especialista" podem ocorrer juntas na mesma instância do processo?
+
+Entrevistado:
+Elas não estão diretamente ligadas. Antes da consulta com especialista, deve-se administrar medicação e fazer exames.
+
+------------------------------------------------------------
+
+Pergunta 95
+
+Entrevistador:
+Em uma mesma execução do processo, "Preparar procedimentos de Internação" e "Consultar especialista" podem ambas ocorrer, mesmo que existam outras atividades entre elas?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 96
+
+Entrevistador:
+Existem execuções válidas do processo com:
+1. Apenas "Preparar procedimentos de Internação";
+2. Apenas "Consultar especialista";
+3. Ambas as atividades?
+
+Entrevistado:
+Sim os três, bem como nenhuma das opções.
+
+------------------------------------------------------------
+
+Pergunta 97
+
+Entrevistador:
+A atividade "Consultar especialista" só pode ocorrer se "Administrar medicação inicial" tiver ocorrido antes?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 98
+
+Entrevistador:
+Quando "Consultar especialista" ocorre, a atividade "Administrar medicação inicial" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 99
+
+Entrevistador:
+A atividade "Administrar medicação inicial" pode ocorrer sem que "Consultar especialista" ocorra em alguma execução válida do processo?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 100
+
+Entrevistador:
+Você também informou anteriormente que, antes da consulta ao especialista, devem ser realizados os exames. A atividade "Consultar especialista" só pode ocorrer se "Processar/realizar exames" tiver ocorrido antes?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 101
+
+Entrevistador:
+Quando "Consultar especialista" ocorre, a atividade "Processar/realizar exames" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 102
+
+Entrevistador:
+A atividade "Processar/realizar exames" pode ocorrer sem que "Consultar especialista" ocorra em alguma execução válida do processo?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 103
+
+Entrevistador:
+A atividade "Solicitar exames adicionais" só pode ocorrer se "Processar/realizar exames" tiver ocorrido antes?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 104
+
+Entrevistador:
+Quando "Solicitar exames adicionais" ocorre, a atividade "Processar/realizar exames" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 105
+
+Entrevistador:
+A atividade "Processar/realizar exames" pode ocorrer sem que "Solicitar exames adicionais" ocorra em alguma execução válida do processo?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 106
+
+Entrevistador:
+A atividade "Solicitar exames adicionais" só pode ocorrer se "Administrar medicação inicial" tiver ocorrido antes?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 107
+
+Entrevistador:
+Quando "Solicitar exames adicionais" ocorre, a atividade "Administrar medicação inicial" deve ocorrer antes, depois ou a ordem é irrelevante/desconhecida?
+
+Entrevistado:
+Antes.
+
+------------------------------------------------------------
+
+Pergunta 108
+
+Entrevistador:
+A atividade "Administrar medicação inicial" pode ocorrer sem que "Solicitar exames adicionais" ocorra em alguma execução válida do processo?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 109
+
+Entrevistador:
+A atividade "Entregar orientações finais" pode ocorrer diretamente após "Revisar diagnóstico", sem que ocorram "Consultar especialista" e "Solicitar exames adicionais", conforme você mencionou anteriormente?
+
+Entrevistado:
+Sim.
+
+------------------------------------------------------------
+
+Pergunta 110
+
+Entrevistador:
+Existe alguma situação em que "Preparar procedimentos de Internação" e "Preparar procedimentos de alta" ocorram na mesma execução, mas sem que haja "Tratamento em andamento" entre elas?
+
+Entrevistado:
+Não, se internação ocorrer, o tratamento em andamento também deve ocorrer antes do procedimento de alta.
+
+------------------------------------------------------------
+
+Pergunta 111
+
+Entrevistador:
+Considerando todas as atividades do processo, existe mais alguma relação de dependência, requisito, dependência circunstancial, exclusão (XOR), união inclusiva (UNI) ou retorno (JMP) que ainda não discutimos e que seja necessária para representar corretamente o processo?
+
+Entrevistado:
+Não.
+
+------------------------------------------------------------
+
+Resultado Final
+
+Entrevistador:
+Processo: Processo Complexo de Atendimento Hospitalar
+
+Atividades:
+- Chegada do paciente
+- Registro administrativo
+- Triagem inicial de enfermagem
+- Médico analisa os sintomas
+- Preparar procedimentos de Internação
+- Monitorar custos e aprovações
+- Tratar autorização do convênio
+- Solicitar exames
+- Administrar medicação inicial
+- Processar/realizar exames
+- Revisar diagnóstico
+- Tratamento em andamento
+- Consultar especialista
+- Solicitar exames adicionais
+- Entregar orientações finais
+- Preparar procedimentos de alta
+
+Situações SBMN:
+
+Registro administrativo DEP Chegada do paciente
+
+Médico analisa os sintomas DEP Triagem inicial de enfermagem
+
+Preparar procedimentos de Internação REQ Médico analisa os sintomas
+
+Monitorar custos e aprovações DEP Registro administrativo
+
+Tratar autorização do convênio DEP Registro administrativo
+
+Solicitar exames DEP Médico analisa os sintomas
+
+Administrar medicação inicial DEP Médico analisa os sintomas
+
+Processar/realizar exames DEP Solicitar exames
+
+Revisar diagnóstico DEP Processar/realizar exames
+
+Tratamento em andamento DEP Administrar medicação inicial
+
+Consultar especialista REQ Revisar diagnóstico
+
+Consultar especialista REQ Administrar medicação inicial
+
+Consultar especialista REQ Processar/realizar exames
+
+Solicitar exames adicionais REQ Revisar diagnóstico
+
+Solicitar exames adicionais REQ Processar/realizar exames
+
+Solicitar exames adicionais REQ Administrar medicação inicial
+
+Entregar orientações finais DEP Tratamento em andamento
+
+Entregar orientações finais DEP Revisar diagnóstico
+
+Entregar orientações finais DEP Monitorar custos e aprovações
+
+Entregar orientações finais DEP Tratar autorização do convênio
+
+Entregar orientações finais DEPC Solicitar exames adicionais
+
+Preparar procedimentos de alta DEP Tratamento em andamento
+
+Preparar procedimentos de alta DEP Revisar diagnóstico
+
+Preparar procedimentos de alta DEP Monitorar custos e aprovações
+
+Preparar procedimentos de alta DEP Tratar autorização do convênio
+
+Preparar procedimentos de alta DEPC Preparar procedimentos de Internação
+
+Consultar especialista UNI Solicitar exames adicionais
+
+Preparar procedimentos de Internação UNI Consultar especialista
+
+Situações JMP:
+
+Nenhuma.
+
+This SBMN model is consistent and has at least one valid BPMN realization.

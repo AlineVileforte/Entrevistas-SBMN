@@ -1,0 +1,27 @@
+Situações SBMN
+
+Verificar Histórico de Pagamentos REQ Verificar Cliente
+Verificar Tipo de Cliente REQ Verificar Cliente
+Criar Novo Cliente REQ Verificar Tipo de Cliente
+Enviar Mensagem de Recusa REQ Verificar Tipo de Cliente
+Enviar Mensagem de Recusa REQ Verificar Histórico de Pagamentos
+Verificar Histórico de Pagamentos XOR Verificar Tipo de Cliente
+Criar Novo Cliente DEP Verificar Tipo de Cliente
+Verificar Disponibilidade REQ Criar Novo Cliente
+Verificar Disponibilidade DEPC Verificar Histórico de Pagamentos
+Enviar Confirmação ao Cliente DEP Verificar Disponibilidade
+Produzir Produtos em Falta REQ Verificar Disponibilidade
+Preparar para Entrega DEP Enviar Confirmação ao Cliente
+Preparar para Entrega DEPC Produzir Produtos em Falta
+Embalar os Produtos DEP Preparar para Entrega
+Preparar Fatura DEP Preparar para Entrega
+Entregar os Produtos DEP Embalar os Produtos
+Enviar a Fatura ao Cliente DEP Preparar Fatura
+Verificar Pagamento DEP Enviar a Fatura ao Cliente
+Verificar Pagamento DEP Entregar os Produtos
+Encerrar Pedido REQ Verificar Pagamento
+Verificar os Lembretes REQ Verificar Pagamento
+Processo de Cobrança REQ Verificar os Lembretes
+
+Situações JMP
+Verificar os Lembretes JMP Verificar Pagamento

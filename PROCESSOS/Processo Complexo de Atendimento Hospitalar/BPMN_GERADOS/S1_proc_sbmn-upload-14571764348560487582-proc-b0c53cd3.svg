@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="3360" height="1280" viewBox="0 0 3360 1280">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#55606c"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="100%" height="100%" fill="#ffffff"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="156,220 220,220 220,280 320,280"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="420,280 480,280 480,435 610,435"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="645,440 700,440 700,380 820,380"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="642,453 720,453 720,560 820,560"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="920,380 980,380 980,496 1089,496"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="920,560 1000,560 1000,660 1080,660"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="1123,512 1180,512 1180,620 1360,620"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="1126,501 1200,501 1200,440 1360,440"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="1180,660 1280,660 1280,800 1360,800"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="1460,800 1520,800 1520,935 1630,935"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="1460,620 1540,620 1540,780 1620,780"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="1662,937 1720,937 1720,800 1900,800"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="1667,948 1740,948 1740,980 1900,980"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="2000,800 2060,800 2060,780 2160,780"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="2000,980 2080,980 2080,960 2160,960"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="1720,780 1800,780 1800,647 1648,647"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="1460,440 1560,440 1560,614 1631,614"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="2260,780 2320,780 2320,935 2450,935"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="2260,960 2340,960 2340,946 2441,946"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="1668,627 1760,627 1760,643 1902,643"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="2484,939 2540,939 2540,860 2700,860"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="2800,860 2860,860 2860,780 2980,780"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="3080,780 3120,780 3120,1120 1860,1120 1860,648 1947,648"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="1947,642 2040,642 2040,608 2163,608"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="2206,601 2300,601 2300,540 2440,540"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="2203,612 2340,612 2340,720 2440,720"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="2540,540 2620,540 2620,527 2702,527"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="2540,720 2640,720 2640,536 2711,536"/>
+  <polyline fill="none" stroke="#55606c" stroke-width="2" marker-end="url(#arrow)" points="2750,525 2820,525 2820,520 3160,520"/>
+  <circle cx="138" cy="218" r="18" fill="#ffffff" stroke="#203040" stroke-width="3"/>
+  <text x="138" y="258" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Default_init</text>
+  <rect x="320" y="240" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="370" y="342" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Triagem inicial de enfermagem</text>
+  <polygon points="625,420 650,445 625,470 600,445" fill="#fff7e0" stroke="#8a6d1f" stroke-width="2"/>
+  <text x="625" y="492" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">PAR</text>
+  <rect x="820" y="340" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="870" y="442" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Chegada do paciente</text>
+  <rect x="820" y="520" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="870" y="622" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Médico analisa os sintomas</text>
+  <polygon points="1105,480 1130,505 1105,530 1080,505" fill="#fff7e0" stroke="#8a6d1f" stroke-width="2"/>
+  <text x="1105" y="552" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">PAR</text>
+  <rect x="1080" y="620" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="1130" y="722" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Solicitar exames</text>
+  <rect x="1360" y="760" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="1410" y="862" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Preparar procedimentos de Int...</text>
+  <rect x="1360" y="580" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="1410" y="682" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Registro administrativo</text>
+  <polygon points="1645,920 1670,945 1645,970 1620,945" fill="#fff7e0" stroke="#8a6d1f" stroke-width="2"/>
+  <text x="1645" y="992" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">PAR</text>
+  <rect x="1900" y="760" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="1950" y="862" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Administrar medicação inicial</text>
+  <rect x="1900" y="940" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="1950" y="1042" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Processar/realizar exames</text>
+  <rect x="1620" y="740" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="1670" y="842" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Tratar autorização do convênio</text>
+  <rect x="1360" y="400" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="1410" y="502" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Monitorar custos e aprovações</text>
+  <rect x="2160" y="740" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="2210" y="842" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Tratamento em andamento</text>
+  <rect x="2160" y="920" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="2210" y="1022" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Revisar diagnóstico</text>
+  <polygon points="1645,600 1670,625 1645,650 1620,625" fill="#fff7e0" stroke="#8a6d1f" stroke-width="2"/>
+  <text x="1645" y="672" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">PARCLOSE25</text>
+  <polygon points="2465,920 2490,945 2465,970 2440,945" fill="#fff7e0" stroke="#8a6d1f" stroke-width="2"/>
+  <text x="2465" y="992" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">PARCLOSE26</text>
+  <rect x="2700" y="820" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="2750" y="922" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Solicitar exames adicionais</text>
+  <rect x="2980" y="740" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="3030" y="842" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Consultar especialista</text>
+  <polygon points="1925,620 1950,645 1925,670 1900,645" fill="#fff7e0" stroke="#8a6d1f" stroke-width="2"/>
+  <text x="1925" y="692" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">PARCLOSE30</text>
+  <polygon points="2185,580 2210,605 2185,630 2160,605" fill="#fff7e0" stroke="#8a6d1f" stroke-width="2"/>
+  <text x="2185" y="652" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">PAR</text>
+  <rect x="2440" y="500" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="2490" y="602" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Entregar orientações finais</text>
+  <rect x="2440" y="680" width="100" height="80" rx="12" ry="12" fill="#f6fbff" stroke="#2b5876" stroke-width="2"/>
+  <text x="2490" y="782" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">Preparar procedimentos de alta</text>
+  <polygon points="2725,500 2750,525 2725,550 2700,525" fill="#fff7e0" stroke="#8a6d1f" stroke-width="2"/>
+  <text x="2725" y="572" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">PARCLOSE34</text>
+  <circle cx="3178" cy="518" r="18" fill="#ffffff" stroke="#203040" stroke-width="3"/>
+  <text x="3178" y="558" font-family="Segoe UI, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#203040">END_EVENT</text>
+</svg>

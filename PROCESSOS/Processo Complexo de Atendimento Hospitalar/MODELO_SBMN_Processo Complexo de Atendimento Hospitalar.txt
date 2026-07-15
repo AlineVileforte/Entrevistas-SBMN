@@ -1,0 +1,33 @@
+Registro administrativo DEP Chegada do paciente
+Triagem inicial de enfermagem DEP Chegada do paciente
+Médico analisa os sintomas DEP Triagem inicial de enfermagem
+Preparar procedimentos de Internação REQ Médico analisa os sintomas
+Monitorar custos e aprovações DEP Registro administrativo
+Tratar autorização do convênio DEP Registro administrativo
+Solicitar exames DEP Médico analisa os sintomas
+Solicitar exames DEPC Preparar procedimentos de Internação
+Administrar medicação inicial DEPC Preparar procedimentos de Internação
+Administrar medicação inicial DEP Médico analisa os sintomas
+Processar/ realizar exames DEP Solicitar exames
+Revisar diagnóstico DEP Processar/ realizar exames
+Revisar diagnóstico DEP Administrar medicação inicial
+Tratamento em andamento DEP Administrar medicação inicial
+Tratamento em andamento DEP Processar/ realizar exames
+Consultar especialista REQ Revisar diagnóstico
+Solicitar exames adicionais DEPC Consultar especialista 
+Solicitar exames adicionais REQ Revisar diagnóstico
+Entregar orientações finais DEP Tratamento em andamento
+Entregar orientações finais DEPC Solicitar exames adicionais
+Entregar orientações finais DEP Monitorar custos e aprovações
+Entregar orientações finais DEP Tratar autorização do convênio
+Preparar procedimentos de alta DEP Tratamento em andamento
+Preparar procedimentos de alta DEP Monitorar custos e aprovações
+Preparar procedimentos de alta DEP Tratar autorização do convênio
+Preparar procedimentos de alta DEPC Solicitar exames adicionais
+
+
+
+
+
+
+
